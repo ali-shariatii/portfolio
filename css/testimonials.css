@@ -1,0 +1,16 @@
+/*SECTION 4: TESTIMONIALS */
+#testimonials-grid {
+	display: grid;
+	grid-template-columns: auto;
+	grid-template-rows: auto auto;
+}
+
+#testimonials-grid-item-1 {
+	display: grid;
+    justify-content: center;
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+#testimonials-grid-item-2 {
+    grid-area: 2 / 1 / 3 / 2;
+}

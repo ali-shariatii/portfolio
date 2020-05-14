@@ -1,3 +1,4 @@
+$(document).ready(function(){
 /* NAVIGATION */
 
 
@@ -18,3 +19,5 @@
 
 /* SECTION 6: FOOTER */
 
+
+});

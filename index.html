@@ -5,11 +5,104 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css.normalize.css">
     <link rel="stylesheet" href="css/main.css">
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/work.css">
+    <link rel="stylesheet" href="css/testimonials.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" type="text/javascript"></script>
     <title>Portfolio | Ali Shariati</title>
 </head>
+
 <body>
+<!--NAVIGATION-->
+<div>
     
-    <script rel="stylesheet" href="js/main.js"></script>
+</div> 
+
+<!--SECTION 1: HOME / LANDING PAGE-->
+<header>
+   <div id="header-grid-item">
+       <h1>ALI SHARIATI</h1>
+       <h3>WEB DEVELOPER | WEB DESIGNER</h3>
+   </div>
+</header>
+
+<!--SECTION 2: ABOUT-->
+<section class="container-grid">
+    <div class="about-grid">
+        <div id="about-grid-item-1">ABOUT</div>
+        <div id="about-grid-item-2">
+            <div id="highlights-grid-item-1">
+                <div id="highlight-img-container-1">img1</div>
+                <div id="highlight-content-container-1">cont1</div>
+            </div>
+            <div id="highlights-grid-item-2">
+                <div id="highlight-img-container-2">img2</div>
+                <div id="highlight-content-container-2">cont2</div>
+            </div>
+            <div id="highlights-grid-item-3">
+                <div id="highlight-img-container-3">img3</div>
+                <div id="highlight-content-container-3">cont3</div>
+            </div>
+        </div>
+        <div id="about-grid-item-3">
+        <p>bio</p></div>
+        <div id="about-grid-item-4">
+            <div id="skills-grid-item-1">skill1</div>
+            <div id="skills-grid-item-2">skill2</div>
+            <div id="skills-grid-item-3">skill3</div>
+            <div id="skills-grid-item-4">skill4</div>
+            <div id="skills-grid-item-5">skill5</div>
+            <div id="skills-grid-item-6">skill6</div>
+            <div id="skills-grid-item-7">skill7</div>
+            <div id="skills-grid-item-8">skill8</div>
+            <div id="skills-grid-item-9">skill9</div>
+        </div>
+    </div>
+</section>
+
+<!--SECTION 3: WORK-->
+<section class="container-grid">
+    <div id="work-grid">
+        <div id="work-grid-item-1">WORK</div>
+        <div id="work-grid-item-2">i2canada</div>
+        <div id="work-grid-item-3">shiftdo</div>
+    </div>
+</section>
+
+<!--SECTION 4: TESTIMONIALS-->
+<section class="container-grid">
+    <div class="testimonials-grid">
+        <div id="testimonials-grid-item-1">TESTIMONIALS</div>
+        <div id="testimonials-grid-item-2">ramin's recom</div>
+    </div>
+</section>
+   
+<!--SECTION 5: CONTACT-->
+<section class="container-grid">
+    <div id="contact-grid">
+        <div id="contact-grid-item-1">CONTACT</div>
+        <div id="contact-grid-item-2">
+            <form id="form-grid" action="">
+                <!--check for force entry with JS simeltaneously!-->
+                <div id="form-grid-item-1"><input type="text" placeholder="Name*" required></div>
+                <div id="form-grid-item-2"><input type="number" placeholder="Phone*" required></div>
+                <div id="form-grid-item-3"><input type="email" placeholder="Email*" required></div>
+                <div id="form-grid-item-4"><textarea placeholder="Your message*" required></textarea></div>
+                <div id="form-grid-item-5"><input type="submit" placeholder="Submit"></div>
+            </form>
+        </div>
+    </div>
+</section>
+
+<!--SECTION 6: FOOTER-->
+<footer>
+    <div id="footer-grid-item-1">social media</div>
+    <div id="footer-grid-item-2">copy write</div>
+</footer>
+
+<!--JS LINKS-->
+<script src="js/jquery.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>
