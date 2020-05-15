@@ -12,5 +12,34 @@
 }
 
 #testimonials-grid-item-2 {
-    grid-area: 2 / 1 / 3 / 2;
+	display: grid;
+	grid-template-columns: auto auto auto;
+	grid-template-rows: auto auto;
+	grid-area: 2 / 1 / 3 / 2;
+	justify-content: space-around;
+	align-items: baseline;
+	text-align: center;
 }
+
+	#recom-item-1 {
+		grid-area: 1 / 1 / 2 / 2;
+	}
+
+	#recom-item-2 {
+		grid-area: 1 / 2 / 2 / 3;
+	}
+
+	#recom-item-3 {
+		grid-area: 1 / 3 / 2 / 4;
+	}
+
+	#recom-item-4 {
+		grid-area: 2 / 2 / 3 / 3;
+		width: 100%;
+	}
+
+		#in { text-decoration: none; color: #082caf ;}
+		#in:visited { text-decoration: none; color: #082caf ;}
+		#in:hover { text-decoration: none; color: #082caf ;}
+		#in:focus { text-decoration: none; color: #082caf ; }
+		#in:hover, #in:active { text-decoration: none; color: #082caf ;}
