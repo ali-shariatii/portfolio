@@ -9,35 +9,41 @@
 
 /*SECTION 3: WORK */
 
-//modal1
+//modal1 var
 var modalOpener1 = document.getElementById("modalOpener1");
-var modalFullWindow = document.getElementsByClassName("modal-full-window")[0];
 var modalCloser1 = document.getElementById("modalCloser1");
+var modalFullWindow1 = document.getElementById("modalFullWindow1");
 
+//modal2 var
+var modalOpener2 = document.getElementById("modalOpener2");
+var modalCloser2 = document.getElementById("modalCloser2");
+var modalFullWindow2 = document.getElementById("modalFullWindow2");
+
+//modal1 func
 modalOpener1.onclick = function() {
-    modalFullWindow.style.display = "block";
+    modalFullWindow1.style.display = "block";
 }
 
 modalCloser1.onclick = function() {
-    modalFullWindow.style.display = "none";
+    modalFullWindow1.style.display = "none";
 }
 
-//modal2
-var modalOpener2 = document.getElementById("modalOpener2");
-var modalCloser2 = document.getElementById("modalCloser2");
-
+//modal2 func
 modalOpener2.onclick = function() {
-    modalFullWindow.style.display = "block";
+    modalFullWindow2.style.display = "block";
 }
 
 modalCloser2.onclick = function() {
-    modalFullWindow.style.display = "none";
+    modalFullWindow2.style.display = "none";
 }
 
+//close all modals on window click
 window.onclick = function(event) {
-    if(event.target == modalFullWindow) {
-        modalFullWindow.style.display = "none";
-    };
+    if(event.target == modalFullWindow1) {
+        modalFullWindow1.style.display = "none";
+    } else if(event.target == modalFullWindow2) {
+        modalFullWindow2.style.display = "none";
+    }
 }
 
 
