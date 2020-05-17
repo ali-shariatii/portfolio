@@ -38,6 +38,8 @@
 
             #form-grid textarea, #form-grid input {
                 padding-left: 19px;
+                padding-right: 19px;
+                padding-bottom: 10px;
             }
 
             #form-grid-item-1 {
@@ -92,4 +94,14 @@
                 background-color: transparent;
                 border: white 2px solid;
             }
-        
+
+            /*auto fill input color sets*/
+            input:-webkit-autofill,
+            input:-webkit-autofill:hover, 
+            input:-webkit-autofill:focus, 
+            input:-webkit-autofill:active  {
+                -webkit-box-shadow: 0 0 0 30px #393939 inset !important;
+            }
+            input:-webkit-autofill {
+                -webkit-text-fill-color: white !important;
+            }

@@ -45,7 +45,6 @@ h4 {
 	width: 100%;
 	height: 48px;
 	align-items: center;
-	background-color: rgba(34, 32, 32, 0.2);
 }
 
 	#nav-items {
@@ -62,22 +61,25 @@ h4 {
 /*										 SECTION 1: HOME / LANDING PAGE */
 header {
 	display: grid;
-	background-image: url("../img/landing-page-bg.jpg");
+	background-image: url("../img/bg.jpg");
 	background-repeat: no-repeat;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
 	height: 100vh;
-	justify-content: center;
 	align-items: center;
 	
 }
 
 	#header-grid-item {
-		text-align: center;
+		display: grid;
 		line-height: 9px;
-		background-color: rgba(34, 32, 32, 0.2);
+		background-color: rgba(57, 57, 57, 0.66);
+		width: inherit;
+		height: inherit;
+		justify-content: left;
+		border: 1px solid red;
 		
 	}
 
@@ -85,9 +87,8 @@ header {
 			margin-left: 4.2vw;
 			font-size: 4.4vw;
 			letter-spacing: 3.39vw;
-			color: white;
 			font-weight: 500;
-			
+			border:  1px green solid;
 		}
 
 			#logo1 {
@@ -96,6 +97,7 @@ header {
 				width: auto;
 				margin-right: 2.05vw;
 				margin-left: -.9vw;
+				border:  1px green solid;
 				
 			}
 
@@ -105,17 +107,17 @@ header {
 				width: auto;
 				margin-right: 2.4vw;
 				margin-left: -1.1vw;
+				border:  1px green solid;
 				
 			}
 
-	#header-grid-item h3{
-		margin-left: 1.3vw;
-		font-size: 1.6vw;
-		letter-spacing: 1.2vw;
-		color: white;
-		font-weight: 500;	
-		
-	}
+		#header-grid-item h3{
+			margin-left: 1.3vw;
+			font-size: 1.6vw;
+			letter-spacing: 1.2vw;
+			font-weight: 500;
+			border:  1px green solid;	
+		}
 
 /*										 SECTION 6: FOOTER */
 footer {

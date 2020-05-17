@@ -3,9 +3,21 @@
 	display: grid;
 	grid-template-columns: auto;
 	grid-template-rows: auto auto;
-	padding-bottom: 80px;
-	background-color: #393939;
+	background-image: url("../img/bg.jpg");
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 }
+
+	#testimonials-grid-shade {
+		display: grid;
+		grid-area: 1 / 1 / 2 / 2;
+		background-color: rgba(57, 57, 57, 0.66);
+		width: inherit;
+		padding-bottom: 80px;
+	}
 
 	#testimonials-grid-item-1 {
 		display: grid;
