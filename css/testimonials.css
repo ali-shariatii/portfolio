@@ -72,7 +72,7 @@
 			#recom-item-4 p span:visited { text-decoration: none; color: white ;}
 			#recom-item-4 p span:hover { text-decoration: none; color: white ;}
 			#recom-item-4 p span:focus { text-decoration: none; color: white ; }
-			#recom-item-4 p span:hover, #in:active { text-decoration: none; color: white ;}
+			#recom-item-4 p span:hover, #recom-item-4 p span:active { text-decoration: none; color: white ;}
 
 			#in {
 				font-size: 23px;

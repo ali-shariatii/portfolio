@@ -32,6 +32,7 @@
             height: auto;
         }
 
+
             .work-img-container img {
                 object-fit: contain;
                 width: 100%;
@@ -56,17 +57,24 @@
                 background-color: rgba(34, 32, 32, 0.7);
             }
             
+            .modal-content-window {animation:animatezoom 0.6s}@keyframes animatezoom{from{transform:scale(0)} to{transform:scale(1)}}
+
             /*This is modal content window.*/
             .modal-content-window {
                 background-color: white;
                 margin: 60px auto 0 auto; 
-                width: 85%;
+                width: 80%;
                 max-height: 80vh;
                 overflow: auto;
-                padding: 1px 25px 25px 25px;
+                padding: 25px 45px 45px 45px;
                 color: white;
                 background-color: #393939;
             }
+
+                .modal-full-window a {
+                    text-decoration: none;
+                    color: #1676b6;
+                }
 
                 .modal-header {
                     display: flex;

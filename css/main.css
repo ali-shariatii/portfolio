@@ -81,32 +81,32 @@ header {
 		
 	}
 
-	#header-grid-item h1 {
-		margin-left: 4.2vw;
-		font-size: 4.4vw;
-		letter-spacing: 3.39vw;
-		color: white;
-		font-weight: 500;
-		
-	}
-
-		#logo1 {
-			display: inline-block;
-			height: 2.9vw;
-			width: auto;
-			margin-right: 2.05vw;
-			margin-left: -.9vw;
+		#header-grid-item h1 {
+			margin-left: 4.2vw;
+			font-size: 4.4vw;
+			letter-spacing: 3.39vw;
+			color: white;
+			font-weight: 500;
 			
 		}
 
-		#logo2 {
-			display: inline-block;
-			height: 2.9vw;
-			width: auto;
-			margin-right: 2.4vw;
-			margin-left: -1.1vw;
-			
-		}
+			#logo1 {
+				display: inline-block;
+				height: 2.9vw;
+				width: auto;
+				margin-right: 2.05vw;
+				margin-left: -.9vw;
+				
+			}
+
+			#logo2 {
+				display: inline-block;
+				height: 2.9vw;
+				width: auto;
+				margin-right: 2.4vw;
+				margin-left: -1.1vw;
+				
+			}
 
 	#header-grid-item h3{
 		margin-left: 1.3vw;
@@ -135,7 +135,7 @@ footer {
 
 		#footer-grid-item-1 p {
 			text-align: center;
-			font-size: 17px;
+			font-size: 20px;
 			word-spacing: 5px;
 			letter-spacing: 0.2px;
 		}

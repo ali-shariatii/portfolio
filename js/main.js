@@ -28,6 +28,8 @@ modalCloser1.onclick = function() {
     modalFullWindow1.style.display = "none";
 }
 
+
+
 //modal2 func
 modalOpener2.onclick = function() {
     modalFullWindow2.style.display = "block";
