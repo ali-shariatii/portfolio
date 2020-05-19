@@ -4,8 +4,8 @@
     justify-content: center;
     grid-template-columns: 43.27% 43.2%;
     grid-template-rows: auto auto; /*alter here in case of adding more work!*/
-    padding-bottom: 80px;
     background-color: #2e2e2e;
+    padding-bottom: 120px;
 }
 
     #work-grid-item-1 {
@@ -26,22 +26,23 @@
         justify-content: stretch;
         margin-left: 13px; /*as grid gaps! between 2 thumbnails!*/
         grid-area: 2 / 2 / 3 / 3;
+
     }
 
         .work-img-container {
             height: auto;
+            box-shadow: 0 4px 8px 0 rgba(5, 5, 5, 0.8), 0 14px 18px 0 rgba(5, 5, 5, 0.8);
+            cursor: pointer;
         }
-
 
             .work-img-container img {
                 object-fit: contain;
-                width: 100%;
-                cursor: pointer;
+                width: 100%;    
             }
 
             .work-img-container span {
                 display: block;
-                margin-bottom: 9px;
+                margin: 3px 10px 9.7px 13px;
                 font-size: 20px;
             }
 
@@ -54,21 +55,21 @@
                 top: 0;
                 width: 100%;
                 height: 100vh;
-                background-color: rgba(34, 32, 32, 0.7);
+                background-color: rgba(34, 32, 32, 0.8);
             }
             
             .modal-content-window {animation:animatezoom 0.6s}@keyframes animatezoom{from{transform:scale(0)} to{transform:scale(1)}}
 
             /*This is modal content window.*/
             .modal-content-window {
-                background-color: white;
-                margin: 60px auto 0 auto; 
+                margin: 7vh auto auto auto; 
                 width: 80%;
-                max-height: 80vh;
+                height: 80vh;
                 overflow: auto;
-                padding: 25px 45px 45px 45px;
+                padding: 5px 45px 45px 0;
                 color: white;
                 background-color: #393939;
+                text-align: justify;
             }
 
                 .modal-full-window a {
@@ -80,10 +81,13 @@
                     display: flex;
                     justify-content: center;
                     position: fixed;
+                    padding-left: 21px;
                 }
 
                 .modal-content-window p {
                     margin-top: 50px;
+                    margin-left: 65px;
+                    margin-right: 15px;
                 }
 
                 #modalCloser1, #modalCloser2 {

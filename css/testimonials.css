@@ -9,14 +9,15 @@
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
+	/* add padding to #testimonials-grid-shade in case of change*/
 }
 
 	#testimonials-grid-shade {
 		display: grid;
 		grid-area: 1 / 1 / 2 / 2;
-		background-color: rgba(57, 57, 57, 0.66);
+		background-color: rgba(57, 57, 57, 0.5);
 		width: inherit;
-		padding-bottom: 80px;
+		padding-bottom: 120px; /*add padding bottom here for the entire testimonials container!*/
 	}
 
 	#testimonials-grid-item-1 {
@@ -42,6 +43,7 @@
 			padding: 0 20px;
 			align-items: center;
 			border: white solid 3px;
+			box-shadow: 0 4px 8px 0 rgba(11, 11, 11, 0.6), 0 14px 18px 0 rgba(16, 16, 16, 0.7);
 		}
 
 		#recom-item-2 {
@@ -51,6 +53,7 @@
 			text-align: center;
 			padding: 0 20px;
 			border: white solid 3px;
+			box-shadow: 0 4px 8px 0 rgba(11, 11, 11, 0.6), 0 14px 18px 0 rgba(16, 16, 16, 0.7);
 		}
 
 		#recom-item-3 {
@@ -60,13 +63,27 @@
 			text-align: center;
 			padding: 0 20px;
 			border: white solid 3px;
+			box-shadow: 0 4px 8px 0 rgba(11, 11, 11, 0.6), 0 14px 18px 0 rgba(16, 16, 16, 0.7);
 		}
 
 		#recom-item-4 {
 			grid-area: 2 / 2 / 3 / 3;
 			width: 100%;
 			text-align: center;
+			
+			-webkit-transition: all;
+			-moz-transition: all;
+			-o-transition: all;
+			transition-property: all;
+			-webkit-transition-duration: 0.3s;
+			-moz-transition-duration: 0.3s;
+			-o-transition-duration: 0.3s;
+			transition-duration: 0.3s;
 		}
+
+		#recom-item-4:hover {
+			transform: scale(1.05);
+		}			
 
 			#recom-item-4 p a {
 				text-decoration: none;
@@ -79,10 +96,9 @@
 					letter-spacing: 1px;
 				}
 
-
 			#recom-item-4 p span { text-decoration: none; color: white ;}
 			#recom-item-4 p span:visited { text-decoration: none; color: white ;}
-			#recom-item-4 p span:hover { text-decoration: none; color: white ;}
+			#recom-item-4 p span:hover { text-decoration: none; color: white;}
 			#recom-item-4 p span:focus { text-decoration: none; color: white ; }
 			#recom-item-4 p span:hover, #recom-item-4 p span:active { text-decoration: none; color: white ;}
 

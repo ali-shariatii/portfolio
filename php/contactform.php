@@ -7,7 +7,6 @@ if (isset($_POST['submit'])) {
     $subject = $_POST['subject'];        
     $message = $_POST['message'];
     
-
     $mailTo = "info@alishariatii.com";
     $headers = "From: ".$email;
     $body = $name." has sent a message via your portfolio online form."."\n\n"."Sender's contact info:".".\n"."Email: ".$email.".\n"."Phone: ".$phone.".\n"."Message: ".$message;

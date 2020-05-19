@@ -10,7 +10,9 @@
     <link rel="stylesheet" href="css/testimonials.css">
     <link rel="stylesheet" href="css/contact.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous"> -->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>  -->
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
     <title>Portfolio | Ali Shariati</title>
     <link rel="shortcut icon" type="image/png" href="img/favicon/favicon-256×256.ico">
 </head>
@@ -19,19 +21,23 @@
 <!--NAVIGATION-->
 <div id="nav-flex">
     <div id="nav-items">
-        <a href="#home-grid">HOME</a>
-        <a href="#about-grid">ABOUT</a>
-        <a href="#work-grid">WORK</a>
-        <a href="#testimonials-grid">TESTIMONIALS</a>
-        <a href="#contact-grid">CONTACT</a>
+        <ul>
+            <li id="home-tab" class="active-tab"><div><a href="#home-grid">HOME</a></div></li>
+            <li id="about-tab"><div><a href="#about-grid">ABOUT</a></div></li> 
+            <li id="work-tab"><div><a href="#work-grid">WORK</a></div></li> 
+            <li id="testimonials-tab"><div><a href="#testimonials-grid">TESTIMONIALS</a></div></li> 
+            <li id="contact-tab"><div><a href="#contact-grid">CONTACT</a></div></li> 
+        </ul>
     </div>
 </div>
 
 <!--SECTION 1: HOME / LANDING PAGE-->
 <header id="home-grid">
-    <div id="header-grid-item">
-        <h1><img src="img/logo.svg" id="logo1">LI SH<img src="img/logo.svg" id="logo2">RIATI</h1>
-        <h3>WEB DEVELOPER | WEB DESIGNER</h3>
+    <div id="header-grid-shade">
+        <div id="header-grid-item">
+            <h1> <img src="img/logo.svg" alt="logo" id="logo1"> LI SH <img src="img/logo.svg" alt="logo" id="logo2"> RIATI</h1>
+            <h3>WEB DEVELOPER | WEB DESIGNER</h3>
+        </div>
     </div>
 </header>
 
@@ -46,7 +52,7 @@
             </div>
             <div id="highlights-grid-item-2">
                 <!--<div id="highlight-img-container-2"></div>-->
-                <div id="highlight-content-container-2"><p>For website visitors or fellow coders & designers, my easy-to-use contents work both ways. </p></div>
+                <div id="highlight-content-container-2"><p>For website visitors or fellow coders & designers, my easy-to-use contents work both ways.</p></div>
             </div>
             <div id="highlights-grid-item-3">
                 <!--<div id="highlight-img-container-3"></div>-->
@@ -75,22 +81,22 @@
         <div id="work-grid-item-1"><h4>WORK</h4></div>
         <div id="work-grid-item-2">
             <!--modal trigger-->
-            <div class="work-img-container">
-                <img src="img/i2canada-thumbnail-wide.jpg" alt="i2canada" id="modalOpener1">
+            <div class="work-img-container" id="modalOpener1">
+                <img src="img/i2canada-thumbnail-wide.jpg" alt="i2canada">
                 <span>HTML | CSS | WORDPRESS</span>
             </div>
             <!--modal content-->
             <div class="modal-full-window" id="modalFullWindow1">
                 <div class="modal-content-window">
                     <div class="modal-header"><span id="modalCloser1">&times;</span><br></div>
-                    <p><a href="http://www.i2canada.com/" target="_blank">i2Canada Immigration Services Inc.</a> is an immigration law firm startup. The project goal was UI/UX redesigning, interactive & responsive development and transferring the web application from Joomla to WordPress and rebranding with SHIFTDO studio collaboration. I have been recruited as a front-end development team.</p>
+                    <p><a href="http://www.i2canada.com/" target="_blank">i2Canada Immigration Services Inc.</a> is an immigration law firm startup. The project goal was UI/UX redesigning, interactive & responsive development and transferring the web application from Joomla to WordPress and rebranding with SHIFTDO studio collaboration. I have been recruited as a front-end development team member.</p>
                 </div>
             </div>
         </div>
         <div id="work-grid-item-3">
             <!--modal trigger-->
-            <div class="work-img-container">
-                <img src="img/shiftdo-thumbnail-wide.jpg" alt="Shiftdo" id="modalOpener2">
+            <div class="work-img-container" id="modalOpener2">
+                <img src="img/shiftdo-thumbnail-wide.jpg" alt="Shiftdo">
                 <span>HTML | CSS | WORDPRESS</span>
             </div>
             <!--modal content-->

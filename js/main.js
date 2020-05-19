@@ -8,7 +8,6 @@
 
 
 /*SECTION 3: WORK */
-
 //modal1 var
 var modalOpener1 = document.getElementById("modalOpener1");
 var modalCloser1 = document.getElementById("modalCloser1");
@@ -45,10 +44,6 @@ window.onclick = function(event) {
         modalFullWindow2.style.display = "none";
     }
 }
-
-
-
-
 
 
 /*SECTION 4: TESTIMONIALS */
