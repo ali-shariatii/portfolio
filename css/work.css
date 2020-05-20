@@ -5,7 +5,7 @@
     grid-template-columns: 43.27% 43.2%;
     grid-template-rows: auto auto; /*alter here in case of adding more work!*/
     background-color: #2e2e2e;
-    padding-bottom: 120px;
+    /*add padding bottom to work-grid-bottom-padding for the entire work-grid*/
 }
 
     #work-grid-item-1 {
@@ -26,18 +26,87 @@
         justify-content: stretch;
         margin-left: 13px; /*as grid gaps! between 2 thumbnails!*/
         grid-area: 2 / 2 / 3 / 3;
-
     }
 
         .work-img-container {
             height: auto;
             box-shadow: 0 4px 8px 0 rgba(5, 5, 5, 0.8), 0 14px 18px 0 rgba(5, 5, 5, 0.8);
             cursor: pointer;
+
+            -webkit-transition-property: all ease;
+            -moz-transition-property: all ease;
+            -ms-transition-property: all ease;
+            -o-transition-property: all ease;
+            transition-property: all ease;
+            -webkit-transition-duration: 0.4s;
+            -moz-transition-duration: 0.4s;
+            -ms-transition-duration: 0.4s;
+            -o-transition-duration: 0.4s;
+            transition-duration: 0.4s;
         }
+
+        .work-img-container:hover {
+            -webkit-transform: scale(1.02);
+            -moz-transform: scale(1.02);
+            text-transform: scale(1.02);
+            -ms-transform: scale(1.02);
+            -o-transform: scale(1.02);
+            transform: scale(1.02);
+        }
+
+        .work-img-container:active {
+            -webkit-transform: scale(0.9);
+            -moz-transform: scale(0.9);
+            text-transform: scale(0.9);
+            -ms-transform: scale(0.9);
+            -o-transform: scale(0.9);
+            transform: scale(0.9);
+        }
+
+            .info-alert {
+                position: absolute;
+                text-align: center;
+                opacity: 0;
+                top: 50%;
+                left: 50%;
+                -webkit-transform: translate(-50%,-50%);
+                -moz-transform: translate(-50%,-50%);
+                text-transform: translate(-50%,-50%);
+                -ms-transform: translate(-50%,-50%);
+                -o-transform: translate(-50%,-50%);
+                transform: translate(-50%,-50%);
+                -webkit-transition-property: all ease;
+                -moz-transition-property: all ease;
+                -ms-transition-property: all ease;
+                -o-transition-property: all ease;
+                transition-property: all ease;
+                -webkit-transition-duration: 0.5s;
+                -moz-transition-duration: 0.5s;
+                -o-transition-duration: 0.5s;
+                transition-duration: 0.5s;
+            }
+
+            .work-img-container:hover .info-alert{
+                opacity: 1;
+            }
 
             .work-img-container img {
                 object-fit: contain;
-                width: 100%;    
+                width: 100%; 
+                opacity: 1;
+                -webkit-transition-property: all ease;
+                -moz-transition-property: all ease;
+                -ms-transition-property: all ease;
+                -o-transition-property: all ease;
+                transition-property: all ease;
+                -webkit-transition-duration: 0.5s;
+                -moz-transition-duration: 0.5s;
+                -o-transition-duration: 0.5s;
+                transition-duration: 0.5s;
+            }
+
+            .work-img-container:hover img{
+                opacity: 0.1;
             }
 
             .work-img-container span {
@@ -58,7 +127,6 @@
                 background-color: rgba(34, 32, 32, 0.8);
             }
             
-            .modal-content-window {animation:animatezoom 0.6s}@keyframes animatezoom{from{transform:scale(0)} to{transform:scale(1)}}
 
             /*This is modal content window.*/
             .modal-content-window {
@@ -70,7 +138,13 @@
                 color: white;
                 background-color: #393939;
                 text-align: justify;
+                animation: animateZoomIn 0.6s;
             }
+
+                @keyframes animateZoomIn {
+                    from {transform:scale(0)} 
+                    to {transform:scale(1)}
+                }
 
                 .modal-full-window a {
                     text-decoration: none;
@@ -93,10 +167,32 @@
                 #modalCloser1, #modalCloser2 {
                     font-size: 45px;
                     font-weight: bolder;
+
+                    -webkit-transition-property: all;
+                    -moz-transition-property: all;
+                    -ms-transition-property: all;
+                    -o-transition-property: all;
+                    transition-property: all;
+                    -webkit-transition-duration: 0.3s;
+                    -moz-transition-duration: 0.3s;
+                    -o-transition-duration: 0.3s;
+                    transition-duration: 0.3s;
+
                 }
 
                 #modalCloser1:hover, #modalCloser2:hover {
                     color: grey;
                     cursor: pointer;
+                    
+                    -webkit-transform: scale(1.3) rotate(180deg);
+                    -moz-transform: scale(1.3) rotate(180deg);
+                    -ms-transform: scale(1.3) rotate(180deg);
+                    -o-transform: scale(1.3) rotate(180deg);
+                    transform: scale(1.3) rotate(180deg);
+                }
+
+                /*add padding bottom to work-grid-bottom-padding for the entire work-grid*/
+                #work-grid-bottom-padding { 
+                    padding-bottom: 120px;
                 }
 

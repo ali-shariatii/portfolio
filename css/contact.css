@@ -13,6 +13,33 @@
         grid-area: 1 / 1 / 2 / 2;
     }
 
+    #logo3 {
+        display: inline-block;
+        width: auto;
+        height: 29.5px;
+        margin: 0 6px -2px -2.8px;
+        cursor: pointer;
+        
+        -webkit-transition-property: all;
+        -moz-transition-property: all;
+        -ms-transition-property: all;
+        -o-transition-property: all;
+        transition-property: all;
+        -webkit-transition-duration: 0.5s;
+        -moz-transition-duration: 0.8s;
+        -ms-transition-duration: 0.8s;
+        -o-transition-duration: 0.8s;
+        transition-duration: 0.8s;
+    }	
+
+    #logo3:hover {
+        -webkit-transform: rotateY(360deg);
+        -moz-transform: rotateY(360deg);
+        -ms-transform: rotateY(360deg);
+        -o-transform: rotateY(360deg);
+        transform: rotateY(360deg);
+    }
+
     #contact-grid-item-2 {
         display: grid;
         grid-template-columns: auto;
@@ -97,6 +124,31 @@
                 padding: 7px 15px 4px 15px;
                 background-color: transparent;
                 border: white 2px solid;
+
+                -webkit-transition-property: all;
+                -moz-transition-property: all;
+                -ms-transition-property: all;
+                -o-transition-property: all;
+                transition-property: all;
+                -webkit-transition-duration: 0.2s;
+                -moz-transition-duration: 0.2s;
+                -ms-transition-duration: 0.2s;
+                -o-transition-duration: 0.2s;
+                transition-duration: 0.2s;
+            }
+
+            #form-grid-item-6 button:hover {
+                font-size: 23.5px;
+                border: grey 2px solid;
+                letter-spacing: .5px;
+                color: grey;        
+            }
+
+            #form-grid-item-6 button:active {
+                font-size: 23px;
+                border: #1676b6 2px solid;
+                letter-spacing: 0px;
+                color: #1676b6;        
             }
 
             /*auto fill input color sets*/

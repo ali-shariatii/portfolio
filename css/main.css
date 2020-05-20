@@ -1,7 +1,19 @@
 /*										 MEGA SETTINGS */
 html, body {
 	margin: 0;
-	font-size: 25px;
+	font-size: 25px; 
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1; 
+    animation-fill-mode: forwards; 
+} 
+  
+@keyframes fadeInAnimation { 
+    0% { 
+        opacity: 0; 
+    } 
+    100% { 
+        opacity: 1; 
+     } 
 }
 
 @font-face {
@@ -54,12 +66,14 @@ h4 {
 		word-spacing: 45px;
 		width: 100%;
 		
-		-webkit-transition: all;
-		-moz-transition: all;
-		-o-transition: all;
+		-webkit-transition-property: all;
+		-moz-transition-property: all;
+		-ms-transition-property: all;
+		-o-transition-property: all;
 		transition-property: all;
 		-webkit-transition-duration: 1s;
 		-moz-transition-duration: 1s;
+		-ms-transition-duration: 1s;
 		-o-transition-duration: 1s;
 		transition-duration: 1s;
 	}
@@ -76,12 +90,14 @@ h4 {
 				font-size: 20px;
 				letter-spacing: 1px;
 
-				-webkit-transition: all;
-				-moz-transition: all;
-				-o-transition: all;
+				-webkit-transition-property: all;
+				-moz-transition-property: all;
+				-ms-transition-property: all;
+				-o-transition-property: all;
 				transition-property: all;
 				-webkit-transition-duration: 0.5s;
 				-moz-transition-duration: 0.5s;
+				-ms-transition-duration: 0.5s;
 				-o-transition-duration: 0.5s;
 				transition-duration: 0.5s;
 				}
@@ -104,7 +120,7 @@ h4 {
 				}
 
 				.active-tab {
-					border-bottom: solid 1.5px white;
+					border-bottom: solid 1.3px white;
 				}
 	
 				.light-colored-navbar {
@@ -127,7 +143,6 @@ header {
 	background-size: cover;
 	height: 100vh;
 	align-items: center;
-
 }
 
 	#header-grid-shade {
@@ -156,14 +171,47 @@ header {
 					width: auto;
 					height: 44.8px;
 					margin-right: -21px;
+					cursor: pointer;
+
+					-webkit-transition-property: all;
+					-moz-transition-property: all;
+					-ms-transition-property: all;
+					-o-transition-property: all;
+					transition-property: all;
+					-webkit-transition-duration: 1s;
+					-moz-transition-duration: 1s;
+					-ms-transition-duration: 1s;
+					-o-transition-duration: 1s;
+					transition-duration: 1s;
 				}	
 
 				#logo2 {
 					display: inline-block;
 					width: auto;
 					height: 44.8px;
-					margin: 0 -16px 0 -70px;	
+					margin: 0 -16px 0 -70px;
+					cursor: pointer;
+					
+					-webkit-transition-property: all;
+					-moz-transition-property: all;
+					-ms-transition-property: all;
+					-o-transition-property: all;
+					transition-property: all;
+					-webkit-transition-duration: 1s;
+					-moz-transition-duration: 1s;
+					-ms-transition-duration: 1s;
+					-o-transition-duration: 1s;
+					transition-duration: 1s;
 				}	
+
+				#logo1:hover, #logo2:hover {
+					-webkit-transform: rotateZ(540deg);
+					-moz-transform: rotateZ(540deg);
+					-ms-transform: rotateZ(540deg);
+					-o-transform: rotateZ(540deg);
+					transform: rotateZ(540deg);
+				}
+
 
 			#header-grid-item h3 {
 				line-height: 85px;

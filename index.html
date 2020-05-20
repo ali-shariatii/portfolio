@@ -35,7 +35,7 @@
 <header id="home-grid">
     <div id="header-grid-shade">
         <div id="header-grid-item">
-            <h1> <img src="img/logo.svg" alt="logo" id="logo1"> LI SH <img src="img/logo.svg" alt="logo" id="logo2"> RIATI</h1>
+            <h1><a href="#about-grid" class="logo-pointer"><img src="img/logo.svg" alt="A" id="logo1"></a> LI SH <a href="#contact-grid" class="logo-pointer"><img src="img/logo.svg" alt="A" id="logo2"></a> RIATI</h1>
             <h3>WEB DEVELOPER | WEB DESIGNER</h3>
         </div>
     </div>
@@ -60,19 +60,19 @@
             </div>
         </div>
         <div id="about-grid-item-3">
-        <p>I am a web designer & developer with an interest in front-end side. My main focus is on advancing my skills in HTML,CSS, JS & its libraries/frameworks, building interactive & responsive web flows as well as designing tools. My quote of the month is__<q>Work hard,<a href="https://github.com/ali-shariatii/" target="_blank"> code hardcore</a>.</q></p>
-        <div id="about-grid-item-4">
-            <div class="skills-items" id="skills-grid-item-1"><span>HTML<br>7</span></div>
-            <div class="skills-items" id="skills-grid-item-2"><span>CSS<br>6</span></div>
-            <div class="skills-items" id="skills-grid-item-3"><span>JS<br>6</span></div>
-            <div class="skills-items" id="skills-grid-item-4"><span>JQuery<br>5</span></div>
-            <div class="skills-items" id="skills-grid-item-5"><span>PHP<br>4</span></div>
-            <div class="skills-items" id="skills-grid-item-6"><span>MySQL<br>5</span></div>
-            <div class="skills-items" id="skills-grid-item-7"><span>Ai<br>7</span></div>
-            <div class="skills-items" id="skills-grid-item-8"><span>UI/UX<br>6</span></div>
-            <div class="skills-items" id="skills-grid-item-9"><span>Ps<br>6</span></div>
+            <p>I am a web designer & developer with an interest in front-end side. My main focus is on advancing my skills in HTML,CSS, JS & its libraries/frameworks, building interactive & responsive web flows as well as designing tools. My quote of the month is__<q>Work hard,<a href="https://github.com/ali-shariatii/" target="_blank"> code hardcore</a>.</q></p>
+            <div id="about-grid-item-4">
+                <div class="skills-items" id="skills-grid-item-1"><span>HTML<br>7</span></div>
+                <div class="skills-items" id="skills-grid-item-2"><span>CSS<br>6</span></div>
+                <div class="skills-items" id="skills-grid-item-3"><span>JS<br>6</span></div>
+                <div class="skills-items" id="skills-grid-item-4"><span>JQuery<br>5</span></div>
+                <div class="skills-items" id="skills-grid-item-5"><span>PHP<br>4</span></div>
+                <div class="skills-items" id="skills-grid-item-6"><span>MySQL<br>5</span></div>
+                <div class="skills-items" id="skills-grid-item-7"><span>Ai<br>7</span></div>
+                <div class="skills-items" id="skills-grid-item-8"><span>UI/UX<br>6</span></div>
+                <div class="skills-items" id="skills-grid-item-9"><span>Ps<br>6</span></div>
+            </div>
         </div>
-    </div>
 </section>
 
 <!--SECTION 3: WORK-->
@@ -82,8 +82,9 @@
         <div id="work-grid-item-2">
             <!--modal trigger-->
             <div class="work-img-container" id="modalOpener1">
-                <img src="img/i2canada-thumbnail-wide.jpg" alt="i2canada">
-                <span>HTML | CSS | WORDPRESS</span>
+                    <div class="info-alert">More Info</div>
+                    <img src="img/i2canada-thumbnail-wide.jpg" alt="i2canada">
+                    <span>HTML | CSS | WORDPRESS</span>
             </div>
             <!--modal content-->
             <div class="modal-full-window" id="modalFullWindow1">
@@ -96,8 +97,9 @@
         <div id="work-grid-item-3">
             <!--modal trigger-->
             <div class="work-img-container" id="modalOpener2">
-                <img src="img/shiftdo-thumbnail-wide.jpg" alt="Shiftdo">
-                <span>HTML | CSS | WORDPRESS</span>
+                    <div class="info-alert">More Info</div>
+                    <img src="img/shiftdo-thumbnail-wide.jpg" alt="Shiftdo">
+                    <span>HTML | CSS | WORDPRESS</span>
             </div>
             <!--modal content-->
             <div class="modal-full-window" id="modalFullWindow2">
@@ -107,6 +109,7 @@
                 </div>
             </div>
         </div>
+        <div id="work-grid-bottom-padding"><!--add padding bottom to this for the entire work-grid!--></div>
     </div>
 </section>
 
@@ -128,7 +131,7 @@
 <!--SECTION 5: CONTACT-->
 <section class="container-grid">
     <div id="contact-grid">
-        <div id="contact-grid-item-1"><h4>CONTACT</h4></div>
+        <div id="contact-grid-item-1"><h4>CONT<a href="#home-grid" class="logo-pointer"><img src="img/logo.svg" alt="A" id="logo3"></a>CT</h4></div>
         <div id="contact-grid-item-2">
             <form id="form-grid" action="php/contactform.php" method="POST">
                 <div id="form-grid-item-1"><input type="text" placeholder="Name*" name="name" required></div>

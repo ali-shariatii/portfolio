@@ -4,7 +4,7 @@
     grid-template-columns: auto;
     grid-template-rows: auto auto auto auto;
     background-color: #393939;
-    padding-bottom: 120px;  
+    /* add bottom padding to #about-grid-item-4 as the entire about-grid bottom padding section in case of change*/
 }
 
     #about-grid-item-1 {
@@ -47,9 +47,10 @@
                 padding: 0 20px;
                 box-shadow: 0 4px 8px 0 rgba(11, 11, 11, 0.6), 0 14px 18px 0 rgba(16, 16, 16, 0.7);
 
-                -webkit-transition: all;
-                -moz-transition: all;
-                -o-transition: all;
+                -webkit-transition-property: all;
+                -moz-transition-property: all;
+                -ms-transition-property: all;
+                -o-transition-property: all;
                 transition-property: all;
                 -webkit-transition-duration: 0.5s;
                 -moz-transition-duration: 0.5s;
@@ -79,9 +80,10 @@
                 padding: 0 20px;
                 box-shadow: 0 4px 8px 0 rgba(11, 11, 11, 0.7), 0 14px 18px 0 rgba(14, 14, 14, 0.6);
                 
-                -webkit-transition: all;
-                -moz-transition: all;
-                -o-transition: all;
+                -webkit-transition-property: all;
+                -moz-transition-property: all;
+                -ms-transition-property: all;
+                -o-transition-property: all;
                 transition-property: all;
                 -webkit-transition-duration: 0.5s;
                 -moz-transition-duration: 0.5s;
@@ -111,9 +113,10 @@
                 padding: 0 20px;
                 box-shadow: 0 4px 8px 0 rgba(11, 11, 11, 0.7), 0 14px 18px 0 rgba(14, 14, 14, 0.6);
                 
-                -webkit-transition: all;
-                -moz-transition: all;
-                -o-transition: all;
+                -webkit-transition-property: all;
+                -moz-transition-property: all;
+                -ms-transition-property: all;
+                -o-transition-property: all;
                 transition-property: all;
                 -webkit-transition-duration: 0.5s;
                 -moz-transition-duration: 0.5s;
@@ -123,6 +126,10 @@
 
             /*hover transitions*/
             #highlight-content-container-1:hover, #highlight-content-container-2:hover, #highlight-content-container-3:hover {
+                -webkit-transform: scale(1.05);
+                -moz-transform: scale(1.05);
+                -ms-transform: scale(1.05);
+                -o-transform: scale(1.05);
                 transform: scale(1.05);
             }
 
@@ -139,6 +146,22 @@
                 color: #1676b6; 
                 text-decoration: none;
                 text-align: center;
+
+                -webkit-transition-property: all;
+                -moz-transition-property: all;
+                -ms-transition-property: all;
+                -o-transition-property: all;
+                transition-property: all;
+                -webkit-transition-duration: 0.5s;
+                -moz-transition-duration: 0.8s;
+                -ms-transition-duration: 0.8s;
+                -o-transition-duration: 0.8s;
+                transition-duration: 0.8s;
+            }
+
+            #about-grid-item-3 a:hover {
+                background-image: linear-gradient(); 
+                background-clip: text; 
             }
 
     #about-grid-item-4 {
@@ -149,6 +172,7 @@
         grid-area: 4 / 1 / 5 / 2;
         grid-row-gap: 35px;
         padding-top: 50px;
+        padding-bottom: 120px; 
     }
 
         .skills-items {
@@ -156,9 +180,10 @@
             text-align: center;
             width: 100%;
 
-            -webkit-transition: all;
-            -moz-transition: all;
-            -o-transition: all;
+            -webkit-transition-property: all;
+            -moz-transition-property: all;
+            -ms-transition-property: all;
+            -o-transition-property: all;
             transition-property: all;
             -webkit-transition-duration: 0.3s;
             -moz-transition-duration: 0.3s;
@@ -167,10 +192,17 @@
             }
 
                 .skills-items:hover {
-                    color: red;
                     letter-spacing: 1.9px;
-                    transform: scale(1.1)
-				}
+                    -webkit-transform: scale(1.1);
+                    -moz-transform: scale(1.1);
+                    -ms-transform: scale(1.1);
+                    -o-transform: scale(1.1);
+                    transform: scale(1.1);
+                }
+                
+                .skills-items:hover span{
+                    color: #1676b6;
+                }
 
         #skills-grid-item-1 {
             display: grid;
