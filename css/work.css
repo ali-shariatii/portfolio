@@ -141,6 +141,21 @@
                 animation: animateZoomIn 0.6s;
             }
 
+                @-webkit-keyframes animateZoomIn {
+                    from {transform:scale(0)} 
+                    to {transform:scale(1)}
+                }
+
+                @-moz-keyframes animateZoomIn {
+                    from {transform:scale(0)} 
+                    to {transform:scale(1)}
+                }
+
+                @-o-keyframes animateZoomIn {
+                    from {transform:scale(0)} 
+                    to {transform:scale(1)}
+                }
+
                 @keyframes animateZoomIn {
                     from {transform:scale(0)} 
                     to {transform:scale(1)}

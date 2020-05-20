@@ -2,17 +2,17 @@
 html, body {
 	margin: 0;
 	font-size: 25px; 
-    animation: fadeInAnimation ease 3s;
+    animation: fadeInAnimation ease 2s;
     animation-iteration-count: 1; 
     animation-fill-mode: forwards; 
 } 
   
 @keyframes fadeInAnimation { 
     0% { 
-        opacity: 0; 
+		opacity: 0; 
     } 
     100% { 
-        opacity: 1; 
+		opacity: 1; 
      } 
 }
 
@@ -103,7 +103,7 @@ h4 {
 				}
 
 				ul li:hover {
-					font-size: 20.8px;
+					font-size: 21px;
 					letter-spacing: 1.8px;
 				}
 
@@ -156,7 +156,39 @@ header {
 		#header-grid-item {
 			text-align: center;
 			width: fit-content;
+			-webkit-transition-property: all;
+			-moz-transition-property: all;
+			-ms-transition-property: all;
+			-o-transition-property: all;
+			transition-property: all;
+			animation: rocket 2.5s infinite ease;
 		}
+
+			@-webkit-keyframes rocket {
+				0% {transform: translateY(0px);}
+				50% {transform: translateY(5px);}
+				100% {transform: translateY(0px);}
+			}
+
+			@-moz-keyframes rocket {
+				0% {transform: translateY(0px);}
+				50% {transform: translateY(5px);}
+				100% {transform: translateY(0px);}
+			}
+
+			@-o-keyframes rocket {
+				0% {transform: translateY(0px);}
+				25% {transform: translateY(3.5px);}
+				50% {transform: translateY(5px);}
+				75% {transform: translateY(3.5px);}
+				100% {transform: translateY(0px);}
+			}
+
+			@keyframes rocket {
+				0% {transform: translateY(0px);}
+				50% {transform: translateY(5px);}
+				100% {transform: translateY(0px);}
+			}
 
 			#header-grid-item h1 {
 				height: 8px;
@@ -183,6 +215,7 @@ header {
 					-ms-transition-duration: 1s;
 					-o-transition-duration: 1s;
 					transition-duration: 1s;
+
 				}	
 
 				#logo2 {
@@ -212,13 +245,27 @@ header {
 					transform: rotateZ(540deg);
 				}
 
-
 			#header-grid-item h3 {
 				line-height: 85px;
 				font-size: 25px;
 				letter-spacing: 16px;
-				margin-left: 16px;
+				margin-left: 23.7px;
 				font-weight: 500;
+
+				-webkit-transition-property: all;
+				-moz-transition-property: all;
+				-ms-transition-property: all;
+				-o-transition-property: all;
+				transition-property: all;
+				-webkit-transition-duration: 1s;
+				-moz-transition-duration: .5s;
+				-ms-transition-duration: .5s;
+				-o-transition-duration: .5s;
+				transition-duration: .5s;
+			}
+
+			#header-grid-item:hover h3{
+				letter-spacing: 17.2px;
 			}
 
 /*										 SECTION 6: FOOTER */
