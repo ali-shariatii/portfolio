@@ -5,6 +5,7 @@
     grid-template-rows: auto auto;
     padding-bottom: 120px;
     background-color: #2e2e2e;
+    border: 1px #2e2e2e solid;
 }
 
     #contact-grid-item-1 {
@@ -150,6 +151,50 @@
                 letter-spacing: 0px;
                 color: #1676b6;        
             }
+
+            /*form submission message page style*/
+            #message-grid-item{
+                text-align: center;
+            }
+
+                #message-grid-item p a { text-decoration: none; color: #1676b6 ;}
+                #message-grid-item p a:visited { text-decoration: none; color: #1676b6 ;}
+                #message-grid-item p a:hover { text-decoration: none; color: #1676b6 ;}
+                #message-grid-item p a:focus { text-decoration: none; color: #1676b6 ; }
+                #message-grid-item p a:hover, #message-grid-item p a:active { text-decoration: none; color: #1676b6 ;}
+
+                #logo4 {
+                        display: inline-block;
+                        width: auto;
+                        height: 44.8px;
+                        animation: spin ease 6s;
+                        animation-iteration-count: 1; 
+                        animation-fill-mode: forwards;
+                    } 
+                      
+                    @keyframes spin { 
+                        0% { 
+                            transform: rotateY(720deg) 
+                        } 
+                        16.667% { 
+                            transform: rotateY(360deg) 
+                        } 
+                        33.333% { 
+                            transform: rotateY(720deg) 
+                        } 
+                        50.001% { 
+                            transform: rotateY(360deg) 
+                        } 
+                        66.668% { 
+                            transform: rotateY(720deg) 
+                        }
+                        83.335% { 
+                            transform: rotateY(360deg) 
+                        } 
+                        100% { 
+                            transform: rotateY(720deg) 
+                        }  
+                    }
 
             /*auto fill input color sets*/
             input:-webkit-autofill,

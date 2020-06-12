@@ -6,6 +6,7 @@
     grid-template-rows: auto auto; /*alter here in case of adding more work!*/
     background-color: #2e2e2e;
     /*add padding bottom to work-grid-bottom-padding for the entire work-grid*/
+    border: 1px #2e2e2e solid;
 }
 
     #work-grid-item-1 {

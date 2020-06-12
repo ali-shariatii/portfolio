@@ -1,10 +1,10 @@
-/*										 MEGA SETTINGS */
+/*										 GLOBAL SETTINGS */
 html, body {
 	margin: 0;
 	font-size: 25px; 
-    animation: fadeInAnimation ease 2s;
-    animation-iteration-count: 1; 
-    animation-fill-mode: forwards; 
+    animation: fadeInAnimation ease 0.3s;
+	animation-iteration-count: 1; 
+    animation-fill-mode: forwards;
 } 
   
 @keyframes fadeInAnimation { 
@@ -13,7 +13,7 @@ html, body {
     } 
     100% { 
 		opacity: 1; 
-     } 
+     }
 }
 
 @font-face {
@@ -143,6 +143,7 @@ header {
 	background-size: cover;
 	height: 100vh;
 	align-items: center;
+	border: 0.5px #393939 solid;
 }
 
 	#header-grid-shade {
@@ -155,13 +156,14 @@ header {
 
 		#header-grid-item {
 			text-align: center;
-			width: fit-content;
+			width: 1000px;
 			-webkit-transition-property: all;
 			-moz-transition-property: all;
 			-ms-transition-property: all;
 			-o-transition-property: all;
 			transition-property: all;
-			animation: rocket 2.5s infinite ease;
+			animation: rocket 2.7s infinite ease;
+			border: 1px solid red;
 		}
 
 			@-webkit-keyframes rocket {
@@ -172,7 +174,9 @@ header {
 
 			@-moz-keyframes rocket {
 				0% {transform: translateY(0px);}
-				50% {transform: translateY(5px);}
+				40% {transform: translateY(5px);}
+				50% {transform: translateY(8px);}
+				60% {transform: translateY(5px);}
 				100% {transform: translateY(0px);}
 			}
 
@@ -273,7 +277,7 @@ footer {
 	display: grid;
 	grid-template-columns: auto;
 	grid-template-rows: auto auto;
-	padding: 36px 0;
+	padding: 65px 0;
 	background-color: #393939;
 }
 
