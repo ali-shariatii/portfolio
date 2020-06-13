@@ -17,7 +17,7 @@ $(window).scroll(function() {
     var testimonialsStart = $('#testimonials-grid-shade').offset().top;
     var testimonialsEnd = $('#testimonials-grid').height();
 
-    var contactStart = $('#contact-grid-item-1').offset().top;
+    //var contactStart = $('#contact-grid-item-1').offset().top;
     //var contactEnd = $('#contact-grid').height();
 
     if(scroll <= homeStart + homeEnd ){
