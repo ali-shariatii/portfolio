@@ -105,52 +105,52 @@
             #form-grid-item-5 {
                 display: grid;
                 grid-area: 2 / 2 / 4 / 3;
-            }
-            
-            #form-grid-item-6 {
-                display: grid;
-                justify-content: space-evenly;
-                grid-area: 4 / 1 / 5 / 3;
-            }           
+            }        
 
             textarea {
                 resize: none;
                 padding-top: 10px;
             }
 
-            #form-grid-item-6 button {
-                font-size: 23px; 
-                letter-spacing: 0px;
-                font-weight: normal;
-                padding: 7px 15px 4px 15px;
-                background-color: transparent;
-                border: white 2px solid;
+            #form-grid-item-6 {
+                display: grid;
+                justify-content: space-evenly;
+                grid-area: 4 / 1 / 5 / 3;
+            }   
 
-                -webkit-transition-property: all;
-                -moz-transition-property: all;
-                -ms-transition-property: all;
-                -o-transition-property: all;
-                transition-property: all;
-                -webkit-transition-duration: 0.2s;
-                -moz-transition-duration: 0.2s;
-                -ms-transition-duration: 0.2s;
-                -o-transition-duration: 0.2s;
-                transition-duration: 0.2s;
-            }
+                #form-grid-item-6 button {
+                    font-size: 23px; 
+                    letter-spacing: 0px;
+                    font-weight: normal;
+                    padding: 7px 15px 4px 15px;
+                    background-color: transparent;
+                    border: white 2px solid;
 
-            #form-grid-item-6 button:hover {
-                font-size: 23.5px;
-                border: grey 2px solid;
-                letter-spacing: .5px;
-                color: grey;        
-            }
+                    -webkit-transition-property: all;
+                    -moz-transition-property: all;
+                    -ms-transition-property: all;
+                    -o-transition-property: all;
+                    transition-property: all;
+                    -webkit-transition-duration: 0.2s;
+                    -moz-transition-duration: 0.2s;
+                    -ms-transition-duration: 0.2s;
+                    -o-transition-duration: 0.2s;
+                    transition-duration: 0.2s;
+                }
 
-            #form-grid-item-6 button:active {
-                font-size: 23px;
-                border: #1676b6 2px solid;
-                letter-spacing: 0px;
-                color: #1676b6;        
-            }
+                #form-grid-item-6 button:hover {
+                    font-size: 23.5px;
+                    border: grey 2px solid;
+                    letter-spacing: .5px;
+                    color: grey;        
+                }
+
+                #form-grid-item-6 button:active {
+                    font-size: 23px;
+                    border: #1676b6 2px solid;
+                    letter-spacing: 0px;
+                    color: #1676b6;        
+                }
 
             /*form submission message page style*/
             #message-grid-item{
@@ -177,17 +177,30 @@
                         width: auto;
                         height: 44.8px;
                         margin-top: 5px;
+                        -webkit-animation: spin 2s infinite ease;
+                        -moz-animation: spin 2s infinite ease;
+                        -o-animation: spin 2s infinite ease;
                         animation: spin 2s infinite ease;
                     } 
                       
+                    @-webkit-keyframes spin { 
+                        0% { transform: rotateY(0deg); } 
+                        100% { transform: rotateY(720deg);} 
+                    }
+            
+                    @-moz-keyframes spin { 
+                        0% { transform: rotateY(0deg); } 
+                        100% { transform: rotateY(720deg);} 
+                    }
+            
+                    @-o-keyframes spin { 
+                        0% { transform: rotateY(0deg); } 
+                        100% { transform: rotateY(720deg);} 
+                    }
+            
                     @keyframes spin { 
-                        0% { 
-                            transform: rotateY(0deg) 
-                        } 
-
-                        100% { 
-                            transform: rotateY(720deg) 
-                        }  
+                        0% { transform: rotateY(0deg); } 
+                        100% { transform: rotateY(720deg);} 
                     }
 
             /*auto fill input color sets*/

@@ -19,8 +19,15 @@
 
 <body>
 <!--NAVIGATION-->
-<div id="nav-flex">
-    <div id="nav-items">
+<div id="nav-grid">
+    <div id="nav-item-1">
+        <audio id="bgMusic" src="snd/bg-music.mp3" loop></audio>
+        <div id="ctrl-container" >
+            <div id="playBtn" onclick="playMusicFunc();" ></div>
+            <div id="pauseBtn" onclick="pauseMusicFunc();" class="hidden-btn" ></div>
+        </div>
+    </div>
+    <div id="nav-item-2">
         <ul>
             <li id="home-tab" class="active-tab"><div><a href="#home-grid">HOME</a></div></li>
             <li id="about-tab"><div><a href="#about-grid">ABOUT</a></div></li> 
@@ -28,6 +35,10 @@
             <li id="testimonials-tab"><div><a href="#testimonials-grid">TESTIMONIALS</a></div></li> 
             <li id="contact-tab"><div><a href="#contact-grid">CONTACT</a></div></li> 
         </ul>
+    </div>
+    <div id="nav-item-3">
+        <div><a href="https://github.com/ali-shariatii/" target="_blank" class="fa fa-github"></a></div>
+        <!--for hamburger menu-->
     </div>
 </div>
 

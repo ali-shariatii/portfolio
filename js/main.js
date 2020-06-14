@@ -1,5 +1,19 @@
-/*                    NAVIGATION */
+/* NAVIGATION */
+var bgMusic = document.getElementById("bgMusic"),
+    playBtn = document.getElementById("playBtn"),
+    pauseBtn = document.getElementById("pauseBtn");
 
+function playMusicFunc() {
+    pauseBtn.classList.remove("hidden-btn");
+    playBtn.classList.add("hidden-btn");
+    bgMusic.play();
+};
+
+function pauseMusicFunc() {
+    playBtn.classList.remove("hidden-btn");
+    pauseBtn.classList.add("hidden-btn");
+    bgMusic.pause();
+};
 
 /*SECTION 1: HOME / LANDING PAGE */
 
