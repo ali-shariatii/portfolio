@@ -56,12 +56,12 @@
         }
 
         .work-img-container:active {
-            -webkit-transform: scale(0.9);
-            -moz-transform: scale(0.9);
-            text-transform: scale(0.9);
-            -ms-transform: scale(0.9);
-            -o-transform: scale(0.9);
-            transform: scale(0.9);
+            -webkit-transform: scale(0.95);
+            -moz-transform: scale(0.95);
+            text-transform: scale(0.95);
+            -ms-transform: scale(0.95);
+            -o-transform: scale(0.95);
+            transform: scale(0.95);
         }
 
             .info-alert {

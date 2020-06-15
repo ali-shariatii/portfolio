@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/navigation.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/about.css">
     <link rel="stylesheet" href="css/work.css">
@@ -19,21 +20,23 @@
 
 <body>
 <!--NAVIGATION-->
-<div id="nav-grid">
+<div id="nav-grid" class="absolute-nav" >
     <div id="nav-item-1">
-        <audio id="bgMusic" src="snd/bg-music.mp3" loop></audio>
+        <audio id="clickSnd" src="snd/click.mp3"></audio>
+        <audio id="clickSnd2" src="snd/click2.mp3"></audio>
+        <audio id="bgMusic" src="snd/bg-music.mp3" loop autoplay></audio>
         <div id="ctrl-container" >
-            <div id="playBtn" onclick="playMusicFunc();" ></div>
-            <div id="pauseBtn" onclick="pauseMusicFunc();" class="hidden-btn" ></div>
+            <div id="playBtn" onclick="playMusicFunc();" class="hidden-btn"></div>
+            <div id="pauseBtn" onclick="pauseMusicFunc();"></div>
         </div>
     </div>
     <div id="nav-item-2">
         <ul>
-            <li id="home-tab" class="active-tab"><div><a href="#home-grid">HOME</a></div></li>
-            <li id="about-tab"><div><a href="#about-grid">ABOUT</a></div></li> 
-            <li id="work-tab"><div><a href="#work-grid">WORK</a></div></li> 
-            <li id="testimonials-tab"><div><a href="#testimonials-grid">TESTIMONIALS</a></div></li> 
-            <li id="contact-tab"><div><a href="#contact-grid">CONTACT</a></div></li> 
+            <li id="home-tab" class="active-tab" onclick="clickEffect();"><div><a href="#home-grid">HOME</a></div></li>
+            <li id="about-tab" onclick="clickEffect();"><div><a href="#about-grid">ABOUT</a></div></li> 
+            <li id="work-tab" onclick="clickEffect();"><div><a href="#work-grid">WORK</a></div></li> 
+            <li id="testimonials-tab" onclick="clickEffect();"><div><a href="#testimonials-grid">TESTIMONIALS</a></div></li> 
+            <li id="contact-tab" onclick="clickEffect();"><div><a href="#contact-grid">CONTACT</a></div></li> 
         </ul>
     </div>
     <div id="nav-item-3">
@@ -46,7 +49,7 @@
 <header id="home-grid">
     <div id="header-grid-shade">    
         <div id="header-grid-item">
-            <h1><a href="#about-grid" class="logo-pointer"><img src="img/logo.svg" alt="A" id="logo1"></a> LI SH<a href="#contact-grid" class="logo-pointer"><img src="img/logo.svg" alt="A" id="logo2"></a>RIATI</h1>
+            <h1><a href="#about-grid" class="header-logo-position logoPointer" onclick="clickEffect();"><img src="img/logo.svg" alt="A" id="logo1"></a><div class="name-letters">LI SH</div><a href="#contact-grid" class="header-logo-position logoPointer" onclick="clickEffect();"><img src="img/logo.svg" alt="A" id="logo2"></a><div class="name-letters">RIATI</div></h1>
             <h3>WEB DEVELOPER | WEB DESIGNER</h3>
         </div>
     </div>
@@ -94,8 +97,8 @@
             <!--modal trigger-->
             <div class="work-img-container" id="modalOpener1">
                     <div class="info-alert">More Info</div>
-                    <img src="img/i2canada-thumbnail-wide.jpg" alt="i2canada">
-                    <span>HTML | CSS | WORDPRESS</span>
+                    <img src="img/i2canada-thumbnail-wide.jpg" alt="i2canada" onclick="clickEffect2();">
+                    <span onclick="clickEffect2();">HTML | CSS | WORDPRESS</span>
             </div>
             <!--modal content-->
             <div class="modal-full-window" id="modalFullWindow1">
@@ -107,10 +110,10 @@
         </div>
         <div id="work-grid-item-3">
             <!--modal trigger-->
-            <div class="work-img-container" id="modalOpener2">
+            <div class="work-img-container" id="modalOpener2" >
                     <div class="info-alert">More Info</div>
-                    <img src="img/shiftdo-thumbnail-wide.jpg" alt="Shiftdo">
-                    <span>HTML | CSS | WORDPRESS</span>
+                    <img src="img/shiftdo-thumbnail-wide.jpg" alt="Shiftdo" onclick="clickEffect2();">
+                    <span onclick="clickEffect2();">HTML | CSS | WORDPRESS</span>
             </div>
             <!--modal content-->
             <div class="modal-full-window" id="modalFullWindow2">
@@ -142,7 +145,7 @@
 <!--SECTION 5: CONTACT-->
 <section class="container-grid">
     <div id="contact-grid">
-        <div id="contact-grid-item-1"><h4>CONT<a href="#home-grid" class="logo-pointer"><img src="img/logo.svg" alt="A"id="logo3"></a>CT</h4></div>
+        <div id="contact-grid-item-1"><h4>CONT<a href="#home-grid" class="logoPointer" onclick="clickEffect();"><img src="img/logo.svg" alt="A"id="logo3"></a>CT</h4></div>
         <div id="contact-grid-item-2">
             <form id="form-grid" action="contactform.php" method="POST">
                 <div id="form-grid-item-1"><input type="text" placeholder="Name*" name="name" required></div>
@@ -150,7 +153,7 @@
                 <div id="form-grid-item-3"><input type="number" placeholder="Phone*" name="phone" required></div>
                 <div id="form-grid-item-4"><input type="text" placeholder="Subject*" name="subject" required></div>
                 <div id="form-grid-item-5"><textarea placeholder="Your message*" name="message" required></textarea></div>
-                <div id="form-grid-item-6"><button type="submit" name="submit">SUBMIT</button></div>
+                <div id="form-grid-item-6" onclick="clickEffect2();"><button type="submit" name="submit">SUBMIT</button></div>
             </form>
         </div>
     </div>

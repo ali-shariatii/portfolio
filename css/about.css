@@ -160,10 +160,6 @@
                 transition-duration: 0.8s;
             }
 
-            #about-grid-item-3 a:hover {
-                background-image: linear-gradient(); 
-                background-clip: text; 
-            }
 
     #about-grid-item-4 {
         display: grid;

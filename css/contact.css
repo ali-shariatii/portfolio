@@ -159,11 +159,53 @@
 
                 #confirmation-mesg {
                     margin: 0;
+                    animation: slideLeft ease 1s;
+                }
+
+                @-webkit-keyframes slideLeft {
+                    from {transform: translateX(-25px); color: transparent;}
+                    to {transform: translateX(0); color: white;}
+                }
+
+                @-moz-keyframes slideLeft {
+                    from {transform: translateX(-25px); color: transparent;}
+                    to {transform: translateX(0); color: white;}
+                }
+
+                @-o-keyframes slideLeft {
+                    from {transform: translateX(-25px); color: transparent;}
+                    to {transform: translateX(0); color: white;}
+                }
+
+                @keyframes slideLeft {
+                    from {transform: translateX(-25px); color: transparent;}
+                    to {transform: translateX(0); color: white;}
                 }
 
                 #redirect-mesg {
                     font-size: 17.5px;
                     padding-bottom: 5px;
+                    animation: slideRight ease 1s;
+                }
+
+                @-webkit-keyframes slideRight {
+                    from {transform: translateX(25px); color: transparent;}
+                    to {transform: translateX(0); color: white;}
+                }
+
+                @-moz-keyframes slideRight {
+                    from {transform: translateX(25px); color: transparent;}
+                    to {transform: translateX(0); color: white;}
+                }
+
+                @-o-keyframes slideRight {
+                    from {transform: translateX(25px); color: transparent;}
+                    to {transform: translateX(0); color: white;}
+                }
+
+                @keyframes slideRight {
+                    from {transform: translateX(25px); color: transparent;}
+                    to {transform: translateX(0); color: white;}
                 }
 
                 #message-grid-item p a { text-decoration: none; color: #1676b6 ;}

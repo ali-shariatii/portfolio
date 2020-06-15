@@ -1,4 +1,5 @@
 /* NAVIGATION */
+//background music
 var bgMusic = document.getElementById("bgMusic"),
     playBtn = document.getElementById("playBtn"),
     pauseBtn = document.getElementById("pauseBtn");
@@ -14,6 +15,18 @@ function pauseMusicFunc() {
     pauseBtn.classList.add("hidden-btn");
     bgMusic.pause();
 };
+
+//click  sound effects
+var clickSnd = document.getElementById("clickSnd"),
+    clickSnd2 = document.getElementById("clickSnd2");
+
+function clickEffect() {
+    clickSnd.play();
+}
+
+function clickEffect2() {
+    clickSnd2.play();
+}
 
 /*SECTION 1: HOME / LANDING PAGE */
 
