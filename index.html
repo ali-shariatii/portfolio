@@ -20,23 +20,23 @@
 
 <body>
 <!--NAVIGATION-->
-<div id="nav-grid" class="absolute-nav" >
+<div id="nav-grid" class="hidden-fixed-nav">
     <div id="nav-item-1">
         <audio id="clickSnd" src="snd/click.mp3"></audio>
         <audio id="clickSnd2" src="snd/click2.mp3"></audio>
-        <audio id="bgMusic" src="snd/bg-music.mp3" loop autoplay></audio>
+        <audio id="bgMusic" src="snd/bg-music.mp3" loop></audio>
         <div id="ctrl-container" >
-            <div id="playBtn" onclick="playMusicFunc();" class="hidden-btn"></div>
-            <div id="pauseBtn" onclick="pauseMusicFunc();"></div>
+            <div id="playBtn" onclick="playMusicFunc();"></div>
+            <div id="pauseBtn" onclick="pauseMusicFunc();" class="hidden-btn"></div>
         </div>
     </div>
     <div id="nav-item-2">
         <ul>
-            <li id="home-tab" class="active-tab" onclick="clickEffect();"><div><a href="#home-grid">HOME</a></div></li>
-            <li id="about-tab" onclick="clickEffect();"><div><a href="#about-grid">ABOUT</a></div></li> 
-            <li id="work-tab" onclick="clickEffect();"><div><a href="#work-grid">WORK</a></div></li> 
-            <li id="testimonials-tab" onclick="clickEffect();"><div><a href="#testimonials-grid">TESTIMONIALS</a></div></li> 
-            <li id="contact-tab" onclick="clickEffect();"><div><a href="#contact-grid">CONTACT</a></div></li> 
+            <li onclick="clickEffect();"><div><a href="#home-grid" id="home-tab" class="active-tab">HOME</a></div></li>
+            <li onclick="clickEffect();"><div><a href="#about-grid" id="about-tab">ABOUT</a></div></li> 
+            <li onclick="clickEffect();"><div><a href="#work-grid" id="work-tab">WORK</a></div></li> 
+            <li onclick="clickEffect();"><div><a href="#testimonials-grid" id="testimonials-tab">TESTIMONIALS</a></div></li> 
+            <li onclick="clickEffect();"><div><a href="#contact-grid" id="contact-tab">CONTACT</a></div></li> 
         </ul>
     </div>
     <div id="nav-item-3">

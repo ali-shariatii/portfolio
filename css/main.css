@@ -78,23 +78,90 @@ header {
 				font-weight: 500;
 				padding-left: 51.2px;
 				padding-right: 0;
+				padding-top: 0;
 			}
 
-				.name-letters {
+				#header-grid-item h1 a {
 					display: inline-block;
-					animation: appearSlideRight ease 2s;
-					margin: 0 -9px;
+					height: inherit;
+
+					-webkit-transition-property: all;
+					-moz-transition-property: all;
+					-ms-transition-property: all;
+					-o-transition-property: all;
+					transition-property: all;
+					-webkit-transition-duration: 1s;
+					-moz-transition-duration: 1s;
+					-ms-transition-duration: 1s;
+					-o-transition-duration: 1s;
+					transition-duration: 1s;
+
+					animation: shake 10s ease infinite;
 				}
 
+				/*this one affects other a-links beside #header-grid-item h1 a*/
 				.header-logo-position {
 					margin: 0 47px 0 0px;
 				}
+
+					@-webkit-keyframes shake {
+						0%, 50%, 54.4%, 100% {transform: rotateZ(0);}
+						50.4%, 51.2%, 52%, 52.8%, 53.6% {transform: rotateZ(6.5deg);}
+						50.8%, 51.6%, 52.4%, 53.2%, 54% {transform: rotateZ(-6.5deg);}
+					}
+				
+					@-moz-keyframes shake {
+						0%, 50%, 54.4%, 100% {transform: rotateZ(0);}
+						50.4%, 51.2%, 52%, 52.8%, 53.6% {transform: rotateZ(6.5deg);}
+						50.8%, 51.6%, 52.4%, 53.2%, 54% {transform: rotateZ(-6.5deg);}
+					}
+				
+					@-o-keyframes shake {
+						0%, 50%, 54.4%, 100% {transform: rotateZ(0);}
+						50.4%, 51.2%, 52%, 52.8%, 53.6% {transform: rotateZ(6.5deg);}
+						50.8%, 51.6%, 52.4%, 53.2%, 54% {transform: rotateZ(-6.5deg);}
+					}
+
+					@keyframes shake {
+						0%, 50%, 54.4%, 100% {transform: rotateZ(0);}
+						50.4%, 51.2%, 52%, 52.8%, 53.6% {transform: rotateZ(6.5deg);}
+						50.8%, 51.6%, 52.4%, 53.2%, 54% {transform: rotateZ(-6.5deg);}
+					}
+
+				.name-letters {
+					display: inline-block;
+					animation: appearSlideLeft ease 2s;
+					margin: 0 -9px;
+				}
+
+					@-webkit-keyframes appearSlideLeft {
+						0% {transform: translateX(-7px); color: transparent;}
+						55% {transform: translateX(-7px); color: transparent;}
+						100% {transform: translateX(0); color: white;} 
+					}
+				
+					@-moz-keyframes appearSlideLeft {
+						0% {transform: translateX(-7px); color: transparent;}
+						55% {transform: translateX(-7px); color: transparent;}
+						100% {transform: translateX(0); color: white;}
+					}
+				
+					@-o-keyframes appearSlideLeft {
+						0% {transform: translateX(-7px); color: transparent;}
+						55% {transform: translateX(-7px); color: transparent;}
+						100% {transform: translateX(0); color: white;}
+					}
+				
+					@keyframes appearSlideLeft {
+						0% {transform: translateX(-7px); color: transparent;}
+						55% {transform: translateX(-7px); color: transparent;}
+						100% {transform: translateX(0); color: white;}
+					}
 
 				#logo1 {
 					display: inline-block;
 					width: auto;
 					height: 44.8px;
-					/*margin-right: -21px;*/
 					cursor: pointer;
 
 					-webkit-transition-property: all;
@@ -115,7 +182,6 @@ header {
 					display: inline-block;
 					width: auto;
 					height: 44.8px;
-					/*margin-right: 55px;*/
 					cursor: pointer;
 					
 					-webkit-transition-property: all;
@@ -132,27 +198,27 @@ header {
 					animation: rotate ease 1.33s;
 				}	
 
-				@-webkit-keyframes  rotate {
-					from {transform: rotateY(0deg);}
-					to {transform: rotateY(720deg);}
-				}
+					@-webkit-keyframes  rotate {
+						from {transform: rotateY(0deg);}
+						to {transform: rotateY(720deg);}
+					}
 
-				@-moz-keyframes rotate {
-					from {transform: rotateY(0deg);}
-					to {transform: rotateY(720deg);}
-				}
+					@-moz-keyframes rotate {
+						from {transform: rotateY(0deg);}
+						to {transform: rotateY(720deg);}
+					}
 
-				@-o-keyframes rotate {
-					from {transform: rotateY(0deg);}
-					to {transform: rotateY(720deg);}
-				}
+					@-o-keyframes rotate {
+						from {transform: rotateY(0deg);}
+						to {transform: rotateY(720deg);}
+					}
 
-				@keyframes rotate {
-					from {transform: rotateY(0deg);}
-					to {transform: rotateY(720deg);}
-				}
+					@keyframes rotate {
+						from {transform: rotateY(0deg); opacity: 0;}
+						to {transform: rotateY(720deg); opacity: 1;}
+					}
 
-				#logo1:hover, #logo2:hover {
+					#header-grid-item h1 a:hover  #logo1,#header-grid-item h1 a:hover #logo2{
 					-webkit-transform: rotateZ(540deg);
 					-moz-transform: rotateZ(540deg);
 					-ms-transform: rotateZ(540deg);
@@ -182,8 +248,32 @@ header {
 				animation: appearSlideRight ease 2s;
 			}
 
+				@-webkit-keyframes appearSlideRight {
+					0% {transform: translateX(7px); color: transparent;}
+					55% {transform: translateX(7px); color: transparent;}
+					100% {transform: translateX(0); color: white;} 
+				}
+			
+				@-moz-keyframes appearSlideRight {
+					0% {transform: translateX(7px); color: transparent;}
+					55% {transform: translateX(7px); color: transparent;}
+					100% {transform: translateX(0); color: white;}
+				}
+			
+				@-o-keyframes appearSlideRight {
+					0% {transform: translateX(7px); color: transparent;}
+					55% {transform: translateX(7px); color: transparent;}
+					100% {transform: translateX(0); color: white;}
+				}
+			
+				@keyframes appearSlideRight {
+					0% {transform: translateX(7px); color: transparent;}
+					55% {transform: translateX(7px); color: transparent;}
+					100% {transform: translateX(0); color: white;}
+			}
+
 			#header-grid-item:hover h3{
-				letter-spacing: 12px;
+				letter-spacing: 11.3px;
 			}
 
 /*										 SECTION 6: FOOTER */
@@ -227,8 +317,8 @@ footer {
 		#footer-grid-item-1 p a { text-decoration: none; color: white ;}
 		#footer-grid-item-1 p a:visited { text-decoration: none; color: white ;}
 		#footer-grid-item-1 p a:hover { text-decoration: none; color: #1676b6 ;}
-		#footer-grid-item-1 p a:focus { text-decoration: none; color: #1676b6 ; }
-		#footer-grid-item-1 p a:active { text-decoration: none; color: #1676b6 ;}
+		#footer-grid-item-1 p a:focus { text-decoration: none; color: white ; }
+		#footer-grid-item-1 p a:active { text-decoration: none; color: white ;}
 
 	#footer-grid-item-2 { 
 		display: grid;

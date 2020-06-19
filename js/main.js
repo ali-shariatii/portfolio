@@ -28,6 +28,9 @@ function clickEffect2() {
     clickSnd2.play();
 }
 
+//nagivation animation
+var nav = document.getElementById("nav-grid");
+
 /*SECTION 1: HOME / LANDING PAGE */
 
 
