@@ -38,40 +38,61 @@ var nav = document.getElementById("nav-grid");
 
 
 /*SECTION 3: WORK */
+
 //modal1 var
-var modalOpener1 = document.getElementById("modalOpener1");
-var modalCloser1 = document.getElementById("modalCloser1");
-var modalFullWindow1 = document.getElementById("modalFullWindow1");
+var modalOpener1 = document.getElementById("modalOpener1"),
+    modalCloser1 = document.getElementById("modalCloser1"),
+    modalContentWindow1 = document.getElementById("modalContentWindow1"),
+    modalFullWindow1 = document.getElementById("modalFullWindow1");
 
 //modal2 var
-var modalOpener2 = document.getElementById("modalOpener2");
-var modalCloser2 = document.getElementById("modalCloser2");
-var modalFullWindow2 = document.getElementById("modalFullWindow2");
+var modalOpener2 = document.getElementById("modalOpener2"),
+    modalCloser2 = document.getElementById("modalCloser2"),
+    modalContentWindow2 = document.getElementById("modalContentWindow2"),
+    modalFullWindow2 = document.getElementById("modalFullWindow2");
 
 //modal1 func
 modalOpener1.onclick = function() {
-    modalFullWindow1.style.display = "block";
+    modalFullWindow1.classList.remove("full-window-disappear");
+    modalContentWindow1.classList.remove("content-window-disappear");
+    modalFullWindow1.classList.add("full-window-appear");
+    modalContentWindow1.classList.add("content-window-appear");
 }
 
 modalCloser1.onclick = function() {
-    modalFullWindow1.style.display = "none";
+    modalFullWindow1.classList.remove("full-window-appear");
+    modalContentWindow1.classList.remove("content-window-appear");
+    modalContentWindow1.classList.add("content-window-disappear");
+    modalFullWindow1.classList.add("full-window-disappear");
 }
 
 //modal2 func
 modalOpener2.onclick = function() {
-    modalFullWindow2.style.display = "block";
+    modalFullWindow2.classList.remove("full-window-disappear");
+    modalContentWindow2.classList.remove("content-window-disappear");
+    modalFullWindow2.classList.add("full-window-appear");
+    modalContentWindow2.classList.add("content-window-appear");
 }
 
 modalCloser2.onclick = function() {
-    modalFullWindow2.style.display = "none";
+    modalFullWindow2.classList.remove("full-window-appear");
+    modalContentWindow2.classList.remove("content-window-appear");
+    modalContentWindow2.classList.add("content-window-disappear");
+    modalFullWindow2.classList.add("full-window-disappear");
 }
 
 //close all modals on window click
 window.onclick = function(event) {
     if(event.target == modalFullWindow1) {
-        modalFullWindow1.style.display = "none";
+        modalFullWindow1.classList.remove("full-window-appear");
+        modalContentWindow1.classList.remove("content-window-appear");
+        modalContentWindow1.classList.add("content-window-disappear");
+        modalFullWindow1.classList.add("full-window-disappear");
     } else if(event.target == modalFullWindow2) {
-        modalFullWindow2.style.display = "none";
+        modalFullWindow2.classList.remove("full-window-appear");
+        modalContentWindow2.classList.remove("content-window-appear");
+        modalContentWindow2.classList.add("content-window-disappear");
+        modalFullWindow2.classList.add("full-window-disappear");
     }
 }
 

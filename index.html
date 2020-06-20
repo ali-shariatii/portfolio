@@ -19,6 +19,7 @@
 </head>
 
 <body>
+<!--<div id="page">-->
 <!--NAVIGATION-->
 <div id="nav-grid" class="hidden-fixed-nav">
     <div id="nav-item-1">
@@ -93,37 +94,39 @@
 <section class="container-grid">
     <div id="work-grid">
         <div id="work-grid-item-1"><h4>WORK</h4></div>
-        <div id="work-grid-item-2">
-            <!--modal trigger-->
-            <div class="work-img-container" id="modalOpener1">
-                    <div class="info-alert">More Info</div>
-                    <img src="img/i2canada-thumbnail-wide.jpg" alt="i2canada" onclick="clickEffect2();">
-                    <span onclick="clickEffect2();">HTML | CSS | WORDPRESS</span>
-            </div>
-            <!--modal content-->
-            <div class="modal-full-window" id="modalFullWindow1">
-                <div class="modal-content-window">
-                    <div class="modal-header"><span id="modalCloser1">&times;</span><br></div>
-                    <p><a href="http://www.i2canada.com/" target="_blank">i2Canada Immigration Services Inc.</a> is an immigration law firm startup. The project goal was UI/UX redesigning, interactive & responsive development and transferring the web application from Joomla to WordPress and rebranding with SHIFTDO studio collaboration. I have been recruited as a front-end development team member.</p>
-                </div>
-            </div>
-        </div>
+        <div id="work-grid-item-2"></div>
         <div id="work-grid-item-3">
-            <!--modal trigger-->
-            <div class="work-img-container" id="modalOpener2" >
-                    <div class="info-alert">More Info</div>
-                    <img src="img/shiftdo-thumbnail-wide.jpg" alt="Shiftdo" onclick="clickEffect2();">
-                    <span onclick="clickEffect2();">HTML | CSS | WORDPRESS</span>
+            <div id="gallery-grid-item-1">
+                <!--modal trigger-->
+                <div class="work-img-container" id="modalOpener1">
+                        <div class="info-alert">More Info</div>
+                        <img src="img/i2canada-thumbnail-wide.jpg" alt="i2canada" onclick="clickEffect2();">
+                        <span onclick="clickEffect2();">HTML | CSS | WORDPRESS</span>
+                </div>
+                <!--modal content-->
+                <div class="modal-full-window" id="modalFullWindow1">
+                    <div class="modal-content-window" id="modalContentWindow1">
+                        <div class="modal-header"><span id="modalCloser1">&times;</span><br></div>
+                        <p><a href="http://www.i2canada.com/" target="_blank">i2Canada Immigration Services Inc.</a> is an immigration law firm startup. The project goal was UI/UX redesigning, interactive & responsive development and transferring the web application from Joomla to WordPress and rebranding with SHIFTDO studio collaboration. I have been recruited as a front-end development team member.</p>
+                    </div>
+                </div>
             </div>
-            <!--modal content-->
-            <div class="modal-full-window" id="modalFullWindow2">
-                <div class="modal-content-window">
-                    <div class="modal-header"><span id="modalCloser2">&times;</span><br></div>
-                    <p><a href="https://www.shiftdo.com/" target="_blank">SHIFTDO</a> is a private design studio owned by Mehdi Ghareh Mohammadi, an international award winning logo designer. I collaborated in the website redesigning as the front-end developer.</p>
+            <div id="gallery-grid-item-2">
+                <!--modal trigger-->
+                <div class="work-img-container" id="modalOpener2" >
+                        <div class="info-alert">More Info</div>
+                        <img src="img/shiftdo-thumbnail-wide.jpg" alt="Shiftdo" onclick="clickEffect2();">
+                        <span onclick="clickEffect2();">HTML | CSS | WORDPRESS</span>
+                </div>
+                <!--modal content-->
+                <div class="modal-full-window" id="modalFullWindow2">
+                    <div class="modal-content-window" id="modalContentWindow2">
+                        <div class="modal-header"><span id="modalCloser2">&times;</span><br></div>
+                        <p><a href="https://www.shiftdo.com/" target="_blank">SHIFTDO</a> is a private design studio owned by Mehdi Ghareh Mohammadi, an international award winning logo designer. I collaborated in the website redesigning as the front-end developer.</p>
+                    </div>
                 </div>
             </div>
         </div>
-        <div id="work-grid-bottom-padding"><!--add padding bottom to this for the entire work-grid!--></div>
     </div>
 </section>
 
@@ -169,6 +172,7 @@
     </p></div>
     <div id="footer-grid-item-2">© 2020 ALI SHARIATI. MADE IN CANADA</div>
 </footer>
+<!--</div>-->
 
 <!--JS LINKS-->
 <script src="js/jquery.js"></script>
