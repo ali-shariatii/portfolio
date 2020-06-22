@@ -5,6 +5,10 @@ html, body {
 	background-color: black;
 }
 
+.noscroll {
+	overflow: hidden;
+}
+
 @font-face {
 	font-family: futura-pt;
 	src: url(../fonts/FuturaPTBook.otf);
@@ -35,6 +39,81 @@ h4 {
 	margin-left: 7px;
 	letter-spacing: 7px;
 	margin: 100px 0 100px 0;
+}
+
+/*										 SOCIAL MEDIA WINDOW */
+#media-container {
+	position: fixed;
+	top: 45vh;
+	display: grid;
+	left: -48px;
+	grid-template-rows: auto;
+	grid-template-columns: 80% 20%;
+	align-items: center;
+	width: 70px;
+	z-index: 1;
+
+	animation: slideOut 2.3s ease;
+
+	-webkit-transition-property: all;
+	-moz-transition-property: all;
+	-ms-transition-property: all;
+	-o-transition-property: all;
+	transition-property: all;
+	-webkit-transition-duration: .35s;
+	-moz-transition-duration: .35s;
+	-ms-transition-duration: .35s;
+	-o-transition-duration: .35s;
+	transition-duration: .35s;
+}
+
+@keyframes slideOut {
+	0%, 90%{left: 0}
+	100% {left: -48px;}
+}
+
+#media-container:hover {
+	left: 0;
+}
+
+#media-window {
+	padding: 15px 0;
+
+	background-color: rgba(97, 96, 96, 0.4);
+	-webkit-backdrop-filter: blur(9px);
+	backdrop-filter: blur(9px);
+
+	-webkit-transition-property: all;
+	-moz-transition-property: all;
+	-ms-transition-property: all;
+	-o-transition-property: all;
+	transition-property: all;
+	-webkit-transition-duration: .35s;
+	-moz-transition-duration: .35s;
+	-ms-transition-duration: .35s;
+	-o-transition-duration: .35s;
+	transition-duration: .35s;
+}
+
+
+	#media-window li {
+		display: block;
+	}
+
+		#media-window a{
+			text-decoration: none;
+		}
+
+		#media-window a:visited { text-decoration: none; color: grey ;}
+		#media-window a:hover { text-decoration: none; color: white ;}
+		#media-window a:focus { text-decoration: none; color: grey ; }
+		#media-window a:active { text-decoration: none; color: white ;}
+
+#media-container-arrow {
+	border-left: 10px solid rgba(97, 96, 96, 0.4);;
+	border-top: 10px solid transparent;
+	border-bottom: 10px solid transparent;
+	background-color: transparent;
 }
 
 /*										 SECTION 1: HOME / LANDING PAGE */

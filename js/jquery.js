@@ -1,5 +1,7 @@
 $(document).ready(function(){
 
+/* MEDIA WIDOWN */
+
 /* NAVIGATION */
 //on scroll functions
 $(window).scroll(function() {
@@ -33,7 +35,7 @@ $(window).scroll(function() {
         $("ul li a.active-tab").removeClass('active-tab');
         $('#work-tab').addClass('active-tab');
     }else if(scroll >= workEnd && scroll <= testimonialsStart + testimonialsEnd){
-        $('#nav-grid').removeClass("light-colored-navbar hidden-fixed-nav").addClass("ark-colored-navbar fixed-nav");
+        $('#nav-grid').removeClass("light-colored-navbar hidden-fixed-nav").addClass("dark-colored-navbar fixed-nav");
         $("ul li a.active-tab").removeClass('active-tab');
         $('#testimonials-tab').addClass('active-tab');
     }else if(scroll > testimonialsEnd){
@@ -99,14 +101,11 @@ $("#logo2").on('click', '#contact-tab', function(){
 
 /* SECTION 2: ABOUT */
 
-
 /* SECTION 3: WORK */
 
 /* SECTION 4: TESTIMONIALS */
 
-
 /* SECTION 5: CONTACT */
-
 
 /* SECTION 6: FOOTER */
 

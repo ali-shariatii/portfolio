@@ -18,7 +18,7 @@
     <link rel="shortcut icon" type="image/png" href="img/favicon/favicon-256×256.ico">
 </head>
 
-<body>
+<body id="body">
 <!--<div id="page">-->
 <!--NAVIGATION-->
 <div id="nav-grid" class="hidden-fixed-nav">
@@ -41,9 +41,22 @@
         </ul>
     </div>
     <div id="nav-item-3">
-        <div><a href="https://github.com/ali-shariatii/" target="_blank" class="fa fa-github"></a></div>
+        <div><a href="https://github.com/ali-shariatii/" target="_blank" class="fa fa-github" id="nav-github"></a></div>
         <!--for hamburger menu-->
     </div>
+</div>
+
+<!--SOCIAL MEDIA WINDOW-->
+<div id="media-container">
+    <div id="media-window">
+        <ul>
+            <li><a href="mailto:info@alishariatii.com" class="fa fa-envelope"></a> 
+            <li><a href="https://github.com/ali-shariatii/" target="_blank" class="fa fa-github"></a></li>
+            <li><a href="https://www.linkedin.com/in/ali-shariatii/" target="_blank" class="fa fa-linkedin"></a></li>
+            <li><a href="https://stackoverflow.com/users/13517523/ali-shariati" target="_blank" class="fa fa-stack-overflow"></a></li></li>
+        </ul>
+    </div>
+    <div id="media-container-arrow"></div>
 </div>
 
 <!--SECTION 1: HOME / LANDING PAGE-->
@@ -94,29 +107,36 @@
 <section class="container-grid">
     <div id="work-grid">
         <div id="work-grid-item-1"><h4>WORK</h4></div>
-        <div id="work-grid-item-2"></div>
+        <!--gallery filter
+        <div id="work-grid-item-2">
+            <div><span>ALL</span></div>
+            <div><span>HTML/CSS</span></div>
+            <div><span>JavaScript</span></div>
+            <div><span>JQuery</span></div>
+        </div> -->
+        <!--work gallery-->
         <div id="work-grid-item-3">
             <div id="gallery-grid-item-1">
                 <!--modal trigger-->
                 <div class="work-img-container" id="modalOpener1">
-                        <div class="info-alert">More Info</div>
-                        <img src="img/i2canada-thumbnail-wide.jpg" alt="i2canada" onclick="clickEffect2();">
-                        <span onclick="clickEffect2();">HTML | CSS | WORDPRESS</span>
+                    <div class="info-alert">More Info</div>
+                    <img src="img/i2canada-thumbnail-wide.jpg" alt="i2canada" onclick="clickEffect2();">
+                    <span onclick="clickEffect2();">HTML | CSS | JAVASCRIPT</span>
                 </div>
                 <!--modal content-->
                 <div class="modal-full-window" id="modalFullWindow1">
                     <div class="modal-content-window" id="modalContentWindow1">
                         <div class="modal-header"><span id="modalCloser1">&times;</span><br></div>
-                        <p><a href="http://www.i2canada.com/" target="_blank">i2Canada Immigration Services Inc.</a> is an immigration law firm startup. The project goal was UI/UX redesigning, interactive & responsive development and transferring the web application from Joomla to WordPress and rebranding with SHIFTDO studio collaboration. I have been recruited as a front-end development team member.</p>
+                        <p><a href="http://www.i2canada.com/" target="_blank">i2Canada Immigration Services Inc.</a> is an immigration law firm startup. The project goal was UI/UX redesigning, interactive & responsive development and transferring the web application from Joomla to WordPress and rebranding with SHIFTDO studio collaboration. I have been recruited as a front-end development team member.</p> 
                     </div>
                 </div>
             </div>
             <div id="gallery-grid-item-2">
                 <!--modal trigger-->
                 <div class="work-img-container" id="modalOpener2" >
-                        <div class="info-alert">More Info</div>
-                        <img src="img/shiftdo-thumbnail-wide.jpg" alt="Shiftdo" onclick="clickEffect2();">
-                        <span onclick="clickEffect2();">HTML | CSS | WORDPRESS</span>
+                    <div class="info-alert">More Info</div>
+                    <img src="img/shiftdo-thumbnail-wide.jpg" alt="Shiftdo" onclick="clickEffect2();">
+                    <span onclick="clickEffect2();">HTML | CSS | WORDPRESS</span>
                 </div>
                 <!--modal content-->
                 <div class="modal-full-window" id="modalFullWindow2">
@@ -156,7 +176,7 @@
                 <div id="form-grid-item-3"><input type="number" placeholder="Phone*" name="phone" required></div>
                 <div id="form-grid-item-4"><input type="text" placeholder="Subject*" name="subject" required></div>
                 <div id="form-grid-item-5"><textarea placeholder="Your message*" name="message" required></textarea></div>
-                <div id="form-grid-item-6" onclick="clickEffect2();"><button type="submit" name="submit">SUBMIT</button></div>
+                <div id="form-grid-item-6"><button type="submit" name="submit"  onclick="clickEffect2();">SUBMIT</button></div>
             </form>
         </div>
     </div>

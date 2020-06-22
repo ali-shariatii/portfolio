@@ -51,12 +51,16 @@ var modalOpener2 = document.getElementById("modalOpener2"),
     modalContentWindow2 = document.getElementById("modalContentWindow2"),
     modalFullWindow2 = document.getElementById("modalFullWindow2");
 
+
+var body = document.getElementById("body");
+
 //modal1 func
 modalOpener1.onclick = function() {
     modalFullWindow1.classList.remove("full-window-disappear");
     modalContentWindow1.classList.remove("content-window-disappear");
     modalFullWindow1.classList.add("full-window-appear");
     modalContentWindow1.classList.add("content-window-appear");
+    body.classList.add("noscroll");
 }
 
 modalCloser1.onclick = function() {
@@ -64,6 +68,7 @@ modalCloser1.onclick = function() {
     modalContentWindow1.classList.remove("content-window-appear");
     modalContentWindow1.classList.add("content-window-disappear");
     modalFullWindow1.classList.add("full-window-disappear");
+    body.classList.remove("noscroll");
 }
 
 //modal2 func
@@ -72,6 +77,7 @@ modalOpener2.onclick = function() {
     modalContentWindow2.classList.remove("content-window-disappear");
     modalFullWindow2.classList.add("full-window-appear");
     modalContentWindow2.classList.add("content-window-appear");
+    body.classList.add("noscroll");
 }
 
 modalCloser2.onclick = function() {
@@ -79,6 +85,7 @@ modalCloser2.onclick = function() {
     modalContentWindow2.classList.remove("content-window-appear");
     modalContentWindow2.classList.add("content-window-disappear");
     modalFullWindow2.classList.add("full-window-disappear");
+    body.classList.add("noscroll");
 }
 
 //close all modals on window click
