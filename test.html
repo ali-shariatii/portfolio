@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container {
+        display: grid;
+        grid-template-columns: 40% 40%;
+        grid-template-rows: 40% 40%;
+        justify-content: space-evenly;
+        align-content: space-evenly;
+        background-color: grey;
+        width: 90%;
+        height: 1200px;
+        margin: auto;
+
+    }
+
+    .container div {
+        background-color: indianred;
+    }
+
+    @media screen and (max-width: 1534px){
+        .container {
+            grid-template-columns: 80%;
+            grid-template-rows: 20% 20% 20% 20%;
+        }
+    }
+</style>
+<body>
+    <div class="container">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</body>
+</html>

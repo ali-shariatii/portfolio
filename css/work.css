@@ -127,10 +127,10 @@
                     -ms-transition-property: all ease;
                     -o-transition-property: all ease;
                     transition-property: all ease;
-                    -webkit-transition-duration: 0.5s;
-                    -moz-transition-duration: 0.5s;
-                    -o-transition-duration: 0.5s;
-                    transition-duration: 0.5s;
+                    -webkit-transition-duration: 0.3s;
+                    -moz-transition-duration: 0.3s;
+                    -o-transition-duration: 0.3s;
+                    transition-duration: 0.3s;
                 }
 
                 .work-img-container:hover .info-alert{
@@ -141,10 +141,10 @@
                     -ms-transition-property: all ease;
                     -o-transition-property: all ease;
                     transition-property: all ease;
-                    -webkit-transition-duration: 0.5s;
-                    -moz-transition-duration: 0.5s;
-                    -o-transition-duration: 0.5s;
-                    transition-duration: 0.5s;
+                    -webkit-transition-duration: 0.3s;
+                    -moz-transition-duration: 0.3s;
+                    -o-transition-duration: 0.3s;
+                    transition-duration: 0.3s;
                 }
 
                 .work-img-container img {
@@ -156,10 +156,10 @@
                     -ms-transition-property: all ease;
                     -o-transition-property: all ease;
                     transition-property: all ease;
-                    -webkit-transition-duration: 0.5s;
-                    -moz-transition-duration: 0.5s;
-                    -o-transition-duration: 0.5s;
-                    transition-duration: 0.5s;
+                    -webkit-transition-duration: 0.3s;
+                    -moz-transition-duration: 0.3s;
+                    -o-transition-duration: 0.3s;
+                    transition-duration: 0.3s;
                 }
 
                 .work-img-container:hover img{

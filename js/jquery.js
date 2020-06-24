@@ -52,7 +52,7 @@ $(function(){
     $("#nav-item-2 ul a").click(function(){
         $("html, body").animate({
             scrollTop: $($.attr(this, 'href')).offset().top
-        }, 1000);
+        }, 700);
     });
 });
 
@@ -60,7 +60,7 @@ $(function(){
     $(".logoPointer").click(function(){
         $("html, body").animate({
             scrollTop: $($.attr(this, 'href')).offset().top
-        }, 1000);
+        }, 700);
     });
 });
 

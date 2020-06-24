@@ -2,7 +2,7 @@
 html, body {
 	margin: 0;
 	font-size: 25px; 
-	background-color: black;
+	background-color: #2e2e2e;
 }
 
 .noscroll {
@@ -143,7 +143,7 @@ header {
 	background-size: cover;
 	height: 100vh;
 	align-items: center;
-	border: 0.5px #393939 solid;
+	border: 0.5px #2e2e2e solid;
 }
 
 	#header-grid-shade {
@@ -265,11 +265,11 @@ header {
 					-ms-transition-property: all;
 					-o-transition-property: all;
 					transition-property: all;
-					-webkit-transition-duration: 1s;
-					-moz-transition-duration: 1s;
-					-ms-transition-duration: 1s;
-					-o-transition-duration: 1s;
-					transition-duration: 1s;
+					-webkit-transition-duration: .4s;
+					-moz-transition-duration: .4s;
+					-ms-transition-duration: .4s;
+					-o-transition-duration: .4s;
+					transition-duration: .4s;	
 
 					animation: rotate ease 1.33s;
 				}	
@@ -285,28 +285,28 @@ header {
 					-ms-transition-property: all;
 					-o-transition-property: all;
 					transition-property: all;
-					-webkit-transition-duration: 1s;
-					-moz-transition-duration: 1s;
-					-ms-transition-duration: 1s;
-					-o-transition-duration: 1s;
-					transition-duration: 1s;	
+					-webkit-transition-duration: .4s;
+					-moz-transition-duration: .4s;
+					-ms-transition-duration: .4s;
+					-o-transition-duration: .4s;
+					transition-duration: .4s;	
 					
 					animation: rotate ease 1.33s;
 				}	
 
 					@-webkit-keyframes  rotate {
-						from {transform: rotateY(0deg);}
-						to {transform: rotateY(720deg);}
+						from {transform: rotateY(0deg); opacity: 0;}
+						to {transform: rotateY(720deg); opacity: 1;}
 					}
 
 					@-moz-keyframes rotate {
-						from {transform: rotateY(0deg);}
-						to {transform: rotateY(720deg);}
+						from {transform: rotateY(0deg); opacity: 0;}
+						to {transform: rotateY(720deg); opacity: 1;}
 					}
 
 					@-o-keyframes rotate {
-						from {transform: rotateY(0deg);}
-						to {transform: rotateY(720deg);}
+						from {transform: rotateY(0deg); opacity: 0;}
+						to {transform: rotateY(720deg); opacity: 1;}
 					}
 
 					@keyframes rotate {
@@ -315,11 +315,11 @@ header {
 					}
 
 					#header-grid-item h1 a:hover  #logo1,#header-grid-item h1 a:hover #logo2{
-					-webkit-transform: rotateZ(540deg);
-					-moz-transform: rotateZ(540deg);
-					-ms-transform: rotateZ(540deg);
-					-o-transform: rotateZ(540deg);
-					transform: rotateZ(540deg);
+					-webkit-transform: rotateZ(180deg);
+					-moz-transform: rotateZ(180deg);
+					-ms-transform: rotateZ(180deg);
+					-o-transform: rotateZ(180deg);
+					transform: rotateZ(180deg);
 				}
 
 			#header-grid-item h3 {
