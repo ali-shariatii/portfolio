@@ -2,27 +2,29 @@ $(document).ready(function(){
 
 /* MEDIA WIDOWN */
 
+/* GLOBAL ON SCROLL ANIMATIONS */
+
 /* NAVIGATION */
 //on scroll functions
 $(window).scroll(function() {
-    var scroll = $(window).scrollTop(); 
+    var scroll = $(window).scrollTop(), 
     
-    var homeStart = $('#home-grid').offset().top;
-    var homeEnd = $('#home-grid').height();
+        homeStart = $('#home-grid').offset().top,
+        homeEnd = $('#home-grid').height(),
 
-    var aboutStart = $('#about-grid-item-1').offset().top;
-    var aboutEnd = $('#about-grid').height();
+        aboutStart = $('#about-grid-item-1').offset().top,
+        aboutEnd = $('#about-grid').height(),
 
-    var workStart = $('#work-grid-item-1').offset().top;
-    var workEnd = $('#work-grid').height();
+        workStart = $('#work-grid-item-1').offset().top,
+        workEnd = $('#work-grid').height(),
 
-    var testimonialsStart = $('#testimonials-grid-shade').offset().top;
-    var testimonialsEnd = $('#testimonials-grid').height();
+        testimonialsStart = $('#testimonials-grid-shade').offset().top,
+        testimonialsEnd = $('#testimonials-grid').height();
 
-    //var contactStart = $('#contact-grid-item-1').offset().top;
-    //var contactEnd = $('#contact-grid').height();
+        //var contactStart = $('#contact-grid-item-1').offset().top;
+        //var contactEnd = $('#contact-grid').height();
 
-    if(scroll <= homeStart + homeEnd ){
+    if(scroll <= homeStart + homeEnd){
         $('#nav-grid').removeClass("dark-colored-navbar light-colored-navbar fixed-nav").addClass("hidden-fixed-nav");
         $("ul li a.active-tab").removeClass('active-tab');
         $('#home-tab').addClass('active-tab');

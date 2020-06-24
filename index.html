@@ -27,17 +27,16 @@
         <audio id="clickSnd2" src="snd/click2.mp3"></audio>
         <audio id="bgMusic" src="snd/bg-music.mp3" loop></audio>
         <div id="ctrl-container" >
-            <div id="playBtn" onclick="playMusicFunc();"></div>
-            <div id="pauseBtn" onclick="pauseMusicFunc();" class="hidden-btn"></div>
+            <div id="musicBtn" onclick="toggleMusic();"></div>
         </div>
     </div>
     <div id="nav-item-2">
         <ul>
-            <li onclick="clickEffect();"><div><a href="#home-grid" id="home-tab" class="active-tab">HOME</a></div></li>
-            <li onclick="clickEffect();"><div><a href="#about-grid" id="about-tab">ABOUT</a></div></li> 
-            <li onclick="clickEffect();"><div><a href="#work-grid" id="work-tab">WORK</a></div></li> 
-            <li onclick="clickEffect();"><div><a href="#testimonials-grid" id="testimonials-tab">TESTIMONIALS</a></div></li> 
-            <li onclick="clickEffect();"><div><a href="#contact-grid" id="contact-tab">CONTACT</a></div></li> 
+            <li onclick="clickEffect2();"><div><a href="#home-grid" id="home-tab" class="active-tab">HOME</a></div></li>
+            <li onclick="clickEffect2();"><div><a href="#about-grid" id="about-tab">ABOUT</a></div></li> 
+            <li onclick="clickEffect2();"><div><a href="#work-grid" id="work-tab">WORK</a></div></li> 
+            <li onclick="clickEffect2();"><div><a href="#testimonials-grid" id="testimonials-tab">TESTIMONIALS</a></div></li> 
+            <li onclick="clickEffect2();"><div><a href="#contact-grid" id="contact-tab">CONTACT</a></div></li> 
         </ul>
     </div>
     <div id="nav-item-3">
@@ -63,7 +62,7 @@
 <header id="home-grid">
     <div id="header-grid-shade">    
         <div id="header-grid-item">
-            <h1><a href="#about-grid" class="header-logo-position logoPointer" onclick="clickEffect();"><img src="img/logo.svg" alt="A" id="logo1"></a><div class="name-letters">LI SH</div><a href="#contact-grid" class="header-logo-position logoPointer" onclick="clickEffect();"><img src="img/logo.svg" alt="A" id="logo2"></a><div class="name-letters">RIATI</div></h1>
+            <h1><a href="#about-grid" class="header-logo-position logoPointer" onclick="clickEffect2();"><img src="img/logo.svg" alt="A" id="logo1"></a><div class="name-letters">LI SH</div><a href="#contact-grid" class="header-logo-position logoPointer" onclick="clickEffect2();"><img src="img/logo.svg" alt="A" id="logo2"></a><div class="name-letters">RIATI</div></h1>
             <h3>WEB DEVELOPER | WEB DESIGNER</h3>
         </div>
     </div>
@@ -88,7 +87,7 @@
             </div>
         </div>
         <div id="about-grid-item-3">
-            <p>I am a web designer & developer with an interest in front-end side. My main focus is on advancing my skills in HTML, CSS, JS & its libraries/frameworks, building interactive & responsive web flows as well as designing tools. My quote of the month is__<q>Work hard,<a href="https://github.com/ali-shariatii/" target="_blank"> code hardcore</a>.</q></p>
+            <p>I am a web designer & developer with an interest in front-end side. My main focus is on advancing my skills in HTML, CSS, JS & its libraries/frameworks, building interactive & responsive web flows as well as designing tools. My quote of the month is__<q>Work hard,<a href="https://github.com/ali-shariatii/" target="_blank" title="More Code on Github"> code hardcore</a>.</q></p>
             <div id="about-grid-item-4">
                 <div class="skills-items" id="skills-grid-item-1"><span>HTML<br>7</span></div>
                 <div class="skills-items" id="skills-grid-item-2"><span>CSS<br>7</span></div>
@@ -127,7 +126,7 @@
                 <div class="modal-full-window" id="modalFullWindow1">
                     <div class="modal-content-window" id="modalContentWindow1">
                         <div class="modal-header"><span id="modalCloser1">&times;</span><br></div>
-                        <p><a href="http://www.i2canada.com/" target="_blank">i2Canada Immigration Services Inc.</a> is an immigration law firm startup. The project goal was UI/UX redesigning, interactive & responsive development and transferring the web application from Joomla to WordPress and rebranding with SHIFTDO studio collaboration. I have been recruited as a front-end development team member.</p> 
+                        <p><a href="http://www.i2canada.com/" target="_blank">i2Canada Immigration Services Inc.</a> is an immigration law firm startup. The project goal was UI/UX redesigning, interactive & responsive development and transferring the web application from Joomla to WordPress and rebranding with SHIFTDO studio collaboration. I have been recruited as a front-end development team member. </p> 
                     </div>
                 </div>
             </div>
@@ -168,7 +167,7 @@
 <!--SECTION 5: CONTACT-->
 <section class="container-grid">
     <div id="contact-grid">
-        <div id="contact-grid-item-1"><h4>CONT<a href="#home-grid" class="logoPointer" onclick="clickEffect();"><img src="img/logo.svg" alt="A"id="logo3"></a>CT</h4></div>
+        <div id="contact-grid-item-1"><h4>CONT<a href="#home-grid" class="logoPointer" onclick="clickEffect2();"><img src="img/logo.svg" alt="A"id="logo3"></a>CT</h4></div>
         <div id="contact-grid-item-2">
             <form id="form-grid" action="contactform.php" method="POST">
                 <div id="form-grid-item-1"><input type="text" placeholder="Name*" name="name" required></div>

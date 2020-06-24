@@ -1,19 +1,27 @@
 /* NAVIGATION */
 //background music
 var bgMusic = document.getElementById("bgMusic"),
-    playBtn = document.getElementById("playBtn"),
-    pauseBtn = document.getElementById("pauseBtn");
+    musicBtn = document.getElementById("musicBtn"),
+    music = false;
 
-function playMusicFunc() {
-    pauseBtn.classList.remove("hidden-btn");
-    playBtn.classList.add("hidden-btn");
-    bgMusic.play();
+function toggleMusic() {
+    if (music) {
+        bgMusic.pause()
+    } else {
+        bgMusic.play();
+    }
 };
 
-function pauseMusicFunc() {
-    playBtn.classList.remove("hidden-btn");
-    pauseBtn.classList.add("hidden-btn");
-    bgMusic.pause();
+bgMusic.onplaying = function() {
+    musicBtn.classList.remove("playBtn");
+    musicBtn.classList.add("pauseBtn");
+    music = true;
+};
+
+bgMusic.onpause = function() {
+    musicBtn.classList.remove("pauseBtn");
+    musicBtn.classList.add("playBtn");
+    music = false;
 };
 
 //click  sound effects
@@ -85,7 +93,7 @@ modalCloser2.onclick = function() {
     modalContentWindow2.classList.remove("content-window-appear");
     modalContentWindow2.classList.add("content-window-disappear");
     modalFullWindow2.classList.add("full-window-disappear");
-    body.classList.add("noscroll");
+    body.classList.remove("noscroll");
 }
 
 //close all modals on window click
@@ -95,11 +103,13 @@ window.onclick = function(event) {
         modalContentWindow1.classList.remove("content-window-appear");
         modalContentWindow1.classList.add("content-window-disappear");
         modalFullWindow1.classList.add("full-window-disappear");
+        body.classList.remove("noscroll");
     } else if(event.target == modalFullWindow2) {
         modalFullWindow2.classList.remove("full-window-appear");
         modalContentWindow2.classList.remove("content-window-appear");
         modalContentWindow2.classList.add("content-window-disappear");
         modalFullWindow2.classList.add("full-window-disappear");
+        body.classList.remove("noscroll");
     }
 }
 

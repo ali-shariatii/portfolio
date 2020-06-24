@@ -53,22 +53,23 @@ h4 {
 	width: 70px;
 	z-index: 1;
 
-	animation: slideOut 2.3s ease;
+	animation: slideOut 2.4s ease;
 
 	-webkit-transition-property: all;
 	-moz-transition-property: all;
 	-ms-transition-property: all;
 	-o-transition-property: all;
 	transition-property: all;
-	-webkit-transition-duration: .35s;
-	-moz-transition-duration: .35s;
-	-ms-transition-duration: .35s;
-	-o-transition-duration: .35s;
-	transition-duration: .35s;
+	-webkit-transition-duration: .4s;
+	-moz-transition-duration: .4s;
+	-ms-transition-duration: .4s;
+	-o-transition-duration: .4s;
+	transition-duration: .4s;
 }
 
 @keyframes slideOut {
-	0%, 90%{left: 0}
+	0% {left: -48px;}
+	30%, 70% {left: 0;}
 	100% {left: -48px;}
 }
 
@@ -116,11 +117,26 @@ h4 {
 	background-color: transparent;
 }
 
+/*										 GLOBAL VISUAL ON SCROLL ANIMATIONS */
+/* slide in animation class for section headers
+#about-grid-item-1, #work-grid-item-1, #testimonials-grid-item-1, #contact-grid-item-1 {opacity: 0;}
+
+.header-slide-in { animation: header-slide-in 1s ease forwards; }
+
+@-webkit-keyframes header-slide-in { from {transform: translateX(-100px); opacity: 0;} To  {transform: translateX(0); opacity: 1;} }
+@-moz-keyframes header-slide-in { from {transform: translateX(-100px); opacity: 0;} To  {transform: translateX(0); opacity: 1;} }
+@-o-keyframes header-slide-in { from {transform: translateX(-100px); opacity: 0;} To  {transform: translateX(0); opacity: 1;} }
+@keyframes header-slide-in { from {transform: translateX(-100px); opacity: 0;} To  {transform: translateX(0); opacity: 1;} }
+*/
+
+
 /*										 SECTION 1: HOME / LANDING PAGE */
+
+
+
 header {
 	display: grid;
-	background-image: url("../img/bg.jpg");
-	background-repeat: no-repeat;
+	background-color: #2e2e2e;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -134,7 +150,7 @@ header {
 		display: grid;
 		grid-template-columns: auto;
 		grid-template-rows: auto;
-		background-color: rgba(57, 57, 57, 0.5);
+		/*background-color: rgba(57, 57, 57, 0.5);*/
 		height: inherit;
 		justify-content: stretch;
 		align-items: center;
