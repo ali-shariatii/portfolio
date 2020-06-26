@@ -145,9 +145,9 @@
 
 				#recom-item-4 p span {
 					font-variant: small-caps;
-					font-size: 19px;
+					font-size: .76rem;
 					font-weight: 600; 
-					letter-spacing: 1px;
+					letter-spacing: .04rem;
 				}
 
 			#recom-item-4 p span { text-decoration: none; color: white ;}
@@ -157,7 +157,7 @@
 			#recom-item-4 p span:hover, #recom-item-4 p span:active { text-decoration: none; color: white ;}
 
 			#in {
-				font-size: 23px;
+				font-size: .92rem;
 			}
 
 			#in { text-decoration: none; color: #1676b6 ;}

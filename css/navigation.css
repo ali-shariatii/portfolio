@@ -73,75 +73,221 @@
 		grid-area: auto;
 	}
 
-		#musicBtn {	
-			width: 0;
-			height: 0;
-			border-left: 16px solid grey;
-			border-top:  8px solid transparent;
-			border-bottom: 8px solid transparent;	
-			margin-top: 3.5px;
+	/*music player controllers*/
+	#musicBtn {
+		-webkit-transition: all .4s ease;; 
+		-moz-transition: all .4s ease;; 
+		-ms-transition: all .4s ease;; 
+		-o-transition: all .4s ease;; 
+		transition: all .4s ease;
+	}
 
-			-webkit-transition-property: all;
-			-moz-transition-property: all;
-			-ms-transition-property: all;
-			-o-transition-property: all;
-			transition-property: all;
-			-webkit-transition-duration: .4s;
-			-moz-transition-duration: .4s;
-			-ms-transition-duration: .4s;
-			-o-transition-duration: .4s;
-			transition-duration: .4s;	
+	#musicBtn.play {
+		animation:play-btn .6s ease; 
+
+		width:0; 
+		height:0; 
+		border-left:.64rem solid grey; 
+		border-top:.32rem solid transparent; 
+		border-right:0 solid transparent; 
+		border-bottom:.32rem solid transparent;
+	}
+	
+	#musicBtn.play:hover {
+		border-left:.64rem solid white;
+	}
+
+	@-webkit-keyframes play-btn {
+		from {
+			transform:rotateZ(0deg); 
+			width:.2rem; 
+			height:.6rem; 
+			border-left:.2rem solid white; 
+			border-top:0 solid transparent; 
+			border-right:.2rem solid white; 
+			border-bottom:0 solid transparent;
 		}
 
-		#musicBtn:hover {border-left: white 16px solid;}
-		#musicBtn:focus { border-left: white 16px solid;}
-		#musicBtn:active { border-left: white 16px solid;}
-		
-		.playBtn {animation: play-btn .35s ease forwards;}
-			@-webkit-keyframes play-btn { 
-				from {transform: rotateZ(0); width: 5px; height: 15px; border-left:  5px solid white; border-top: 0 solid transparent; border-right: 5px solid white; border-bottom: 0 solid transparent;} 
-				to {transform: rotateZ(-180deg); width: 0; height: 0; border-left: 0 solid transparent; border-top:  8px solid transparent; border-right: 16px solid grey; border-bottom: 8px solid transparent;} 
-			}
+		to {
+			transform:rotateZ(-360deg); 
+			width:0; 
+			height:0; 
+			border-left:.64rem solid grey; 
+			border-top:.32rem solid transparent; 
+			border-right:0 solid transparent; 
+			border-bottom:.32rem solid transparent;
+		}
+	}
 
-			@-moz-keyframes play-btn { 
-				from {transform: rotateZ(0); width: 5px; height: 15px; border-left:  5px solid white; border-top: 0 solid transparent; border-right: 5px solid white; border-bottom: 0 solid transparent;} 
-				to {transform: rotateZ(-180deg); width: 0; height: 0; border-left: 0 solid transparent; border-top:  8px solid transparent; border-right: 16px solid grey; border-bottom: 8px solid transparent;} 
-			}
+	@-moz-keyframes play-btn {
+		from {
+			transform:rotateZ(0deg); 
+			width:.2rem; 
+			height:.6rem; 
+			border-left:.2rem solid white; 
+			border-top:0 solid transparent; 
+			border-right:.2rem solid white; 
+			border-bottom:0 solid transparent;
+		}
 
-			@-o-keyframes play-btn { 
-				from {transform: rotateZ(0); width: 5px; height: 15px; border-left:  5px solid white; border-top: 0 solid transparent; border-right: 5px solid white; border-bottom: 0 solid transparent;} 
-				to {transform: rotateZ(-180deg); width: 0; height: 0; border-left: 0 solid transparent; border-top:  8px solid transparent; border-right: 16px solid grey; border-bottom: 8px solid transparent;} 
-			}
+		to {
+			transform:rotateZ(-360deg); 
+			width:0; 
+			height:0; 
+			border-left:.64rem solid grey; 
+			border-top:.32rem solid transparent; 
+			border-right:0 solid transparent; 
+			border-bottom:.32rem solid transparent;
+		}
+	}
 
-			@keyframes play-btn { 
-				from {transform: rotateZ(0); width: 5px; height: 15px; border-left:  5px solid white; border-top: 0 solid transparent; border-right: 5px solid white; border-bottom: 0 solid transparent;} 
-				to {transform: rotateZ(-180deg); width: 0; height: 0; border-left: 0 solid transparent; border-top:  8px solid transparent; border-right: 16px solid grey; border-bottom: 8px solid transparent;} 
-			}
+	@-o-keyframes play-btn {
+		from {
+			transform:rotateZ(0deg); 
+			width:.2rem; 
+			height:.6rem; 
+			border-left:.2rem solid white; 
+			border-top:0 solid transparent; 
+			border-right:.2rem solid white; 
+			border-bottom:0 solid transparent;
+		}
 
-		.playBtn:hover {border-right: white 16px solid;}
+		to {
+			transform:rotateZ(-360deg); 
+			width:0; 
+			height:0; 
+			border-left:.64rem solid grey; 
+			border-top:.32rem solid transparent; 
+			border-right:0 solid transparent; 
+			border-bottom:.32rem solid transparent;
+		}
+	}
 
-		.pauseBtn {animation: pause-btn .35s ease forwards; }
-			@-webkit-keyframes pause-btn { 
-				from {transform: rotateZ(0deg); width: 0; height: 0; border-left: 16px solid grey; border-top:  8px solid transparent; border-right: 0 solid transparent; border-bottom: 8px solid transparent;} 
-				to { transform: rotateZ(180deg); width: 5px; height: 15px; border-left:  5px solid white; border-top: 0 solid transparent; border-right: 5px solid white; border-bottom: 0 solid transparent;} 
-			}
+	@keyframes play-btn {
+		from {
+			transform:rotateZ(0deg); 
+			width:.2rem; 
+			height:.6rem; 
+			border-left:.2rem solid white; 
+			border-top:0 solid transparent; 
+			border-right:.2rem solid white; 
+			border-bottom:0 solid transparent;
+		}
 
-			@-moz-keyframes pause-btn { 
-				from {transform: rotateZ(0deg); width: 0; height: 0; border-left: 16px solid grey; border-top:  8px solid transparent; border-right: 0 solid transparent; border-bottom: 8px solid transparent;} 
-				to { transform: rotateZ(180deg); width: 5px; height: 15px; border-left:  5px solid white; border-top: 0 solid transparent; border-right: 5px solid white; border-bottom: 0 solid transparent;} 
-			}
+		to {
+			transform:rotateZ(-360deg); 
+			width:0; 
+			height:0; 
+			border-left:.64rem solid grey; 
+			border-top:.32rem solid transparent; 
+			border-right:0 solid transparent; 
+			border-bottom:.32rem solid transparent;
+		}
+	}
 
-			@-o-keyframes pause-btn { 
-				from {transform: rotateZ(0deg); width: 0; height: 0; border-left: 16px solid grey; border-top:  8px solid transparent; border-right: 0 solid transparent; border-bottom: 8px solid transparent;} 
-				to { transform: rotateZ(180deg); width: 5px; height: 15px; border-left:  5px solid white; border-top: 0 solid transparent; border-right: 5px solid white; border-bottom: 0 solid transparent;} 
-			}
+	#musicBtn.pause {
+		animation:pause-btn .6s ease; 
 
-			@keyframes pause-btn { 
-				from {transform: rotateZ(0deg); width: 0; height: 0; border-left: 16px solid grey; border-top:  8px solid transparent; border-right: 0 solid transparent; border-bottom: 8px solid transparent;} 
-				to { transform: rotateZ(180deg); width: 5px; height: 15px; border-left:  5px solid white; border-top: 0 solid transparent; border-right: 5px solid white; border-bottom: 0 solid transparent;} 
-			}
+		width:.2rem; 
+		height: .6rem;; 
+		border-left:.2rem solid white; 
+		border-top:0 solid transparent; 
+		border-right:.2rem solid white; 
+		border-bottom:0 solid transparent;
+	}
 
-			.pauseBtn:hover {border-left: 5px solid grey; border-right: 5px solid grey;}
+	/*#musicBtn.pause:hover {
+		border-left:5px solid grey;
+		border-right:5px solid grey;
+	}*/
+
+	@-webkit-keyframes pause-btn {
+		from {
+			transform:rotateZ(0deg); 
+			width:0; 
+			height:0; 
+			border-left:.64rem solid white; 
+			border-top:.32rem solid transparent; 
+			border-right:0 solid transparent; 
+			border-bottom:.32rem solid transparent;
+		}
+
+		to {
+			transform:rotateZ(360deg); 
+			width:.2rem; 
+			height:.6rem; 
+			border-left:.2rem solid white; 
+			border-top:0 solid transparent; 
+			border-right:.2rem solid white; 
+			border-bottom:0 solid transparent;
+		}
+	}
+
+	@-moz-keyframes pause-btn {
+		from {
+			transform:rotateZ(0deg); 
+			width:0; 
+			height:0; 
+			border-left:.64rem solid white; 
+			border-top:.32rem solid transparent; 
+			border-right:0 solid transparent; 
+			border-bottom:.32rem solid transparent;
+		}
+
+		to {
+			transform:rotateZ(360deg); 
+			width:.2rem; 
+			height:.6rem; 
+			border-left:.2rem solid white; 
+			border-top:0 solid transparent; 
+			border-right:.2rem solid white; 
+			border-bottom:0 solid transparent;
+		}
+	}
+
+	@-o-keyframes pause-btn {
+		from {
+			transform:rotateZ(0deg); 
+			width:0; 
+			height:0; 
+			border-left:.64rem solid white; 
+			border-top:.32rem solid transparent; 
+			border-right:0 solid transparent; 
+			border-bottom:.32rem solid transparent;
+		}
+
+		to {
+			transform:rotateZ(360deg); 
+			width:.2rem; 
+			height:.6rem; 
+			border-left:.2rem solid white; 
+			border-top:0 solid transparent; 
+			border-right:.2rem solid white; 
+			border-bottom:0 solid transparent;
+		}
+	}
+
+	@keyframes pause-btn {
+		from {
+			transform:rotateZ(0deg); 
+			width:0; 
+			height:0; 
+			border-left:.64rem solid white; 
+			border-top:.32rem solid transparent; 
+			border-right:0 solid transparent; 
+			border-bottom:.32rem solid transparent;
+		}
+
+		to {
+			transform:rotateZ(360deg); 
+			width:.2rem; 
+			height:.6rem; 
+			border-left:.2rem solid white; 
+			border-top:0 solid transparent; 
+			border-right:.2rem solid white; 
+			border-bottom:0 solid transparent;
+		}
+	}
 
 		#ctrl-container {
 			cursor: pointer;
@@ -152,7 +298,7 @@
 		grid-area: auto;
 		justify-content: center;
 		align-items: center;
-		word-spacing: 45px;
+		word-spacing: 1.8rem;
 	}
 
 		ul {
@@ -164,8 +310,8 @@
 
 			ul li {
 				display: inline-block;
-				font-size: 20px;
-				letter-spacing: 1px;
+				font-size: .8rem;
+				letter-spacing: .04rem;
 
 				-webkit-transition-property: all;
 				-moz-transition-property: all;

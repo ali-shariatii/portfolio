@@ -1,28 +1,22 @@
 /* NAVIGATION */
 //background music
+const AudioContext = window.AudioContext || window.webkitAudioContext;
+const audioCtx = new AudioContext();
+
 var bgMusic = document.getElementById("bgMusic"),
     musicBtn = document.getElementById("musicBtn"),
     music = false;
 
-function toggleMusic() {
-    if (music) {
-        bgMusic.pause()
-    } else {
+
+musicBtn.onclick = function() {
+    if (this.classList.contains("play")) {
+        this.classList.replace("play","pause");
         bgMusic.play();
+    } else {
+        this.classList.replace("pause","play");
+        bgMusic.pause()
     }
-};
-
-bgMusic.onplaying = function() {
-    musicBtn.classList.remove("playBtn");
-    musicBtn.classList.add("pauseBtn");
-    music = true;
-};
-
-bgMusic.onpause = function() {
-    musicBtn.classList.remove("pauseBtn");
-    musicBtn.classList.add("playBtn");
-    music = false;
-};
+    };
 
 //click  sound effects
 var clickSnd = document.getElementById("clickSnd"),
