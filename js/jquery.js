@@ -12,23 +12,23 @@ $(window).scroll(function() {
         homeStart = $('#home-grid').offset().top,
         homeEnd = $('#home-grid').height(),
 
-        aboutStart = $('#about-grid-item-1').offset().top,
-        aboutEnd = $('#about-grid').height(),
+        aboutStart = $('#about-container').offset().top,
+        aboutEnd = $('#about-container').height(),
 
-        workStart = $('#work-grid-item-1').offset().top,
-        workEnd = $('#work-grid').height(),
+        workStart = $('#work-container').offset().top,
+        workEnd = $('#work-container').height(),
 
-        testimonialsStart = $('#testimonials-grid-shade').offset().top,
-        testimonialsEnd = $('#testimonials-grid').height();
+        testimonialsStart = $('#testimonials-container').offset().top,
+        testimonialsEnd = $('#testimonials-container').height();
 
-        //var contactStart = $('#contact-grid-item-1').offset().top;
+        var contactStart = $('#contact-container').offset().top;
         //var contactEnd = $('#contact-grid').height();
 
     if(scroll <= homeStart + homeEnd){
         $('#nav-grid').removeClass("dark-colored-navbar light-colored-navbar fixed-nav").addClass("hidden-fixed-nav");
         $("ul li a.active-tab").removeClass('active-tab');
         $('#home-tab').addClass('active-tab');
-    }else if(scroll >= homeEnd && scroll <= aboutStart + aboutEnd){
+    }else if(scroll >= homeEnd && scroll < aboutStart + aboutEnd){
         $('#nav-grid').removeClass("dark-colored-navbar hidden-fixed-nav").addClass("light-colored-navbar fixed-nav");
         $("ul li a.active-tab").removeClass('active-tab');
         $('#about-tab').addClass('active-tab');
@@ -36,11 +36,11 @@ $(window).scroll(function() {
         $('#nav-grid').removeClass("light-colored-navbar hidden-fixed-nav").addClass("dark-colored-navbar fixed-nav");
         $("ul li a.active-tab").removeClass('active-tab');
         $('#work-tab').addClass('active-tab');
-    }else if(scroll >= workEnd && scroll <= testimonialsStart + testimonialsEnd){
-        $('#nav-grid').removeClass("light-colored-navbar hidden-fixed-nav").addClass("dark-colored-navbar fixed-nav");
+    }else if(scroll >= testimonialsStart && scroll <= testimonialsStart + testimonialsEnd){
+        $('#nav-grid').removeClass("dark-colored-navbar hidden-fixed-nav").addClass("light-colored-navbar fixed-nav");
         $("ul li a.active-tab").removeClass('active-tab');
         $('#testimonials-tab').addClass('active-tab');
-    }else if(scroll > testimonialsEnd){
+    }else if(scroll >= contactStart){
         $('#nav-grid').removeClass("light-colored-navbar hidden-fixed-nav").addClass("dark-colored-navbar fixed-nav");
         $("ul li a.active-tab").removeClass('active-tab');
         $('#contact-tab').addClass('active-tab');        

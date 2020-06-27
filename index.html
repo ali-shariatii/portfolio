@@ -19,7 +19,7 @@
 </head>
 
 <body id="body">
-<!--<div id="page">-->
+<div id="content-wrapper">
 <!--NAVIGATION-->
 <div id="nav-grid" class="hidden-fixed-nav">
     <div id="nav-item-1">
@@ -69,7 +69,7 @@
 </header>
 
 <!--SECTION 2: ABOUT-->
-<section class="container-grid">
+<section class="container-grid" id="about-container">
     <div id="about-grid">
         <div id="about-grid-item-1"><h4>ABOUT</h4></div>
         <div id="about-grid-item-2">
@@ -88,22 +88,22 @@
         </div>
         <div id="about-grid-item-3">
             <p>I am a web designer & developer with an interest in front-end side. My main focus is on advancing my skills in HTML, CSS, JS & its libraries/frameworks, building interactive & responsive web flows as well as designing tools. My quote of the month is__<q>Work hard,<a href="https://github.com/ali-shariatii/" target="_blank" title="More Code on Github"> code hardcore</a>.</q></p>
-            <div id="about-grid-item-4">
-                <div class="skills-items" id="skills-grid-item-1"><span>HTML<br>7</span></div>
-                <div class="skills-items" id="skills-grid-item-2"><span>CSS<br>7</span></div>
-                <div class="skills-items" id="skills-grid-item-3"><span>JS<br>6</span></div>
-                <div class="skills-items" id="skills-grid-item-4"><span>JQuery<br>5</span></div>
-                <div class="skills-items" id="skills-grid-item-5"><span>PHP<br>5</span></div>
-                <div class="skills-items" id="skills-grid-item-6"><span>MySQL<br>5</span></div>
-                <div class="skills-items" id="skills-grid-item-7"><span>Ai<br>7</span></div>
-                <div class="skills-items" id="skills-grid-item-8"><span>UI/UX<br>6</span></div>
-                <div class="skills-items" id="skills-grid-item-9"><span>Ps<br>6</span></div>
-            </div>
+        </div>
+        <div id="about-grid-item-4">
+            <div class="skills-items" id="skills-grid-item-1"><span>HTML<br>7</span></div>
+            <div class="skills-items" id="skills-grid-item-2"><span>CSS<br>7</span></div>
+            <div class="skills-items" id="skills-grid-item-3"><span>JS<br>6</span></div>
+            <div class="skills-items" id="skills-grid-item-4"><span>JQuery<br>5</span></div>
+            <div class="skills-items" id="skills-grid-item-5"><span>PHP<br>5</span></div>
+            <div class="skills-items" id="skills-grid-item-6"><span>MySQL<br>5</span></div>
+            <div class="skills-items" id="skills-grid-item-7"><span>Ai<br>7</span></div>
+            <div class="skills-items" id="skills-grid-item-8"><span>UI/UX<br>6</span></div>
+            <div class="skills-items" id="skills-grid-item-9"><span>Ps<br>6</span></div>
         </div>
 </section>
 
 <!--SECTION 3: WORK-->
-<section class="container-grid">
+<section class="container-grid" id="work-container">
     <div id="work-grid">
         <div id="work-grid-item-1"><h4>WORK</h4></div>
         <!--gallery filter
@@ -150,9 +150,9 @@
 </section>
 
 <!--SECTION 4: TESTIMONIALS-->
-<section class="container-grid">
+<section class="container-grid" id="testimonials-container">
     <div id="testimonials-grid">
-        <div id="testimonials-grid-shade">
+        <!--<div id="testimonials-grid-shade">-->
             <div id="testimonials-grid-item-1"><h4>TESTIMONIALS</h4></div>
             <div id="testimonials-grid-item-2">
                 <div id="recom-item-1"><p><q>Ali is a team player & an exceptional problem solver.</q></p></div>
@@ -160,12 +160,12 @@
                 <div id="recom-item-3"><p><q>Every team which Ali is a part of, is among the winners.</q></p></div>
                 <div id="recom-item-4"><p><a href="https://www.linkedin.com/in/ali-shariatii/" target="_blank"><span>More on </span></a><a href="https://www.linkedin.com/in/ali-shariatii/"target="_blank" class="fa fa-linkedin" id="in"></a></p></div>
             </div>
-        </div>
+        <!--</div>-->
     </div>
 </section>
    
 <!--SECTION 5: CONTACT-->
-<section class="container-grid">
+<section class="container-grid" id="contact-container">
     <div id="contact-grid">
         <div id="contact-grid-item-1"><h4>CONT<a href="#home-grid" class="logoPointer" onclick="clickEffect2();"><img src="img/logo.svg" alt="A"id="logo3"></a>CT</h4></div>
         <div id="contact-grid-item-2">
@@ -191,7 +191,7 @@
     </p></div>
     <div id="footer-grid-item-2">© 2020 ALI SHARIATI. MADE IN CANADA</div>
 </footer>
-<!--</div>-->
+</div>
 
 <!--JS LINKS-->
 <script src="js/jquery.js"></script>
