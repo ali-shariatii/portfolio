@@ -4,7 +4,9 @@ html, body {
 	background-color: #2e2e2e;
 }
 
-html { 	font-size: 125%; }
+html { 
+	font-size: 142%; 
+}
 
 #content-wrapper {
 	display: grid;
@@ -47,71 +49,71 @@ input::-webkit-inner-spin-button {
 input[type=number] {
 -moz-appearance: textfield;
 }
-/*************** NOT RESPONSIVE ***************/
+
 h4 {
 	font-size: 1.6rem;
 	margin-left: .28rem;
 	letter-spacing: .28rem;
-	margin: 100px 0 100px 0;
+	margin: 4rem 0 4rem 0;
 	text-align: center;
 }
 
 /*										 SOCIAL MEDIA WINDOW */
-/*************** NOT RESPONSIVE ***************/
+
 #media-container {
 	position: fixed;
-	top: 45vh;
+	top: 45.5vh;
 	display: grid;
-	left: -48px;
+	left: -1.92rem;
 	grid-template-rows: auto;
 	grid-template-columns: 80% 20%;
 	align-items: center;
-	width: 70px;
+	width: 2.8rem;
 	z-index: 1;
 
 	animation: slideOut 2.4s ease;
 
-	-webkit-transition: all .4s ease;
-	-moz-transition: all .4s ease;
-	-ms-transition: all .4s ease;
-	-o-transition: all .4s ease;
-	transition: all .4s ease;
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-ms-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
 }
-/*************** NOT RESPONSIVE ***************/
+
 @-webkit-keyframes slideOut {
-	0% {left: -48px;}
+	0% {left: -1.92rem;}
 	30%, 70% {left: 0;}
-	100% {left: -48px;}
+	100% {left: -1.92rem;}
 }
 
 @-moz-keyframes slideOut {
-	0% {left: -48px;}
+	0% {left: -1.92rem;}
 	30%, 70% {left: 0;}
-	100% {left: -48px;}
+	100% {left: -1.92rem;}
 }
 
 @-o-keyframes slideOut {
-	0% {left: -48px;}
+	0% {left: -1.92rem;}
 	30%, 70% {left: 0;}
-	100% {left: -48px;}
+	100% {left: -1.92rem;}
 }
 
 @keyframes slideOut {
-	0% {left: -48px;}
+	0% {left: -1.92rem;}
 	30%, 70% {left: 0;}
-	100% {left: -48px;}
+	100% {left: -1.92rem;}
 }
 
 #media-container:hover {
 	left: 0;
 }
-/*************** NOT RESPONSIVE ***************/
+
 #media-window {
-	padding: 15px 0;
+	padding: .4rem 0;
 
 	background-color: rgba(97, 96, 96, 0.4);
-	-webkit-backdrop-filter: blur(9px);
-	backdrop-filter: blur(9px);
+	-webkit-backdrop-filter: blur(.36rem);
+	backdrop-filter: blur(.36rem);
 
 	-webkit-transition: all .35s ease;
 	-moz-transition: all .35s ease;
@@ -133,11 +135,11 @@ h4 {
 		#media-window a:hover { text-decoration: none; color: white ;}
 		#media-window a:focus { text-decoration: none; color: grey ; }
 		#media-window a:active { text-decoration: none; color: white ;}
-/*************** NOT RESPONSIVE ***************/
+
 #media-container-arrow {
-	border-left: 10px solid rgba(97, 96, 96, 0.4);;
-	border-top: 10px solid transparent;
-	border-bottom: 10px solid transparent;
+	border-left: .4rem solid rgba(97, 96, 96, 0.4);;
+	border-top: .4rem solid transparent;
+	border-bottom: .4rem solid transparent;
 	background-color: transparent;
 }
 
@@ -241,7 +243,7 @@ header {
 					display: inline-block;
 					animation: appearSlideLeft ease 2s;
 				}
-/*************** NOT RESPONSIVE ***************/
+
 					@-webkit-keyframes appearSlideLeft {
 						0% {transform: translateX(-7px); color: transparent;}
 						55% {transform: translateX(-7px); color: transparent;}
@@ -249,24 +251,24 @@ header {
 					}
 				
 					@-moz-keyframes appearSlideLeft {
-						0% {transform: translateX(-7px); color: transparent;}
-						55% {transform: translateX(-7px); color: transparent;}
+						0% {transform: translateX(-.28rem); color: transparent;}
+						55% {transform: translateX(-.28rem); color: transparent;}
 						100% {transform: translateX(0); color: white;}
 					}
 				
 					@-o-keyframes appearSlideLeft {
-						0% {transform: translateX(-7px); color: transparent;}
-						55% {transform: translateX(-7px); color: transparent;}
+						0% {transform: translateX(-.28rem); color: transparent;}
+						55% {transform: translateX(-.28rem); color: transparent;}
 						100% {transform: translateX(0); color: white;}
 					}
 				
 					@keyframes appearSlideLeft {
-						0% {transform: translateX(-7px); color: transparent;}
-						55% {transform: translateX(-7px); color: transparent;}
+						0% {transform: translateX(-.28rem); color: transparent;}
+						55% {transform: translateX(-.28rem); color: transparent;}
 						100% {transform: translateX(0); color: white;}
 					}
 
-				#logo1 {
+				#logo1, #logo2 {
 					display: inline-block;
 					width: auto;
 					height: 1.82rem;
@@ -278,21 +280,6 @@ header {
 					-o-transition: all .46s ease;
 					transition: all .46s ease;	
 
-					animation: rotate ease 1.33s;
-				}	
-
-				#logo2 {
-					display: inline-block;
-					width: auto;
-					height: 1.82rem;
-					cursor: pointer;
-					
-					-webkit-transition: all .46s ease;
-					-moz-transition: all .46s ease;
-					-ms-transition: all .46s ease;
-					-o-transition: all .46s ease;
-					transition: all .46s ease;	
-					
 					animation: rotate ease 1.33s;
 				}	
 
@@ -340,39 +327,39 @@ header {
 
 				animation: appearSlideRight ease 2s;
 			}
-/*************** NOT RESPONSIVE ***************/
+
 				@-webkit-keyframes appearSlideRight {
-					0% {transform: translateX(7px); color: transparent;}
-					55% {transform: translateX(7px); color: transparent;}
+					0% {transform: translateX(.28rem); color: transparent;}
+					55% {transform: translateX(.28rem); color: transparent;}
 					100% {transform: translateX(0); color: white;} 
 				}
 			
 				@-moz-keyframes appearSlideRight {
-					0% {transform: translateX(7px); color: transparent;}
-					55% {transform: translateX(7px); color: transparent;}
+					0% {transform: translateX(.28rem); color: transparent;}
+					55% {transform: translateX(.28rem); color: transparent;}
 					100% {transform: translateX(0); color: white;}
 				}
 			
 				@-o-keyframes appearSlideRight {
-					0% {transform: translateX(7px); color: transparent;}
-					55% {transform: translateX(7px); color: transparent;}
+					0% {transform: translateX(.28rem); color: transparent;}
+					55% {transform: translateX(.28rem); color: transparent;}
 					100% {transform: translateX(0); color: white;}
 				}
 			
 				@keyframes appearSlideRight {
-					0% {transform: translateX(7px); color: transparent;}
-					55% {transform: translateX(7px); color: transparent;}
+					0% {transform: translateX(.28rem); color: transparent;}
+					55% {transform: translateX(.28rem); color: transparent;}
 					100% {transform: translateX(0); color: white;}
 			}
 
 
 /*										 SECTION 6: FOOTER */
-/*************** NOT RESPONSIVE ***************/
+
 footer {
 	display: grid;
 	grid-template-columns: 1fr;
 	grid-template-rows: auto auto;
-	padding: 65px 0;
+	padding: 2.6rem 0;
 	background-color: #393939;
 }
 

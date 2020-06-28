@@ -1,0 +1,19 @@
+/* xxlarge screens & tvs */
+@media only screen and (min-width: 100em) {html { font-size: 153%; }}
+@media only screen and (min-width: 105em) {html { font-size: 160%; }}
+@media only screen and (min-width: 110em) {html { font-size: 167%; }}
+@media only screen and (min-width: 115em) {html { font-size: 174%; }}
+@media only screen and (min-width: 120em) {html { font-size: 181%; }}
+@media only screen and (min-width: 125em) {html { font-size: 188%; }}
+@media only screen and (min-width: 130em) {html { font-size: 195%; }}
+@media only screen and (min-width: 135em) {html { font-size: 202%; }}
+@media only screen and (min-width: 140em) {html { font-size: 209%; }}
+@media only screen and (min-width: 145em) {html { font-size: 219%; }}
+@media only screen and (min-width: 150em) {html { font-size: 229%; }}
+@media only screen and (min-width: 155em) {html { font-size: 233%; }}
+@media only screen and (min-width: 160em) {html { font-size: 237%; }}
+@media only screen and (min-width: 165em) {html { font-size: 249%; }}
+@media only screen and (min-width: 170em) {html { font-size: 260%; }}
+@media only screen and (min-width: 175em) {html { font-size: 153%; }}
+
+/* landscape wide screens */

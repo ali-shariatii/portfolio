@@ -1,0 +1,371 @@
+/* xxsmall */
+@media only screen and (max-width: 575.98px) {
+/*                                       GLOBAL SETTINGS */
+html { 
+    font-size: 100%; 
+}
+
+/*                                       NAVIGATION */
+#nav-grid {
+	grid-template-columns: repeat(2, 50%);
+    grid-auto-columns: repeat(2, 50%);
+    height: 3.4rem;
+}
+
+.fixed-nav {
+    top: -.1rem;
+}
+
+.hidden-fixed-nav {
+    top: -3.5rem;	
+}
+
+#nav-item-1 {
+    justify-content: flex-start;
+}
+
+#ctrl-container {
+    padding-left: 19%;
+}
+
+#musicBtn.play {
+    animation:play-btn-min .6s ease; 
+
+    width:0; 
+    height:0; 
+    border-left:1rem solid grey; 
+    border-top:.5rem solid transparent; 
+    border-right:0 solid transparent; 
+    border-bottom:.5rem solid transparent;
+}
+
+@-webkit-keyframes play-btn-min {
+    from {
+        transform:rotateZ(0deg); 
+        width:.4rem; 
+        height: 1rem; 
+        border-left:.3rem solid white; 
+        border-top:0 solid transparent; 
+        border-right:.3rem solid white; 
+        border-bottom:0 solid transparent;
+    }
+
+    to {
+        transform:rotateZ(-360deg); 
+        width:0; 
+        height:0; 
+        border-left:1rem solid grey; 
+        border-top:.5rem solid transparent; 
+        border-right:0 solid transparent; 
+        border-bottom:.5rem solid transparent;
+    }
+}
+
+@-moz-keyframes play-btn-min {
+    from {
+        transform:rotateZ(0deg); 
+        width:.4rem; 
+        height: 1rem; 
+        border-left:.3rem solid white; 
+        border-top:0 solid transparent; 
+        border-right:.3rem solid white; 
+        border-bottom:0 solid transparent;
+    }
+
+    to {
+        transform:rotateZ(-360deg); 
+        width:0; 
+        height:0; 
+        border-left:1rem solid grey; 
+        border-top:.5rem solid transparent; 
+        border-right:0 solid transparent; 
+        border-bottom:.5rem solid transparent;
+    }
+}
+
+@-o-keyframes play-btn-min {
+    from {
+        transform:rotateZ(0deg); 
+        width:.4rem; 
+        height: 1rem; 
+        border-left:.3rem solid white; 
+        border-top:0 solid transparent; 
+        border-right:.3rem solid white; 
+        border-bottom:0 solid transparent;
+    }
+
+    to {
+        transform:rotateZ(-360deg); 
+        width:0; 
+        height:0; 
+        border-left:1rem solid grey; 
+        border-top:.5rem solid transparent; 
+        border-right:0 solid transparent; 
+        border-bottom:.5rem solid transparent;
+    }
+}
+
+@keyframes play-btn-min {
+    from {
+        transform:rotateZ(0deg); 
+        width:.4rem; 
+        height: 1rem; 
+        border-left:.3rem solid white; 
+        border-top:0 solid transparent; 
+        border-right:.3rem solid white; 
+        border-bottom:0 solid transparent;
+    }
+
+    to {
+        transform:rotateZ(-360deg); 
+        width:0; 
+        height:0; 
+        border-left:1rem solid grey; 
+        border-top:.5rem solid transparent; 
+        border-right:0 solid transparent; 
+        border-bottom:.5rem solid transparent;
+    }
+}
+
+#musicBtn.pause {
+    animation:pause-btn-min .6s ease; 
+
+    width:.4rem; 
+    height: 1rem;; 
+    border-left:.3rem solid white; 
+    border-top:0 solid transparent; 
+    border-right:.3rem solid white; 
+    border-bottom:0 solid transparent;
+}
+
+@-webkit-keyframes pause-btn-min {
+    from {
+        transform:rotateZ(0deg); 
+        width:0; 
+        height:0; 
+        border-left:1rem solid grey; 
+        border-top:.5rem solid transparent; 
+        border-right:0 solid transparent; 
+        border-bottom:.5rem solid transparent;
+    }
+
+    to {
+        transform:rotateZ(360deg); 
+        width:.4rem; 
+        height: 1rem; 
+        border-left:.3rem solid white; 
+        border-top:0 solid transparent; 
+        border-right:.3rem solid white; 
+        border-bottom:0 solid transparent;
+    }
+}
+
+@-moz-keyframes pause-btn-min {
+    from {
+        transform:rotateZ(0deg); 
+        width:0; 
+        height:0; 
+        border-left:1rem solid grey; 
+        border-top:.5rem solid transparent; 
+        border-right:0 solid transparent; 
+        border-bottom:.5rem solid transparent;
+    }
+
+    to {
+        transform:rotateZ(360deg); 
+        width:.4rem; 
+        height: 1rem; 
+        border-left:.3rem solid white; 
+        border-top:0 solid transparent; 
+        border-right:.3rem solid white; 
+        border-bottom:0 solid transparent;
+    }
+}
+
+@-o-keyframes pause-btn-min {
+    from {
+        transform:rotateZ(0deg); 
+        width:0; 
+        height:0; 
+        border-left:1rem solid grey; 
+        border-top:.5rem solid transparent; 
+        border-right:0 solid transparent; 
+        border-bottom:.5rem solid transparent;
+    }
+
+    to {
+        transform:rotateZ(360deg); 
+        width:.4rem; 
+        height: 1rem; 
+        border-left:.3rem solid white; 
+        border-top:0 solid transparent; 
+        border-right:.3rem solid white; 
+        border-bottom:0 solid transparent;
+    }
+}
+
+@keyframes pause-btn-min {
+    from {
+        transform:rotateZ(0deg); 
+        width:0; 
+        height:0; 
+        border-left:1rem solid grey; 
+        border-top:.5rem solid transparent; 
+        border-right:0 solid transparent; 
+        border-bottom:.5rem solid transparent;
+    }
+
+    to {
+        transform:rotateZ(360deg); 
+        width:.4rem; 
+        height: 1rem; 
+        border-left:.3rem solid white; 
+        border-top:0 solid transparent; 
+        border-right:.3rem solid white; 
+        border-bottom:0 solid transparent;
+    }
+}
+
+#nav-item-2, #nav-github {
+    display: none;
+}
+
+#nav-item-3 {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#hamburger {
+	display: flex;
+    }
+
+/*										 SECTION 1: HOME / LANDING PAGE */
+#header-grid-item h1 {
+    font-size: 1.77rem;
+    letter-spacing: 1.024rem;
+    font-weight: 500;
+    padding-left: 1.024rem;
+    padding-right: 0;
+    padding-top: 0;
+}
+
+#header-grid-item h1 a {
+    margin: 0 1.024rem 0 0;
+}
+
+#logo1, #logo2 {
+    height: 1.29rem;
+}
+
+#header-grid-item h3 {
+    font-size: .1rem;
+    letter-spacing: .3rem;
+    margin-left: .3rem;
+    font-weight: 500;
+    margin-top: -2.5rem;
+}
+
+/*										 SOCIAL MEDIA WINDOW */
+#media-container {
+    display: none;
+}
+
+/*                                       SECTION 2: ABOUT */
+#about-grid-item-2 {
+    display: grid;
+    grid-template-columns: 81%;
+    grid-auto-columns: 81%;
+    grid-template-rows: repeat(3, auto);
+    justify-content: space-evenly;
+    align-items: stretch;
+    row-gap: 1.1rem;
+}
+
+#about-grid-item-3 {
+    display: grid;
+    justify-content: center;
+    padding: 2rem 0 0 0;
+    grid-template-columns: 74%;
+    grid-auto-columns: 7%;
+
+}
+
+#about-grid-item-3 p {
+    text-align: center;
+}
+
+#about-grid-item-4 {
+    justify-content: space-evenly;
+}
+
+/*                                       SECTION 3: WORK */
+#work-grid-item-3 {
+    grid-template-columns: 81%;
+    grid-auto-columns: 81%;
+    grid-template-rows: repeat(2, auto); /*add more auto after adding more work to gallery*/
+    gap: 1.1rem;
+}
+
+/*                                       SECTION 4: TESTIMONIALS */
+#testimonials-grid-item-2 {
+    grid-template-columns: 81%;
+    grid-auto-columns: 81%;
+    grid-template-rows: repeat(4, auto);
+    gap: 1.1rem;
+}
+
+#recom-item-4 {
+    grid-area: 4 / 1 / 5 / 2;
+}
+
+/*                                       SECTION 5: CONTACT */
+#form-grid{ 
+    grid-template-columns: 81%;
+    grid-auto-columns: 81%;
+    grid-template-rows: repeat(7, auto);
+    gap: 1.1rem;
+}
+
+#form-grid-item-5 {
+    grid-area: 5 / 1 / 7 / 2;
+}
+
+textarea {
+    min-height: 3.5rem;
+    resize: vertical;
+}
+
+#form-grid-item-6 {
+    grid-area: 7 / 1 / 8 / 2;
+}   
+
+}
+
+
+/* xsmall */
+@media only screen and (max-width: 767.98px) {
+    
+}
+
+
+/* small */
+@media only screen and (max-width: 991.98) {
+    
+}
+
+
+/* medium */
+@media only screen and (max-width: 1199.98px) {
+    
+}
+
+
+/* large */
+@media only screen and (max-width: 1365.98px) {
+    
+}
+
+
+
+
+

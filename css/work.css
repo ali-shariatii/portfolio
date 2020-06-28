@@ -1,11 +1,10 @@
 /*SECTION 3: WORK */
-/*************** NOT RESPONSIVE ***************/
 #work-grid {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(2, auto); /*add another auto after adding gallery filter*/ 
     background-color: #2e2e2e;
-    padding-bottom: 120px;
+    padding-bottom: 4.8rem;
 }
 
     #work-grid-item-1 {
@@ -51,26 +50,24 @@
             border: red 2px solid;
         }  */
 
-    /*gallery grid*/
-    /*************** NOT RESPONSIVE ***************/
+    /* work gallery */
     #work-grid-item-3 {
         display: grid;
         justify-content: center;
         grid-template-columns: repeat(2, 43.27%);
         grid-auto-columns: 43.27%;
         grid-template-rows: auto; /*add more auto after adding more work to gallery*/
-        row-gap: 26px;
-        column-gap: 26px;
+        gap: 1.1rem;
     }
 
         #gallery-grid-item-1, #gallery-grid-item-2 { 
             display: grid;
             justify-content: stretch;
         }
-/*************** NOT RESPONSIVE ***************/
+
             .work-img-container {
                 height: auto;
-                box-shadow: 0 4px 8px 0 rgba(12, 12, 12, 0.8), 0 9px 10px 0 rgba(12, 12, 12, 0.8);
+                box-shadow: 0 .16rem .32rem 0 rgba(12, 12, 12, 0.8), 0 .36rem .4rem 0 rgba(12, 12, 12, 0.8);
                 cursor: pointer;
 
                 -webkit-transition: all .4s ease;
@@ -126,23 +123,22 @@
                     -moz-transition: all .3s ease;
                     -ms-transition: all .3s ease;
                     -o-transition: all .3s ease;
-                    transition: all .3s ease;
+                    transition: all .3s ease;     
                 }
-/*************** NOT RESPONSIVE ***************/
+
                 .work-img-container:hover img{
                     opacity: 0.1;
-                    -webkit-filter: blur(4px);
-                    filter: blur(4px);
+                    -webkit-filter: blur(.2rem);
+                    filter: blur(.2rem);
                 }
-/*************** NOT RESPONSIVE ***************/
+
                 .work-img-container span {
                     display: block;
-                    margin: 3px 10px 9.7px 13px;
+                    margin: .12rem .4rem .388rem .52rem;
                     font-size: .8rem;
                 }
 
                 /*This is the full blackout background.*/
-/*************** NOT RESPONSIVE ***************/
                 .modal-full-window {
                     display: grid;
                     grid-template-columns: auto;
@@ -157,8 +153,8 @@
                     height: 100vh;
                     opacity: 0;
                     background-color: rgba(34, 32, 32, .9);
-                    -webkit-backdrop-filter: blur(7px);
-                    backdrop-filter: blur(7px);
+                    -webkit-backdrop-filter: blur(.2rem);
+                    backdrop-filter: blur(.2rem);
                 }
 
                     .full-window-appear { animation: fullWindowAppear .1s ease forwards; }
@@ -181,7 +177,7 @@
                         width: 85%;
                         height: 70%;
                         overflow: auto;
-                        padding: 5px 45px 45px 0;
+                        padding: .2rem 1.8rem 1.8rem 0;
                         color: white;
                         background-color: #393939;
                         text-align: justify;
@@ -203,13 +199,13 @@
                         text-decoration: none;
                         color: #1676b6;
                     }
-/*************** NOT RESPONSIVE ***************/
+
                         .modal-header {
                             display: flex;
                             position: sticky;
                             top: 0;
                             left: 0;
-                            padding-left: 21px;
+                            padding-left: .84rem;
                         }
 
                             #modalCloser1, #modalCloser2 {

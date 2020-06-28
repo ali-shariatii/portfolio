@@ -49,7 +49,7 @@ $(window).scroll(function() {
 
 //on click functions
 $(function(){
-    $("#nav-item-2 ul a").click(function(){
+    $("#nav-item-2 ul a, #nav-item-4 ul a").click(function(){
         $("html, body").animate({
             scrollTop: $($.attr(this, 'href')).offset().top
         }, 850);

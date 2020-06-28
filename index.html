@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="css/work.css">
     <link rel="stylesheet" href="css/testimonials.css">
     <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/media-queries/small-devices.css">
+    <link rel="stylesheet" href="css/media-queries/large-devices.css">   
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous"> -->
     <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>  -->
@@ -40,8 +42,21 @@
         </ul>
     </div>
     <div id="nav-item-3">
-        <div><a href="https://github.com/ali-shariatii/" target="_blank" class="fa fa-github" id="nav-github"></a></div>
-        <!--for hamburger menu-->
+        <div id="nav-github"><a href="https://github.com/ali-shariatii/" target="_blank" class="fa fa-github" id="nav-github"></a></div>
+        <!-- hamburger icon-->
+        <div id="hamburger">
+            <div></div>
+        </div>
+    </div>
+    <!-- hamburger menu-->
+    <div id="nav-item-4">
+        <ul>
+            <li onclick="clickEffect2();"><div><a href="#home-grid" id="home-tab" class="active-tab">HOME</a></div></li>
+            <li onclick="clickEffect2();"><div><a href="#about-grid" id="about-tab">ABOUT</a></div></li> 
+            <li onclick="clickEffect2();"><div><a href="#work-grid" id="work-tab">WORK</a></div></li> 
+            <li onclick="clickEffect2();"><div><a href="#testimonials-grid" id="testimonials-tab">TESTIMONIALS</a></div></li> 
+            <li onclick="clickEffect2();"><div><a href="#contact-grid" id="contact-tab">CONTACT</a></div></li> 
+        </ul>
     </div>
 </div>
 
