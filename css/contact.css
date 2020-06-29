@@ -97,9 +97,8 @@
                 }
 
                 #form-grid-item-6 button:hover {
-                    font-size: .94rem;
                     border: grey .08rem solid;
-                    letter-spacing: .02rem;
+                    letter-spacing: .05rem;
                     color: grey;        
                 }
 

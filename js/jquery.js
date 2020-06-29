@@ -25,25 +25,32 @@ $(window).scroll(function() {
         //var contactEnd = $('#contact-grid').height();
 
     if(scroll <= homeStart + homeEnd){
-        $('#nav-grid').removeClass("dark-colored-navbar light-colored-navbar fixed-nav").addClass("hidden-fixed-nav");
+        $("#nav-grid").removeClass("dark-colored-navbar light-colored-navbar fixed-nav").addClass("hidden-fixed-nav");
+        $("#nav-item-4").removeClass("dark-colored-navbar light-colored-navbar unhidden-dropdown").addClass("hidden-dropdown");
+        $("#hamburger-menu-container > div").removeClass("times").addClass("hamburger");
+        $("#hamburger-menu-container").removeClass("align-container-2").addClass("align-container-1");
         $("ul li a.active-tab").removeClass('active-tab');
-        $('#home-tab').addClass('active-tab');
+        $("#home-tab, #home-tab_min").addClass('active-tab');
     }else if(scroll >= homeEnd && scroll < aboutStart + aboutEnd){
-        $('#nav-grid').removeClass("dark-colored-navbar hidden-fixed-nav").addClass("light-colored-navbar fixed-nav");
+        $("#nav-grid").removeClass("dark-colored-navbar hidden-fixed-nav").addClass("light-colored-navbar fixed-nav");
+        $("#nav-item-4").removeClass("dark-colored-navbar").addClass("light-colored-navbar");
         $("ul li a.active-tab").removeClass('active-tab');
-        $('#about-tab').addClass('active-tab');
+        $("#about-tab, #about-tab_min").addClass('active-tab');
     }else if(scroll >= aboutEnd && scroll <= workStart + workEnd){
-        $('#nav-grid').removeClass("light-colored-navbar hidden-fixed-nav").addClass("dark-colored-navbar fixed-nav");
+        $("#nav-grid").removeClass("light-colored-navbar hidden-fixed-nav").addClass("dark-colored-navbar fixed-nav");
+        $("#nav-item-4").removeClass("light-colored-navbar").addClass("dark-colored-navbar ");
         $("ul li a.active-tab").removeClass('active-tab');
-        $('#work-tab').addClass('active-tab');
+        $("#work-tab, #work-tab_min").addClass('active-tab');
     }else if(scroll >= testimonialsStart && scroll <= testimonialsStart + testimonialsEnd){
-        $('#nav-grid').removeClass("dark-colored-navbar hidden-fixed-nav").addClass("light-colored-navbar fixed-nav");
+        $("#nav-grid").removeClass("dark-colored-navbar hidden-fixed-nav").addClass("light-colored-navbar fixed-nav");
+        $("#nav-item-4").removeClass("dark-colored-navbar").addClass("light-colored-navbar");
         $("ul li a.active-tab").removeClass('active-tab');
-        $('#testimonials-tab').addClass('active-tab');
+        $("#testimonials-tab, #testimonials-tab_min").addClass('active-tab');
     }else if(scroll >= contactStart){
-        $('#nav-grid').removeClass("light-colored-navbar hidden-fixed-nav").addClass("dark-colored-navbar fixed-nav");
+        $("#nav-grid").removeClass("light-colored-navbar hidden-fixed-nav").addClass("dark-colored-navbar fixed-nav");
+        $("#nav-item-4").removeClass("light-colored-navbar").addClass("dark-colored-navbar");
         $("ul li a.active-tab").removeClass('active-tab');
-        $('#contact-tab').addClass('active-tab');        
+        $("#contact-tab, #contact-tab_min").addClass('active-tab');        
     }
 });
 
@@ -64,12 +71,12 @@ $(function(){
     });
 });
 
-$("#nav-item-2 ul").on('click', '#home-tab', function(){
+$("#nav-item-2 ul, #nav-item-4 ul").on('click', '#home-tab', function(){
     $("ul li a.active-tab").removeClass('active-tab');
     $(this).addClass('active-tab');
 });
 
-$("#nav-item-2 ul").on('click', '#about-tab', function(){
+$("#nav-item-2 ul, #nav-item-4 ul").on('click', '#about-tab', function(){
     $("ul li a.active-tab").removeClass('active-tab');
     $(this).addClass('active-tab');
 });
@@ -79,17 +86,17 @@ $("#logo1").on('click', '#about-tab', function(){
     $(this).addClass('active-tab');
 });
 
-$("#nav-item-2 ul").on('click', '#work-tab', function(){
+$("#nav-item-2 ul, #nav-item-4 ul").on('click', '#work-tab', function(){
     $("ul li a.active-tab").removeClass('active-tab');
     $(this).addClass('active-tab');
 });
 
-$("#nav-item-2 ul").on('click', '#testimonials-tab', function(){
+$("#nav-item-2 ul, #nav-item-4 ul").on('click', '#testimonials-tab', function(){
     $("ul li a.active-tab").removeClass('active-tab');
     $(this).addClass('active-tab');
 });
 
-$("#nav-item-2 ul").on('click', '#contact-tab', function(){
+$("#nav-item-2 ul, #nav-item-4 ul").on('click', '#contact-tab', function(){
     $("ul li a.active-tab").removeClass('active-tab');
     $(this).addClass('active-tab');
 });

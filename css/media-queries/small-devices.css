@@ -17,26 +17,25 @@ html {
 }
 
 .hidden-fixed-nav {
-    top: -3.5rem;	
+    top: -3.8rem;	
 }
 
 #nav-item-1 {
     justify-content: flex-start;
-}
-
-#ctrl-container {
     padding-left: 19%;
 }
 
-#musicBtn.play {
-    animation:play-btn-min .6s ease; 
-
+#musicBtn {
     width:0; 
     height:0; 
     border-left:1rem solid grey; 
     border-top:.5rem solid transparent; 
     border-right:0 solid transparent; 
     border-bottom:.5rem solid transparent;
+}
+
+.play {
+    animation:play-btn-min .5s ease forwards; 
 }
 
 @-webkit-keyframes play-btn-min {
@@ -127,15 +126,8 @@ html {
     }
 }
 
-#musicBtn.pause {
-    animation:pause-btn-min .6s ease; 
-
-    width:.4rem; 
-    height: 1rem;; 
-    border-left:.3rem solid white; 
-    border-top:0 solid transparent; 
-    border-right:.3rem solid white; 
-    border-bottom:0 solid transparent;
+.pause {
+    animation:pause-btn-min .5s ease forwards;
 }
 
 @-webkit-keyframes pause-btn-min {
@@ -231,13 +223,17 @@ html {
 }
 
 #nav-item-3 {
-    display: flex;
     justify-content: flex-end;
+    padding-right: 19%;
 }
 
-#hamburger {
+#hamburger-menu-container {
 	display: flex;
-    }
+}
+
+#nav-item-4 {
+    display: grid;
+}
 
 /*										 SECTION 1: HOME / LANDING PAGE */
 #header-grid-item h1 {

@@ -4,18 +4,16 @@ const AudioContext = window.AudioContext || window.webkitAudioContext;
 const audioCtx = new AudioContext();
 
 var bgMusic = document.getElementById("bgMusic"),
-    musicBtn = document.getElementById("musicBtn"),
-    music = false;
-
+    musicBtn = document.getElementById("musicBtn");
 
 musicBtn.onclick = function() {
-    if (this.classList.contains("play")) {
-        this.classList.replace("play","pause");
-        bgMusic.play();
-    } else {
-        this.classList.replace("pause","play");
-        bgMusic.pause()
-    }
+        if (this.classList.contains("play")) {
+            this.classList.replace("play","pause");
+            bgMusic.play();
+        } else {
+            this.classList.replace("pause","play");
+            bgMusic.pause()
+        }
     };
 
 //click  sound effects
@@ -30,8 +28,29 @@ function clickEffect2() {
     clickSnd2.play();
 }
 
-//nagivation animation
-var nav = document.getElementById("nav-grid");
+//hamburger/dropdown menu
+var hamburgerIcon = document.getElementById("hamburgerIcon"),
+    hamburgerContainer = document.getElementById("hamburger-menu-container"),
+    hamMenuCont = document.getElementById("hamburger-menu-container"),
+    dropDownMenu = document.getElementById("nav-item-4"),
+    navGrid = document.getElementById("nav-grid");
+
+hamburgerContainer.onclick = function() {
+    if(hamburgerIcon.classList.contains("hamburger")) {
+        hamburgerIcon.classList.replace("hamburger", "times");
+        hamMenuCont.classList.replace("align-container-1", "align-container-2");
+        dropDownMenu.classList.replace("hidden-dropdown","unhidden-dropdown");
+        navGrid.classList.remove("shadow-filter-effect");
+    }else {
+        hamburgerIcon.classList.replace("times","hamburger");
+        hamMenuCont.classList.replace("align-container-2", "align-container-1");
+        dropDownMenu.classList.replace("unhidden-dropdown","hidden-dropdown");
+        navGrid.classList.add("shadow-filter-effect");
+    }
+};
+
+//close dropdown menu on window click
+
 
 /*SECTION 1: HOME / LANDING PAGE */
 
@@ -52,7 +71,6 @@ var modalOpener2 = document.getElementById("modalOpener2"),
     modalCloser2 = document.getElementById("modalCloser2"),
     modalContentWindow2 = document.getElementById("modalContentWindow2"),
     modalFullWindow2 = document.getElementById("modalFullWindow2");
-
 
 var body = document.getElementById("body");
 
@@ -105,8 +123,8 @@ window.onclick = function(event) {
         modalFullWindow2.classList.add("full-window-disappear");
         body.classList.remove("noscroll");
     }
-}
 
+}
 
 /*SECTION 4: TESTIMONIALS */
 

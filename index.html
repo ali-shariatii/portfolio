@@ -23,13 +23,13 @@
 <body id="body">
 <div id="content-wrapper">
 <!--NAVIGATION-->
-<div id="nav-grid" class="hidden-fixed-nav">
+<div id="nav-grid" class="hidden-fixed-nav shadow-filter-effect">
     <div id="nav-item-1">
         <audio id="clickSnd" src="snd/click.mp3"></audio>
         <audio id="clickSnd2" src="snd/click2.mp3"></audio>
         <audio id="bgMusic" src="snd/bg-music.mp3" loop></audio>
         <div id="ctrl-container" >
-            <div id="musicBtn" class="play"></div>
+            <div id="musicBtn"></div>
         </div>
     </div>
     <div id="nav-item-2">
@@ -44,19 +44,27 @@
     <div id="nav-item-3">
         <div id="nav-github"><a href="https://github.com/ali-shariatii/" target="_blank" class="fa fa-github" id="nav-github"></a></div>
         <!-- hamburger icon-->
-        <div id="hamburger">
-            <div></div>
-        </div>
+        <div id="hamburger-menu-container" class="align-container-1"><div id="hamburgerIcon" class="hamburger"></div></div>
     </div>
-    <!-- hamburger menu-->
-    <div id="nav-item-4">
-        <ul>
-            <li onclick="clickEffect2();"><div><a href="#home-grid" id="home-tab" class="active-tab">HOME</a></div></li>
-            <li onclick="clickEffect2();"><div><a href="#about-grid" id="about-tab">ABOUT</a></div></li> 
-            <li onclick="clickEffect2();"><div><a href="#work-grid" id="work-tab">WORK</a></div></li> 
-            <li onclick="clickEffect2();"><div><a href="#testimonials-grid" id="testimonials-tab">TESTIMONIALS</a></div></li> 
-            <li onclick="clickEffect2();"><div><a href="#contact-grid" id="contact-tab">CONTACT</a></div></li> 
-        </ul>
+    <!-- dropdown menu-->
+    <div id="nav-item-4" class="hidden-dropdown">
+        <div id=menu-min>
+            <ul>
+                <li onclick="clickEffect2();"><div><a href="#home-grid" id="home-tab_min" class="active-tab">HOME</a></div></li>
+                <li onclick="clickEffect2();"><div><a href="#about-grid" id="about-tab_min">ABOUT</a></div></li> 
+                <li onclick="clickEffect2();"><div><a href="#work-grid" id="work-tab_min">WORK</a></div></li> 
+                <li onclick="clickEffect2();"><div><a href="#testimonials-grid" id="testimonials-tab_min">TESTIMONIALS</a></div></li> 
+                <li onclick="clickEffect2();"><div><a href="#contact-grid" id="contact-tab_min">CONTACT</a></div></li> 
+            </ul>
+        </div>
+        <div id="social-media-min">
+            <ul>
+                <li><a href="mailto:info@alishariatii.com" class="fa fa-envelope"></a> 
+                <li><a href="https://github.com/ali-shariatii/" target="_blank" class="fa fa-github"></a></li>
+                <li><a href="https://www.linkedin.com/in/ali-shariatii/" target="_blank" class="fa fa-linkedin"></a></li>
+                <li><a href="https://stackoverflow.com/users/13517523/ali-shariati" target="_blank" class="fa fa-stack-overflow"></a></li></li>
+            </ul>
+        </div>
     </div>
 </div>
 
