@@ -78,7 +78,6 @@
 
 		/*music player controllers*/
 		#musicBtn {
-			display: block;
 			width:0; 
 			height:0; 
 			border-left:.64rem solid grey; 
@@ -92,10 +91,6 @@
 			-o-transition: all .5s ease; 
 			transition: all .5s ease;
 		}
-
-		#musicBtnMin {
-			display: none;
-		} 
 
 		.playBtn {
 			animation:play-btn .5s ease forwards; 
@@ -293,21 +288,7 @@
 			#ctrl-container {
 				cursor: pointer;
 			}
-
-		/*scaled music button for small screens*/
-		#musicBtnMin {display: none;width:0; height:0; border-left:1rem solid grey; border-top:.5rem solid transparent; border-right:0 solid transparent; border-bottom:.5rem solid transparent;}  
-		.playBtn { animation:play-btn-min .5s ease forwards; }
-		@-webkit-keyframes play-btn-min { from {transform:rotateZ(0deg); width:.4rem; height: 1rem; border-left:.3rem solid white; border-top:0 solid transparent; border-right:.3rem solid white; border-bottom:0 solid transparent;} to {transform:rotateZ(-360deg); width:0; height:0; border-left:1rem solid grey; border-top:.5rem solid transparent; border-right:0 solid transparent; border-bottom:.5rem solid transparent;}}
-		@-moz-keyframes play-btn-min { from {transform:rotateZ(0deg); width:.4rem; height: 1rem; border-left:.3rem solid white; border-top:0 solid transparent; border-right:.3rem solid white; border-bottom:0 solid transparent;} to {transform:rotateZ(-360deg); width:0; height:0; border-left:1rem solid grey; border-top:.5rem solid transparent; border-right:0 solid transparent; border-bottom:.5rem solid transparent;}}
-		@-o-keyframes play-btn-min { from {transform:rotateZ(0deg); width:.4rem; height: 1rem; border-left:.3rem solid white; border-top:0 solid transparent; border-right:.3rem solid white; border-bottom:0 solid transparent;} to {transform:rotateZ(-360deg); width:0; height:0; border-left:1rem solid grey; border-top:.5rem solid transparent; border-right:0 solid transparent; border-bottom:.5rem solid transparent;}}
-		@keyframes play-btn-min { from {transform:rotateZ(0deg); width:.4rem; height: 1rem; border-left:.3rem solid white; border-top:0 solid transparent; border-right:.3rem solid white; border-bottom:0 solid transparent;} to {transform:rotateZ(-360deg); width:0; height:0; border-left:1rem solid grey; border-top:.5rem solid transparent; border-right:0 solid transparent; border-bottom:.5rem solid transparent;}}
-		.pauseBtn {animation:pause-btn-min .5s ease forwards;}
-		@-webkit-keyframes pause-btn-min {from {transform:rotateZ(0deg); width:0; height:0; border-left:1rem solid grey; border-top:.5rem solid transparent; border-right:0 solid transparent; border-bottom:.5rem solid transparent;}to {transform:rotateZ(360deg); width:.4rem; height: 1rem; border-left:.3rem solid white; border-top:0 solid transparent; border-right:.3rem solid white; border-bottom:0 solid transparent;}}
-		@-moz-keyframes pause-btn-min {from {transform:rotateZ(0deg); width:0; height:0; border-left:1rem solid grey; border-top:.5rem solid transparent; border-right:0 solid transparent; border-bottom:.5rem solid transparent;}to {transform:rotateZ(360deg); width:.4rem; height: 1rem; border-left:.3rem solid white; border-top:0 solid transparent; border-right:.3rem solid white; border-bottom:0 solid transparent;}}
-		@-o-keyframes pause-btn-min {from {transform:rotateZ(0deg); width:0; height:0; border-left:1rem solid grey; border-top:.5rem solid transparent; border-right:0 solid transparent; border-bottom:.5rem solid transparent;}to {transform:rotateZ(360deg); width:.4rem; height: 1rem; border-left:.3rem solid white; border-top:0 solid transparent; border-right:.3rem solid white; border-bottom:0 solid transparent;}}
-		@keyframes pause-btn-min {from {transform:rotateZ(0deg); width:0; height:0; border-left:1rem solid grey; border-top:.5rem solid transparent; border-right:0 solid transparent; border-bottom:.5rem solid transparent;}to {transform:rotateZ(360deg); width:.4rem; height: 1rem; border-left:.3rem solid white; border-top:0 solid transparent; border-right:.3rem solid white; border-bottom:0 solid transparent;}}
-
-
+			
 	#nav-item-2 {
 		display: flex;
 		justify-content: center;
@@ -397,7 +378,7 @@
 		}
 
 			.align-container-1 {
-				padding-top: .21rem;
+				padding-top: .3rem;
 			}
 
 			.align-container-2 {
@@ -405,9 +386,10 @@
 			}
 
 			#hamburger-menu-container > div.hamburger{
-				height: .25rem;
-				width: 1.4rem;
+				height: .17rem;
+				width: 1.3rem;
 				background-color: grey;
+				margin-bottom: -.08rem;
 
 				-webkit-transition: all .4s ease;
 				-moz-transition: all .4s ease;
@@ -419,10 +401,11 @@
 				#hamburger-menu-container > div.hamburger::after {
 					content: "";
 					position: absolute;
-					height: .25rem;
-					width: 1.4rem;
+					height: .17rem;
+					width: 1.3rem;
 					background-color: grey;
 					transform: translateY(.6rem);
+					margin-top: -.08rem;
 
 					-webkit-transition: all .4s ease;
 					-moz-transition: all .4s ease;
@@ -433,8 +416,8 @@
 
 
 				#hamburger-menu-container > div.times {
-					height: .25rem;
-					width: 1.5rem;
+					height: .17rem;
+					width: 1.3rem;
 					background-color: white;
 					transform: rotateZ(225deg);
 
@@ -448,8 +431,8 @@
 					#hamburger-menu-container > div.times::after {
 						content: "";
 						position: absolute;
-						height: .25rem;
-						width: 1.5rem;
+						height: .17rem;
+						width: 1.3rem;
 						background-color: white;
 						transform: rotateZ(90deg);
 
@@ -464,7 +447,7 @@
 			#nav-item-4 {
 				display: none;
 				width: 100vw;
-				height: 100vh;
+				height: 101vh;
 				grid-template-rows: 80% 20%;
 				position:absolute;
 				z-index: -1;
@@ -505,7 +488,7 @@
 						}
 
 							#social-media-min a{
-								font-size: 1.5rem;
+								font-size: 1.3rem;
 							}
 
 		#nav-github:visited, #social-media-min a:visited  { text-decoration: none; color: grey ;}

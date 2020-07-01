@@ -170,7 +170,7 @@
                     @-moz-keyframes fullWindowDisappear {0% {left: 0; opacity: 1;} 75% {left: 0; opacity: 1;} 76% {left: 0; opacity: 0;} 100% {left: -100%; opacity: 0;} }
                     @-o-keyframes fullWindowDisappear {0% {left: 0; opacity: 1;} 75% {left: 0; opacity: 1;} 76% {left: 0; opacity: 0;} 100% {left: -100%; opacity: 0;} }
                     @keyframes fullWindowDisappear {0% {left: 0; opacity: 1;} 75% {left: 0; opacity: 1;} 76% {left: 0; opacity: 0;} 100% {left: -100%; opacity: 0;} }
-/*************** NOT RESPONSIVE ***************/
+
                     /*This is modal content window.*/
                     .modal-content-window {
                         margin: auto;

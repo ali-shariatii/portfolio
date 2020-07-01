@@ -86,7 +86,7 @@ $("#nav-item-4 ul li").click(function() {
 
 $(window).on('resize', function(){
     var win = $(this); 
-    if (win.width() >= 800) { /*set this number to a size that hamburger menu is set to display none*/
+    if (win.width() > 991.98) { /*set this number to a size that hamburger menu is set to display none*/
         $("#nav-item-4").removeClass("unhidden-dropdown").addClass("hidden-dropdown");
         $("#hamburger-menu-container").removeClass("align-container-2").addClass("align-container-1");
         $("#hamburger-menu-container div").removeClass("times").addClass("hamburger");

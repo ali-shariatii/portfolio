@@ -5,7 +5,6 @@ const audioCtx = new AudioContext();
 
 var bgMusic = document.getElementById("bgMusic"),
     musicBtn = document.getElementById("musicBtn"),
-    musicBtnMin = document.getElementById("musicBtnMin"),
     music = false;
 
 function toggleMusic() {
@@ -19,16 +18,12 @@ function toggleMusic() {
 bgMusic.onplaying = function() {
     musicBtn.classList.remove("playBtn");
     musicBtn.classList.add("pauseBtn");
-    musicBtnMin.classList.remove("playBtn");
-    musicBtnMin.classList.add("pauseBtn");
     music = true;
 };
 
 bgMusic.onpause = function() {
     musicBtn.classList.remove("pauseBtn");
     musicBtn.classList.add("playBtn");
-    musicBtnMin.classList.remove("pauseBtn");
-    musicBtnMin.classList.add("playBtn");
     music = false;
 };
 

@@ -43,7 +43,7 @@
         #form-grid {
             display: grid;
             grid-template-columns: repeat(2, 43.27%);
-            grid-auto-columns: 43.27%;
+            grid-auto-columns: 43.27% 43.27%;
             grid-template-rows: repeat(4, auto);
             gap: 1.06rem;
             justify-content: center;
