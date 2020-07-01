@@ -4,17 +4,33 @@ const AudioContext = window.AudioContext || window.webkitAudioContext;
 const audioCtx = new AudioContext();
 
 var bgMusic = document.getElementById("bgMusic"),
-    musicBtn = document.getElementById("musicBtn");
+    musicBtn = document.getElementById("musicBtn"),
+    musicBtnMin = document.getElementById("musicBtnMin"),
+    music = false;
 
-musicBtn.onclick = function() {
-        if (this.classList.contains("play")) {
-            this.classList.replace("play","pause");
-            bgMusic.play();
-        } else {
-            this.classList.replace("pause","play");
-            bgMusic.pause()
-        }
-    };
+function toggleMusic() {
+    if (music) {
+        bgMusic.pause()
+    } else {
+        bgMusic.play();
+    }
+};
+
+bgMusic.onplaying = function() {
+    musicBtn.classList.remove("playBtn");
+    musicBtn.classList.add("pauseBtn");
+    musicBtnMin.classList.remove("playBtn");
+    musicBtnMin.classList.add("pauseBtn");
+    music = true;
+};
+
+bgMusic.onpause = function() {
+    musicBtn.classList.remove("pauseBtn");
+    musicBtn.classList.add("playBtn");
+    musicBtnMin.classList.remove("pauseBtn");
+    musicBtnMin.classList.add("playBtn");
+    music = false;
+};
 
 //click  sound effects
 var clickSnd = document.getElementById("clickSnd"),
@@ -48,9 +64,6 @@ hamburgerContainer.onclick = function() {
         navGrid.classList.add("shadow-filter-effect");
     }
 };
-
-//close dropdown menu on window click
-
 
 /*SECTION 1: HOME / LANDING PAGE */
 

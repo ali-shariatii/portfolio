@@ -1,367 +1,540 @@
-/* xxsmall */
-@media only screen and (max-width: 575.98px) {
-/*                                       GLOBAL SETTINGS */
-html { 
-    font-size: 100%; 
-}
 
-/*                                       NAVIGATION */
-#nav-grid {
-	grid-template-columns: repeat(2, 50%);
-    grid-auto-columns: repeat(2, 50%);
-    height: 3.4rem;
-}
+/**************************************** small to large phones portrait mode **********************************************************************************************************************************/
+@media only screen and (max-width: 600.1px) /*and (orientation: portrait) and (min-aspect-ratio: 9/23) and (max-aspect-ratio: 3/4) */{
+    #about-grid {background-color: black;}
+    header {background-color: black;}
+/*******************/
+/* GLOBAL SETTINGS */
+/*******************/
 
-.fixed-nav {
-    top: -.1rem;
-}
+html { font-size: 4.1vw; }
 
-.hidden-fixed-nav {
-    top: -3.8rem;	
-}
+/**************/   
+/* NAVIGATION */
+/**************/
 
-#nav-item-1 {
-    justify-content: flex-start;
-    padding-left: 19%;
-}
+/*navigation layout for small screens*/
+#nav-grid { grid-template-columns: repeat(2, 50%); grid-auto-columns: repeat(2, 50%); height: 3rem;}
 
-#musicBtn {
-    width:0; 
-    height:0; 
-    border-left:1rem solid grey; 
-    border-top:.5rem solid transparent; 
-    border-right:0 solid transparent; 
-    border-bottom:.5rem solid transparent;
-}
+/*left-adjustable music button outter container*/
+#nav-item-1 { justify-content: flex-start; padding-left: 19%; }
+/*original size music button*/
+#musicBtn {display: none;} 
+/*scaled music button for small screens*/
+#musicBtnMin {display: block}
+/*middle navbar menu + right-github icon for large screens*/
+#nav-item-2, #nav-github {display: none;}
 
-.play {
-    animation:play-btn-min .5s ease forwards; 
-}
+/*hamburger menu outter container*/
+#nav-item-3 {justify-content: flex-end; padding-right: 19%;}
+/*hamburger menu inner container*/
+#hamburger-menu-container {display: flex;}
+/*dropdown menu*/
+#nav-item-4 {display: grid;}
+#nav-item-4 ul li {font-size: 1.4rem;line-height: 7vh;}
 
-@-webkit-keyframes play-btn-min {
-    from {
-        transform:rotateZ(0deg); 
-        width:.4rem; 
-        height: 1rem; 
-        border-left:.3rem solid white; 
-        border-top:0 solid transparent; 
-        border-right:.3rem solid white; 
-        border-bottom:0 solid transparent;
-    }
+/**********************************/
+/* SECTION 1: HOME / LANDING PAGE */
+/**********************************/
 
-    to {
-        transform:rotateZ(-360deg); 
-        width:0; 
-        height:0; 
-        border-left:1rem solid grey; 
-        border-top:.5rem solid transparent; 
-        border-right:0 solid transparent; 
-        border-bottom:.5rem solid transparent;
-    }
-}
+/*header size proportions for small screens*/
+#header-grid-item h1 {font-size: 1.77rem;letter-spacing: 1.024rem;font-weight: 500;padding-left: 1.024rem; padding-right: 0;padding-top: 0;}
+#header-grid-item h1 a {margin: 0 1.024rem 0 0;}
+#logo1, #logo2 {height: 1.29rem;}
+#header-grid-item h3 {font-size: .8rem;letter-spacing: .22rem;margin-left: .3rem;font-weight: 500;margin-top: -2.3rem;}
 
-@-moz-keyframes play-btn-min {
-    from {
-        transform:rotateZ(0deg); 
-        width:.4rem; 
-        height: 1rem; 
-        border-left:.3rem solid white; 
-        border-top:0 solid transparent; 
-        border-right:.3rem solid white; 
-        border-bottom:0 solid transparent;
-    }
+/***********************/
+/* SOCIAL MEDIA WINDOW */
+/***********************/
 
-    to {
-        transform:rotateZ(-360deg); 
-        width:0; 
-        height:0; 
-        border-left:1rem solid grey; 
-        border-top:.5rem solid transparent; 
-        border-right:0 solid transparent; 
-        border-bottom:.5rem solid transparent;
-    }
-}
+#media-container {display: none;}
 
-@-o-keyframes play-btn-min {
-    from {
-        transform:rotateZ(0deg); 
-        width:.4rem; 
-        height: 1rem; 
-        border-left:.3rem solid white; 
-        border-top:0 solid transparent; 
-        border-right:.3rem solid white; 
-        border-bottom:0 solid transparent;
-    }
+/********************/
+/* SECTION 2: ABOUT */
+/********************/
 
-    to {
-        transform:rotateZ(-360deg); 
-        width:0; 
-        height:0; 
-        border-left:1rem solid grey; 
-        border-top:.5rem solid transparent; 
-        border-right:0 solid transparent; 
-        border-bottom:.5rem solid transparent;
-    }
-}
+/*layout for small screens*/
+#about-grid-item-2 {display: grid;grid-template-columns: 81%;grid-auto-columns: 81%;grid-template-rows: repeat(3, auto);justify-content: space-evenly;align-items: stretch;row-gap: 1.1rem;}
+#about-grid-item-3 {display: grid;justify-content: center;padding: 2rem 0 0 0;grid-template-columns: 74%;grid-auto-columns: 7%;}
+#about-grid-item-3 p {text-align: center;}
+#about-grid-item-4 {justify-content: space-evenly;}
 
-@keyframes play-btn-min {
-    from {
-        transform:rotateZ(0deg); 
-        width:.4rem; 
-        height: 1rem; 
-        border-left:.3rem solid white; 
-        border-top:0 solid transparent; 
-        border-right:.3rem solid white; 
-        border-bottom:0 solid transparent;
-    }
+/*******************/
+/* SECTION 3: WORK */
+/*******************/
 
-    to {
-        transform:rotateZ(-360deg); 
-        width:0; 
-        height:0; 
-        border-left:1rem solid grey; 
-        border-top:.5rem solid transparent; 
-        border-right:0 solid transparent; 
-        border-bottom:.5rem solid transparent;
-    }
-}
+/*layout for small screens*/
+#work-grid-item-3 {grid-template-columns: 81%;grid-auto-columns: 81%;grid-template-rows: repeat(2, auto); /*add more auto after adding more work to gallery*/gap: 1.1rem;}
 
-.pause {
-    animation:pause-btn-min .5s ease forwards;
-}
+/***************************/
+/* SECTION 4: TESTIMONIALS */
+/***************************/
 
-@-webkit-keyframes pause-btn-min {
-    from {
-        transform:rotateZ(0deg); 
-        width:0; 
-        height:0; 
-        border-left:1rem solid grey; 
-        border-top:.5rem solid transparent; 
-        border-right:0 solid transparent; 
-        border-bottom:.5rem solid transparent;
-    }
+/*layout for small screens*/
+#testimonials-grid-item-2 {grid-template-columns: 81%;grid-auto-columns: 81%;grid-template-rows: repeat(4, auto);gap: 1.1rem;}
+#recom-item-4 {grid-area: 4 / 1 / 5 / 2;}
 
-    to {
-        transform:rotateZ(360deg); 
-        width:.4rem; 
-        height: 1rem; 
-        border-left:.3rem solid white; 
-        border-top:0 solid transparent; 
-        border-right:.3rem solid white; 
-        border-bottom:0 solid transparent;
-    }
-}
+/**********************/
+/* SECTION 5: CONTACT */
+/**********************/
 
-@-moz-keyframes pause-btn-min {
-    from {
-        transform:rotateZ(0deg); 
-        width:0; 
-        height:0; 
-        border-left:1rem solid grey; 
-        border-top:.5rem solid transparent; 
-        border-right:0 solid transparent; 
-        border-bottom:.5rem solid transparent;
-    }
+/*layout for small screens*/
+#form-grid{ grid-template-columns: 81%;grid-auto-columns: 81%;grid-template-rows: repeat(7, auto);gap: 1.1rem;}
+#form-grid-item-5 {grid-area: 5 / 1 / 7 / 2;}
+textarea {min-height: 6rem;resize: vertical;}
+#form-grid-item-6 {grid-area: 7 / 1 / 8 / 2;}   
 
-    to {
-        transform:rotateZ(360deg); 
-        width:.4rem; 
-        height: 1rem; 
-        border-left:.3rem solid white; 
-        border-top:0 solid transparent; 
-        border-right:.3rem solid white; 
-        border-bottom:0 solid transparent;
-    }
-}
+/*********************/
+/* SECTION 6: FOOTER */
+/*********************/
 
-@-o-keyframes pause-btn-min {
-    from {
-        transform:rotateZ(0deg); 
-        width:0; 
-        height:0; 
-        border-left:1rem solid grey; 
-        border-top:.5rem solid transparent; 
-        border-right:0 solid transparent; 
-        border-bottom:.5rem solid transparent;
-    }
-
-    to {
-        transform:rotateZ(360deg); 
-        width:.4rem; 
-        height: 1rem; 
-        border-left:.3rem solid white; 
-        border-top:0 solid transparent; 
-        border-right:.3rem solid white; 
-        border-bottom:0 solid transparent;
-    }
-}
-
-@keyframes pause-btn-min {
-    from {
-        transform:rotateZ(0deg); 
-        width:0; 
-        height:0; 
-        border-left:1rem solid grey; 
-        border-top:.5rem solid transparent; 
-        border-right:0 solid transparent; 
-        border-bottom:.5rem solid transparent;
-    }
-
-    to {
-        transform:rotateZ(360deg); 
-        width:.4rem; 
-        height: 1rem; 
-        border-left:.3rem solid white; 
-        border-top:0 solid transparent; 
-        border-right:.3rem solid white; 
-        border-bottom:0 solid transparent;
-    }
-}
-
-#nav-item-2, #nav-github {
-    display: none;
-}
-
-#nav-item-3 {
-    justify-content: flex-end;
-    padding-right: 19%;
-}
-
-#hamburger-menu-container {
-	display: flex;
-}
-
-#nav-item-4 {
-    display: grid;
-}
-
-/*										 SECTION 1: HOME / LANDING PAGE */
-#header-grid-item h1 {
-    font-size: 1.77rem;
-    letter-spacing: 1.024rem;
-    font-weight: 500;
-    padding-left: 1.024rem;
-    padding-right: 0;
-    padding-top: 0;
-}
-
-#header-grid-item h1 a {
-    margin: 0 1.024rem 0 0;
-}
-
-#logo1, #logo2 {
-    height: 1.29rem;
-}
-
-#header-grid-item h3 {
-    font-size: .1rem;
-    letter-spacing: .3rem;
-    margin-left: .3rem;
-    font-weight: 500;
-    margin-top: -2.5rem;
-}
-
-/*										 SOCIAL MEDIA WINDOW */
-#media-container {
-    display: none;
-}
-
-/*                                       SECTION 2: ABOUT */
-#about-grid-item-2 {
-    display: grid;
-    grid-template-columns: 81%;
-    grid-auto-columns: 81%;
-    grid-template-rows: repeat(3, auto);
-    justify-content: space-evenly;
-    align-items: stretch;
-    row-gap: 1.1rem;
-}
-
-#about-grid-item-3 {
-    display: grid;
-    justify-content: center;
-    padding: 2rem 0 0 0;
-    grid-template-columns: 74%;
-    grid-auto-columns: 7%;
+/*scaled font size for sall screens*/
+footer {padding: 3rem 0;}
+#footer-grid-item-1 p {font-size: 1rem;letter-spacing: .01rem;}
+#footer-grid-item-2 { margin-top: .2rem;font-size: .8rem;}
 
 }
 
-#about-grid-item-3 p {
-    text-align: center;
+/**************************************** small phones lansdcape mode **********************************************************************************************************************************/
+@media only screen and (max-width: 500.1px) /*and (orientation: landscape) and (min-aspect-ratio: 1/1) and (max-aspect-ratio: 4/3)*/{ 
+    #about-grid {background-color: brown;}
+    header {background-color: brown;}
+
+/*******************/
+/* GLOBAL SETTINGS */
+/*******************/
+
+html { font-size: 3.2vw; }
+
+/**************/   
+/* NAVIGATION */
+/**************/
+
+/*navigation layout for small screens*/
+#nav-grid { grid-template-columns: repeat(2, 50%); grid-auto-columns: repeat(2, 50%); height: 2.9rem;}
+
+/*left-adjustable music button outter container*/
+#nav-item-1 { justify-content: flex-start; padding-left: 19%; }
+/*original size music button*/
+#musicBtn {display: none;} 
+/*scaled music button for small screens*/
+#musicBtnMin {display: block}
+/*middle navbar menu + right-github icon for large screens*/
+#nav-item-2, #nav-github {display: none;}
+
+/*hamburger menu outter container*/
+#nav-item-3 {justify-content: flex-end; padding-right: 19%;}
+/*hamburger menu inner container*/
+#hamburger-menu-container {display: flex;}
+/*dropdown menu*/
+#nav-item-4 {display: grid;}
+#nav-item-4 ul li {font-size: 1.1rem;line-height: 12vh;}
+
+/**********************************/
+/* SECTION 1: HOME / LANDING PAGE */
+/**********************************/
+
+/*header size proportions for small screens*/
+#header-grid-item h1 {font-size: 1.77rem;letter-spacing: 1.024rem;font-weight: 500;padding-left: 1.024rem; padding-right: 0;padding-top: 0;}
+#header-grid-item h1 a {margin: 0 1.024rem 0 0;}
+#logo1, #logo2 {height: 1.29rem;}
+#header-grid-item h3 {font-size: .8rem;letter-spacing: .22rem;margin-left: .3rem;font-weight: 500;margin-top: -2.3rem;}
+
+/***********************/
+/* SOCIAL MEDIA WINDOW */
+/***********************/
+
+#media-container {display: none;}
+
+/********************/
+/* SECTION 2: ABOUT */
+/********************/
+
+/*layout for small screens*/
+#about-grid-item-2 {display: grid;grid-template-columns: 81%;grid-auto-columns: 81%;grid-template-rows: repeat(3, auto);justify-content: space-evenly;align-items: stretch;row-gap: 1.1rem;}
+#about-grid-item-3 {display: grid;justify-content: center;padding: 2rem 0 0 0;grid-template-columns: 74%;grid-auto-columns: 7%;}
+#about-grid-item-3 p {text-align: center;}
+#about-grid-item-4 {justify-content: space-evenly;}
+
+/*******************/
+/* SECTION 3: WORK */
+/*******************/
+
+/*layout for small screens*/
+#work-grid-item-3 {grid-template-columns: 81%;grid-auto-columns: 81%;grid-template-rows: repeat(2, auto); /*add more auto after adding more work to gallery*/gap: 1.1rem;}
+
+/***************************/
+/* SECTION 4: TESTIMONIALS */
+/***************************/
+
+/*layout for small screens*/
+#testimonials-grid-item-2 {grid-template-columns: 81%;grid-auto-columns: 81%;grid-template-rows: repeat(4, auto);gap: 1.1rem;}
+#recom-item-4 {grid-area: 4 / 1 / 5 / 2;}
+
+/**********************/
+/* SECTION 5: CONTACT */
+/**********************/
+
+/*layout for small screens*/
+#form-grid{ grid-template-columns: 81%;grid-auto-columns: 81%;grid-template-rows: repeat(7, auto);gap: 1.1rem;}
+#form-grid-item-5 {grid-area: 5 / 1 / 7 / 2;}
+textarea {min-height: 6rem;resize: vertical;}
+#form-grid-item-6 {grid-area: 7 / 1 / 8 / 2;}   
+
+/*********************/
+/* SECTION 6: FOOTER */
+/*********************/
+
+/*scaled font size for sall screens*/
+footer {padding: 3rem 0;}
+#footer-grid-item-1 p {font-size: 1rem;letter-spacing: .01rem;}
+#footer-grid-item-2 { margin-top: .2rem;font-size: .8rem;}
+
 }
 
-#about-grid-item-4 {
-    justify-content: space-evenly;
+/**************************************** medium to large phones lansdcape mode **********************************************************************************************************************************/
+@media only screen and (max-width: 900.1px) /*and (orientation: landscape) and (min-aspect-ratio: 16/9)*/{
+    #about-grid {background-color: blue;}
+    header {background-color: blue;}
+/*******************/
+/* GLOBAL SETTINGS */
+/*******************/
+
+html { font-size: 3.2vw; }
+
+/**************/   
+/* NAVIGATION */
+/**************/
+
+/*navigation layout for small screens*/
+#nav-grid { grid-template-columns: repeat(2, 50%); grid-auto-columns: repeat(2, 50%); height: 2rem;}
+
+/*left-adjustable music button outter container*/
+#nav-item-1 { justify-content: flex-start; padding-left: 19%; }
+/*original size music button*/
+#musicBtn {display: none;} 
+/*scaled music button for small screens*/
+#musicBtnMin {display: block}
+/*middle navbar menu + right-github icon for large screens*/
+#nav-item-2, #nav-github {display: none;}
+
+/*hamburger menu outter container*/
+#nav-item-3 {justify-content: flex-end; padding-right: 19%;}
+/*hamburger menu inner container*/
+#hamburger-menu-container {display: flex;}
+/*dropdown menu*/
+#nav-item-4 {display: grid;}
+#nav-item-4 ul li {font-size: 1.1rem;line-height: 12vh;}
+
+/**********************************/
+/* SECTION 1: HOME / LANDING PAGE */
+/**********************************/
+
+/*header size proportions for small screens*/
+#header-grid-item h1 {font-size: 1.77rem;letter-spacing: 1.024rem;font-weight: 500;padding-left: 1.024rem; padding-right: 0;padding-top: 0;}
+#header-grid-item h1 a {margin: 0 1.024rem 0 0;}
+#logo1, #logo2 {height: 1.29rem;}
+#header-grid-item h3 {font-size: .8rem;letter-spacing: .22rem;margin-left: .3rem;font-weight: 500;margin-top: -2.3rem;}
+
+/***********************/
+/* SOCIAL MEDIA WINDOW */
+/***********************/
+
+#media-container {display: none;}
+
+/********************/
+/* SECTION 2: ABOUT */
+/********************/
+
+/*layout for small screens*/
+#about-grid-item-2 {display: grid;grid-template-columns: 81%;grid-auto-columns: 81%;grid-template-rows: repeat(3, auto);justify-content: space-evenly;align-items: stretch;row-gap: 1.1rem;}
+#about-grid-item-3 {display: grid;justify-content: center;padding: 2rem 0 0 0;grid-template-columns: 74%;grid-auto-columns: 7%;}
+#about-grid-item-3 p {text-align: center;}
+#about-grid-item-4 {justify-content: space-evenly;}
+
+/*******************/
+/* SECTION 3: WORK */
+/*******************/
+
+/*layout for small screens*/
+#work-grid-item-3 {grid-template-columns: 81%;grid-auto-columns: 81%;grid-template-rows: repeat(2, auto); /*add more auto after adding more work to gallery*/gap: 1.1rem;}
+
+/***************************/
+/* SECTION 4: TESTIMONIALS */
+/***************************/
+
+/*layout for small screens*/
+#testimonials-grid-item-2 {grid-template-columns: 81%;grid-auto-columns: 81%;grid-template-rows: repeat(4, auto);gap: 1.1rem;}
+#recom-item-4 {grid-area: 4 / 1 / 5 / 2;}
+
+/**********************/
+/* SECTION 5: CONTACT */
+/**********************/
+
+/*layout for small screens*/
+#form-grid{ grid-template-columns: 81%;grid-auto-columns: 81%;grid-template-rows: repeat(7, auto);gap: 1.1rem;}
+#form-grid-item-5 {grid-area: 5 / 1 / 7 / 2;}
+textarea {min-height: 6rem;resize: vertical;}
+#form-grid-item-6 {grid-area: 7 / 1 / 8 / 2;}   
+
+/*********************/
+/* SECTION 6: FOOTER */
+/*********************/
+
+/*scaled font size for sall screens*/
+footer {padding: 3rem 0;}
+#footer-grid-item-1 p {font-size: 1rem;letter-spacing: .01rem;}
+#footer-grid-item-2 { margin-top: .2rem;font-size: .8rem;}
+
 }
 
-/*                                       SECTION 3: WORK */
-#work-grid-item-3 {
-    grid-template-columns: 81%;
-    grid-auto-columns: 81%;
-    grid-template-rows: repeat(2, auto); /*add more auto after adding more work to gallery*/
-    gap: 1.1rem;
+/**************************************** small tablets portrait mode *********************************************************************************************************************************/
+@media only screen and (max-width: 768.1px)/* and (orientation: portrait) and (min-aspect-ratio: 10/16) and (max-aspect-ratio: 3/4)*/{
+    #about-grid {background-color: green;}
+    header {background-color: green;}
+/*******************/
+/* GLOBAL SETTINGS */
+/*******************/
+
+html { font-size: 3.2vw; }
+
+/**************/   
+/* NAVIGATION */
+/**************/
+
+/*navigation layout for small screens*/
+#nav-grid { grid-template-columns: repeat(2, 50%); grid-auto-columns: repeat(2, 50%); height: 2.1rem;}
+
+/*left-adjustable music button outter container*/
+#nav-item-1 { justify-content: flex-start; padding-left: 19%; }
+/*original size music button*/
+#musicBtn {display: block;} 
+/*scaled music button for small screens*/
+#musicBtnMin {display: none;}
+/*middle navbar menu + right-github icon for large screens*/
+#nav-item-2, #nav-github {display: none;}
+/*hamburger menu outter container*/
+#nav-item-3 {justify-content: flex-end; padding-right: 19%;}
+/*hamburger menu inner container*/
+#hamburger-menu-container {display: flex;}
+#hamburger-menu-container > div.hamburger, #hamburger-menu-container > div.hamburger::after, #hamburger-menu-container > div.times, #hamburger-menu-container > div.times::after {height: .2rem; width: 1.1rem;}
+/*dropdown menu*/
+#nav-item-4 {display: grid;}
+#nav-item-4 ul li {font-size: 1.1rem;line-height: 7vh;}
+
+/**********************************/
+/* SECTION 1: HOME / LANDING PAGE */
+/**********************************/
+
+/*header size proportions for small screens*/
+#header-grid-item h1 {font-size: calc(1.24 * 1.77rem);letter-spacing: calc(1.24 * 1.024rem);font-weight: 500;padding-left: calc(1.24 * 1.024rem); padding-right: 0;padding-top: 0;}
+#header-grid-item h1 a {margin: 0 calc(1.24 * 1.024rem) 0 0;}
+#logo1, #logo2 {height: calc(1.24 * 1.29rem);}
+#header-grid-item h3 {font-size: calc(1.24 * .8rem);letter-spacing: calc(1.24 * .22rem);margin-left: calc(1.24 * .3rem);font-weight: 500;margin-top: calc(1.24 * -2.3rem);}
+
+/***********************/
+/* SOCIAL MEDIA WINDOW */
+/***********************/
+
+#media-container {display: none;}
+
+/********************/
+/* SECTION 2: ABOUT */
+/********************/
+
+/*layout for small screens*/
+#about-grid-item-2 {display: grid;grid-template-columns: 81%;grid-auto-columns: 81%;grid-template-rows: repeat(3, auto);justify-content: space-evenly;align-items: stretch;row-gap: 1.1rem;}
+#about-grid-item-3 {display: grid;justify-content: center;padding: 2rem 0 0 0;grid-template-columns: 74%;grid-auto-columns: 7%;}
+#about-grid-item-3 p {text-align: center;}
+#about-grid-item-4 {justify-content: space-evenly;}
+
+/*******************/
+/* SECTION 3: WORK */
+/*******************/
+
+/*layout for small screens*/
+#work-grid-item-3 {grid-template-columns: 81%;grid-auto-columns: 81%;grid-template-rows: repeat(2, auto); /*add more auto after adding more work to gallery*/gap: 1.1rem;}
+
+/***************************/
+/* SECTION 4: TESTIMONIALS */
+/***************************/
+
+/*layout for small screens*/
+#testimonials-grid-item-2 {grid-template-columns: 81%;grid-auto-columns: 81%;grid-template-rows: repeat(4, auto);gap: 1.1rem;}
+#recom-item-4 {grid-area: 4 / 1 / 5 / 2;}
+
+/**********************/
+/* SECTION 5: CONTACT */
+/**********************/
+
+/*layout for small screens*/
+#form-grid{ grid-template-columns: 81%;grid-auto-columns: 81%;grid-template-rows: repeat(7, auto);gap: 1.1rem;}
+#form-grid-item-5 {grid-area: 5 / 1 / 7 / 2;}
+textarea {min-height: 6rem;resize: vertical;}
+#form-grid-item-6 {grid-area: 7 / 1 / 8 / 2;}   
+
+/*********************/
+/* SECTION 6: FOOTER */
+/*********************/
+
+/*scaled font size for sall screens*/
+footer {padding: 3rem 0;}
+#footer-grid-item-1 p {font-size: 1rem;letter-spacing: .01rem;}
+#footer-grid-item-2 { margin-top: .2rem;font-size: .8rem;}
+
 }
 
-/*                                       SECTION 4: TESTIMONIALS */
-#testimonials-grid-item-2 {
-    grid-template-columns: 81%;
-    grid-auto-columns: 81%;
-    grid-template-rows: repeat(4, auto);
-    gap: 1.1rem;
+/**************************************** medium/large tablets portrait mode **********************************************************************************************************************************/
+@media only screen and (max-width: 900.1px)/* and (orientation: portrait) and (min-aspect-ratio: 10/16) and (max-aspect-ratio: 3/4)*/{ 
+    #about-grid {background-color: red;}
+    header {background-color: red;}
+/*******************/
+/* GLOBAL SETTINGS */
+/*******************/
+
+html { font-size: 3vw; }
+
+/**************/   
+/* NAVIGATION */
+/**************/
+
+/*navigation layout for small screens*/
+#nav-grid { grid-template-columns: repeat(2, 50%); grid-auto-columns: repeat(2, 50%); height: 2.4rem;}
+
+/*left-adjustable music button outter container*/
+#nav-item-1 { justify-content: flex-start; padding-left: 19%; }
+/*original size music button*/
+#musicBtn {display: block;} 
+/*scaled music button for small screens*/
+#musicBtnMin {display: none;}
+/*middle navbar menu + right-github icon for large screens*/
+#nav-item-2, #nav-github {display: none;}
+
+/*hamburger menu outter container*/
+#nav-item-3 {justify-content: flex-end; padding-right: 19%;}
+/*hamburger menu inner container*/
+#hamburger-menu-container {display: flex;}
+#hamburger-menu-container > div.hamburger, #hamburger-menu-container > div.hamburger::after, #hamburger-menu-container > div.times, #hamburger-menu-container > div.times::after {height: .2rem; width: 1.4rem;}
+/*dropdown menu*/
+#nav-item-4 {display: grid;}
+#nav-item-4 ul li {font-size: 1.1rem;line-height: 7vh;}
+
+/**********************************/
+/* SECTION 1: HOME / LANDING PAGE */
+/**********************************/
+
+/*header size proportions for small screens*/
+#header-grid-item h1 {font-size: calc(1.24 * 1.77rem);letter-spacing: calc(1.24 * 1.024rem);font-weight: 500;padding-left: calc(1.24 * 1.024rem); padding-right: 0;padding-top: 0;}
+#header-grid-item h1 a {margin: 0 calc(1.24 * 1.024rem) 0 0;}
+#logo1, #logo2 {height: calc(1.24 * 1.29rem);}
+#header-grid-item h3 {font-size: calc(1.24 * .8rem);letter-spacing: calc(1.24 * .22rem);margin-left: calc(1.24 * .3rem);font-weight: 500;margin-top: calc(1.24 * -2.3rem);}
+
+/***********************/
+/* SOCIAL MEDIA WINDOW */
+/***********************/
+
+#media-container {display: none;}
+
 }
 
-#recom-item-4 {
-    grid-area: 4 / 1 / 5 / 2;
+/**************************************** medium tablets landscape mode ********************************************************************************************************************************/
+@media only screen and (max-width: 960.1px) /*and (orientation: landscape) and (min-aspect-ratio: 4/3) and (max-aspect-ratio: 16/10)*/ {
+    #about-grid {background-color: purple;}
+    header {background-color: purple;}
+
+/*******************/
+/* GLOBAL SETTINGS */
+/*******************/
+
+html { font-size: 2.4vw; }
+
+/**************/   
+/* NAVIGATION */
+/**************/
+
+/*navigation layout for small screens*/
+#nav-grid { grid-template-columns: repeat(2, 50%); grid-auto-columns: repeat(2, 50%); height: 2.5rem;}
+
+/*left-adjustable music button outter container*/
+#nav-item-1 { justify-content: flex-start; padding-left: 19%; }
+/*original size music button*/
+#musicBtn {display: block;} 
+/*scaled music button for small screens*/
+#musicBtnMin {display: none;}
+/*middle navbar menu + right-github icon for large screens*/
+#nav-item-2, #nav-github {display: none;}
+
+/*hamburger menu outter container*/
+#nav-item-3 {justify-content: flex-end; padding-right: 19%;}
+/*hamburger menu inner container*/
+#hamburger-menu-container {display: flex;}
+#hamburger-menu-container > div.hamburger, #hamburger-menu-container > div.hamburger::after, #hamburger-menu-container > div.times, #hamburger-menu-container > div.times::after {height: .26rem; width: 1.4rem;}
+/*dropdown menu*/
+#nav-item-4 {display: grid;}
+#nav-item-4 ul li {font-size: 1.1rem;line-height: 7vh;}
+
+/**********************************/
+/* SECTION 1: HOME / LANDING PAGE */
+/**********************************/
+
+/*header size proportions for small screens*/
+#header-grid-item h1 {font-size: calc(1.24 * 1.77rem);letter-spacing: calc(1.24 * 1.024rem);font-weight: 500;padding-left: calc(1.24 * 1.024rem); padding-right: 0;padding-top: 0;}
+#header-grid-item h1 a {margin: 0 calc(1.24 * 1.024rem) 0 0;}
+#logo1, #logo2 {height: calc(1.24 * 1.29rem);}
+#header-grid-item h3 {font-size: calc(1.24 * .8rem);letter-spacing: calc(1.24 * .22rem);margin-left: calc(1.24 * .3rem);font-weight: 500;margin-top: calc(1.24 * -2.3rem);}
+
+/***********************/
+/* SOCIAL MEDIA WINDOW */
+/***********************/
+
+#media-container {display: none;}
+
 }
 
-/*                                       SECTION 5: CONTACT */
-#form-grid{ 
-    grid-template-columns: 81%;
-    grid-auto-columns: 81%;
-    grid-template-rows: repeat(7, auto);
-    gap: 1.1rem;
+
+@media only screen and (max-width: 1024px) { 
+    #about-grid {background-color: yellowgreen;}
+    header {background-color: yellowgreen;}
+/*******************/
+/* GLOBAL SETTINGS */
+/*******************/
+
+html { font-size: 2.9vw; }
+
+/**************/   
+/* NAVIGATION */
+/**************/
+
+/*navigation layout for small screens*/
+#nav-grid { grid-template-columns: repeat(2, 50%); grid-auto-columns: repeat(2, 50%); height: 2.5rem;}
+
+/*left-adjustable music button outter container*/
+#nav-item-1 { justify-content: flex-start; padding-left: 19%; }
+/*original size music button*/
+#musicBtn {display: none;} 
+/*scaled music button for small screens*/
+#musicBtnMin {display: block}
+/*middle navbar menu + right-github icon for large screens*/
+#nav-item-2, #nav-github {display: none;}
+
+/*hamburger menu outter container*/
+#nav-item-3 {justify-content: flex-end; padding-right: 19%;}
+/*hamburger menu inner container*/
+#hamburger-menu-container {display: flex;}
+#hamburger-menu-container > div.hamburger, #hamburger-menu-container > div.hamburger::after, #hamburger-menu-container > div.times, #hamburger-menu-container > div.times::after {height: .24rem; width: 1.4rem;}
+/*dropdown menu*/
+#nav-item-4 {display: grid;}
+#nav-item-4 ul li {font-size: 1.1rem;line-height: 7vh;}
+
+
+/**********************************/
+/* SECTION 1: HOME / LANDING PAGE */
+/**********************************/
+
+/*header size proportions for small screens*/
+#header-grid-item h1 {font-size: calc(1.24 * 1.77rem);letter-spacing: calc(1.24 * 1.024rem);font-weight: 500;padding-left: calc(1.24 * 1.024rem); padding-right: 0;padding-top: 0;}
+#header-grid-item h1 a {margin: 0 calc(1.24 * 1.024rem) 0 0;}
+#logo1, #logo2 {height: calc(1.24 * 1.29rem);}
+#header-grid-item h3 {font-size: calc(1.24 * .8rem);letter-spacing: calc(1.24 * .22rem);margin-left: calc(1.24 * .3rem);font-weight: 500;margin-top: calc(1.24 * -2.3rem);}
+
 }
-
-#form-grid-item-5 {
-    grid-area: 5 / 1 / 7 / 2;
-}
-
-textarea {
-    min-height: 3.5rem;
-    resize: vertical;
-}
-
-#form-grid-item-6 {
-    grid-area: 7 / 1 / 8 / 2;
-}   
-
-}
-
-
-/* xsmall */
-@media only screen and (max-width: 767.98px) {
-    
-}
-
-
-/* small */
-@media only screen and (max-width: 991.98) {
-    
-}
-
-
-/* medium */
-@media only screen and (max-width: 1199.98px) {
-    
-}
-
-
-/* large */
-@media only screen and (max-width: 1365.98px) {
-    
-}
-
-
-
-
-

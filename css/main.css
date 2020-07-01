@@ -5,7 +5,7 @@ html, body {
 }
 
 html { 
-	font-size: 142%; 
+	font-size: 1.5vw;
 }
 
 #content-wrapper {
@@ -271,7 +271,7 @@ header {
 				#logo1, #logo2 {
 					display: inline-block;
 					width: auto;
-					height: 1.82rem;
+					height: 1.88rem;
 					cursor: pointer;
 
 					-webkit-transition: all .46s ease;

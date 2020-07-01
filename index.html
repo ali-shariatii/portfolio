@@ -29,7 +29,8 @@
         <audio id="clickSnd2" src="snd/click2.mp3"></audio>
         <audio id="bgMusic" src="snd/bg-music.mp3" loop></audio>
         <div id="ctrl-container" >
-            <div id="musicBtn"></div>
+            <div id="musicBtn" onclick="toggleMusic();"></div>
+            <div id="musicBtnMin" onclick="toggleMusic();"></div>
         </div>
     </div>
     <div id="nav-item-2">
@@ -50,11 +51,11 @@
     <div id="nav-item-4" class="hidden-dropdown">
         <div id=menu-min>
             <ul>
-                <li onclick="clickEffect2();"><div><a href="#home-grid" id="home-tab_min" class="active-tab">HOME</a></div></li>
-                <li onclick="clickEffect2();"><div><a href="#about-grid" id="about-tab_min">ABOUT</a></div></li> 
-                <li onclick="clickEffect2();"><div><a href="#work-grid" id="work-tab_min">WORK</a></div></li> 
-                <li onclick="clickEffect2();"><div><a href="#testimonials-grid" id="testimonials-tab_min">TESTIMONIALS</a></div></li> 
-                <li onclick="clickEffect2();"><div><a href="#contact-grid" id="contact-tab_min">CONTACT</a></div></li> 
+                <li onclick="clickEffect2();"><div><a href="#home-grid" id="home-tab-min" >HOME</a></div></li><br>
+                <li onclick="clickEffect2();"><div><a href="#about-grid" id="about-tab-min">ABOUT</a></div></li><br> 
+                <li onclick="clickEffect2();"><div><a href="#work-grid" id="work-tab-min">WORK</a></div></li><br> 
+                <li onclick="clickEffect2();"><div><a href="#testimonials-grid" id="testimonials-tab-min">TESTIMONIALS</a></div></li><br> 
+                <li onclick="clickEffect2();"><div><a href="#contact-grid" id="contact-tab-min">CONTACT</a></div></li> 
             </ul>
         </div>
         <div id="social-media-min">
