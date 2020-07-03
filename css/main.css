@@ -1,3 +1,6 @@
+/*   :/   */
+
+
 /*										 GLOBAL SETTINGS */
 html, body {
 	margin: 0;
@@ -5,7 +8,7 @@ html, body {
 }
 
 html { 
-	font-size: 1.5vw;
+	font-size: 1.4vw;
 }
 
 #content-wrapper {
@@ -56,6 +59,8 @@ h4 {
 	letter-spacing: .28rem;
 	margin: 4rem 0 4rem 0;
 	text-align: center;
+	opacity: 0;
+	transform: translateX(-15vw);
 }
 
 /*										 SOCIAL MEDIA WINDOW */

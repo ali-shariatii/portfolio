@@ -1,4 +1,4 @@
-/* landscape wide screens */
+/* ultra wide screen monitors [min 21:9 aspect ratio] 
+@media only screen and (min-width: 1200px) and (min-aspect-ratio: 21/9) {
 
-
-
+}*/

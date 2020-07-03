@@ -1,8 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-171562548-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-171562548-1');
+    </script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="I am a web designer & developer with an interest and passion in building web applications and websites. My main focus is mostly on front-end side including advanced CSS + extension, JavaScript & JS libraries/frameworks and building interactive & responsive web flows.">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/navigation.css">
     <link rel="stylesheet" href="css/main.css">
@@ -12,6 +23,7 @@
     <link rel="stylesheet" href="css/contact.css">
     <link rel="stylesheet" href="css/media-queries/small-devices.css">
     <link rel="stylesheet" href="css/media-queries/large-devices.css">   
+    <link rel="stylesheet" href="css/global-animation.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous"> -->
     <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>  -->
@@ -21,6 +33,9 @@
 </head>
 
 <body id="body">
+
+<!-- ¯\_(ツ)_/¯  -->
+
 <div id="content-wrapper">
 <!--NAVIGATION-->
 <div id="nav-grid" class="hidden-fixed-nav shadow-filter-effect">
@@ -97,23 +112,23 @@
     <div id="about-grid">
         <div id="about-grid-item-1"><h4>ABOUT</h4></div>
         <div id="about-grid-item-2">
-            <div id="highlights-grid-item-1">
+            <div id="highlights-grid-item-1" class="init-scale-in">
                 <!--<div id="highlight-img-container-1"></div>-->
                 <div id="highlight-content-container-1"><p>Tight deadlines or fast load times, employers or website visitors, I save time either way.</p></div>
             </div>
-            <div id="highlights-grid-item-2">
+            <div id="highlights-grid-item-2" class="init-scale-in">
                 <!--<div id="highlight-img-container-2"></div>-->
                 <div id="highlight-content-container-2"><p>For website visitors or fellow coders & designers, my easy-to-use contents work both ways.</p></div>
             </div>
-            <div id="highlights-grid-item-3">
+            <div id="highlights-grid-item-3" class="init-scale-in">
                 <!--<div id="highlight-img-container-3"></div>-->
                 <div id="highlight-content-container-3"><p>Bespoke visual element selection & proper implementation, according to plans & preferences</p></div>
             </div>
         </div>
         <div id="about-grid-item-3">
-            <p>I am a web designer & developer with an interest in front-end side. My main focus is on advancing my skills in HTML, CSS, JS & its libraries/frameworks, building interactive & responsive web flows as well as designing tools. My quote of the month is__<q>Work hard,<a href="https://github.com/ali-shariatii/" target="_blank" title="More Code on Github"> code hardcore</a>.</q></p>
+            <p class="init-appear-in">I am a web designer & developer with an interest and passion in building web applications and websites. My main focus is mostly on front-end side including advanced CSS + extension, JavaScript & JS libraries/frameworks and building interactive & responsive web flows. My quote of the month is__<q>Work hard,<a href="https://github.com/ali-shariatii/" target="_blank" title="More Code on Github"> code hardcore</a>.</q></p>
         </div>
-        <div id="about-grid-item-4">
+        <div id="about-grid-item-4" class="init-appear-in">
             <div class="skills-items" id="skills-grid-item-1"><span>HTML<br>7</span></div>
             <div class="skills-items" id="skills-grid-item-2"><span>CSS<br>7</span></div>
             <div class="skills-items" id="skills-grid-item-3"><span>JS<br>6</span></div>
@@ -139,7 +154,7 @@
         </div> -->
         <!--work gallery-->
         <div id="work-grid-item-3">
-            <div id="gallery-grid-item-1">
+            <div id="gallery-grid-item-1" class="init-scale-in">
                 <!--modal trigger-->
                 <div class="work-img-container" id="modalOpener1">
                     <div class="info-alert">More Info</div>
@@ -154,9 +169,9 @@
                     </div>
                 </div>
             </div>
-            <div id="gallery-grid-item-2">
+            <div id="gallery-grid-item-2" class="init-scale-in">
                 <!--modal trigger-->
-                <div class="work-img-container" id="modalOpener2" >
+                <div class="work-img-container" id="modalOpener2">
                     <div class="info-alert">More Info</div>
                     <img src="img/shiftdo-thumbnail-wide.jpg" alt="Shiftdo" onclick="clickEffect2();">
                     <span onclick="clickEffect2();">HTML | CSS | WORDPRESS</span>
@@ -179,10 +194,10 @@
         <!--<div id="testimonials-grid-shade">-->
             <div id="testimonials-grid-item-1"><h4>TESTIMONIALS</h4></div>
             <div id="testimonials-grid-item-2">
-                <div id="recom-item-1"><p><q>Ali is a team player & an exceptional problem solver.</q></p></div>
-                <div id="recom-item-2"><p><q>He is keen to learn new skills & challenge himself every day.</q></p></div>
-                <div id="recom-item-3"><p><q>Every team which Ali is a part of, is among the winners.</q></p></div>
-                <div id="recom-item-4"><p><a href="https://www.linkedin.com/in/ali-shariatii/" target="_blank"><span>More on </span></a><a href="https://www.linkedin.com/in/ali-shariatii/"target="_blank" class="fa fa-linkedin" id="in"></a></p></div>
+                <div id="recom-item-1" class="init-scale-in"><p><q>Ali is a team player & an exceptional problem solver.</q></p></div>
+                <div id="recom-item-2" class="init-scale-in"><p><q>He is keen to learn new skills & challenge himself every day.</q></p></div>
+                <div id="recom-item-3" class="init-scale-in"><p><q>Every team which Ali is a part of, is among the winners.</q></p></div>
+                <div id="recom-item-4" class="init-appear-in"><p><a href="https://www.linkedin.com/in/ali-shariatii/" target="_blank"><span>More on </span></a><a href="https://www.linkedin.com/in/ali-shariatii/"target="_blank" class="fa fa-linkedin" id="in"></a></p></div>
             </div>
         <!--</div>-->
     </div>
@@ -192,7 +207,7 @@
 <section class="container-grid" id="contact-container">
     <div id="contact-grid">
         <div id="contact-grid-item-1"><h4>CONT<a href="#home-grid" class="logoPointer" onclick="clickEffect2();"><img src="img/logo.svg" alt="A"id="logo3"></a>CT</h4></div>
-        <div id="contact-grid-item-2">
+        <div id="contact-grid-item-2" class="init-scale-in">
             <form id="form-grid" action="contactform.php" method="POST">
                 <div id="form-grid-item-1"><input type="text" placeholder="Name*" name="name" required></div>
                 <div id="form-grid-item-2"><input type="email" placeholder="Email*" name="email" required></div>

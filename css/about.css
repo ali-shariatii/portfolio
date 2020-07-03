@@ -35,11 +35,11 @@
                     padding: 0 .8rem;
                     box-shadow: 0 .16rem .32rem 0 rgba(11, 11, 11, 0.7), 0 .36rem .4rem 0 rgba(14, 14, 14, 0.6);
                     
-                    -webkit-transition: all .2s ease;
-                    -moz-transition: all .2s ease;
-                    -ms-transition: all .2s ease;
-                    -o-transition: all .2s ease;
-                    transition: all .2s ease;
+                    -webkit-transition: all .3s ease;
+                    -moz-transition: all .3s ease;
+                    -ms-transition: all .3s ease;
+                    -o-transition: all .3s ease;
+                    transition: all .3s ease;
                 }
 
             /*hover transitions*/

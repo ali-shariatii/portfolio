@@ -38,7 +38,7 @@
 	.hidden-fixed-nav {
 		display: grid;
 		position: fixed;
-		top: -3.2rem;	
+		top: -3.3rem;	
 	}
 
 		@-moz-keyframes fixedNavSlideIn {
@@ -288,7 +288,7 @@
 			#ctrl-container {
 				cursor: pointer;
 			}
-			
+
 	#nav-item-2 {
 		display: flex;
 		justify-content: center;
@@ -391,12 +391,19 @@
 				background-color: grey;
 				margin-bottom: -.08rem;
 
-				-webkit-transition: all .4s ease;
+				/*-webkit-transition: all .4s ease;
 				-moz-transition: all .4s ease;
 				-ms-transition: all .4s ease;
 				-o-transition: all .4s ease;
-				transition: all .4s ease;
+				transition: all .4s ease;*/
+
+				animation: hamburger .3s ease-out forwards;
 			}
+
+			@-webkit-keyframes hamburger {0% {transform: translateY(0rem) rotateZ(45deg);}40% {transform: translateY(0rem);}100% {transform: translateY(0rem);}}
+			@-moz-keyframes hamburger {0% {transform: translateY(0rem) rotateZ(45deg);}40% {transform: translateY(0rem);}100% {transform: translateY(0rem);}}
+			@-o-keyframes hamburger {0% {transform: translateY(0rem) rotateZ(45deg);}40% {transform: translateY(0rem);}100% {transform: translateY(0rem);}}
+			@keyframes hamburger {0% {transform: translateY(0rem) rotateZ(45deg);}40% {transform: translateY(0rem);}100% {transform: translateY(0rem);}}
 
 				#hamburger-menu-container > div.hamburger::after {
 					content: "";
@@ -404,29 +411,42 @@
 					height: .17rem;
 					width: 1.3rem;
 					background-color: grey;
-					transform: translateY(.6rem);
+					/*transform: translateY(.6rem);*/
 					margin-top: -.08rem;
 
-					-webkit-transition: all .4s ease;
+					/*-webkit-transition: all .4s ease;
 					-moz-transition: all .4s ease;
 					-ms-transition: all .4s ease;
 					-o-transition: all .4s ease;
-					transition: all .4s ease;
+					transition: all .4s ease;*/
+					animation: hamburger2 .3s ease-out forwards;
 				}
-
-
+	
+				@-webkit-keyframes hamburger2 {0% {transform: translateY(0rem) rotateZ(-90deg);}40% {transform: translateY(0rem);}100% {transform: translateY(0.6rem);}}
+				@-moz-keyframes hamburger2 {0% {transform: translateY(0rem) rotateZ(-90deg);}40% {transform: translateY(0rem);}100% {transform: translateY(0.6rem);}}
+				@-o-keyframes	 hamburger2 {0% {transform: translateY(0rem) rotateZ(-90deg);}40% {transform: translateY(0rem);}100% {transform: translateY(0.6rem);}}			
+				@keyframes hamburger2 {0% {transform: translateY(0rem) rotateZ(-90deg);}40% {transform: translateY(0rem);}100% {transform: translateY(0.6rem);}}
+	
 				#hamburger-menu-container > div.times {
 					height: .17rem;
 					width: 1.3rem;
 					background-color: white;
-					transform: rotateZ(225deg);
+			
+					/*transform: rotateZ(225deg);
 
 					-webkit-transition: all .4s ease;
 					-moz-transition: all .4s ease;
 					-ms-transition: all .4s ease;
 					-o-transition: all .4s ease;
-					transition: all .4s ease;
+					transition: all .4s ease;*/
+
+					animation: times .3s ease-in forwards;
 				}
+
+				@-webkit-keyframes times {0% {transform: translateY(0rem);}40% {transform: translateY(0.3rem);}100% {transform: translateY(0rem) rotateZ(45deg);}}
+				@-moz-keyframes times {0% {transform: translateY(0rem);}40% {transform: translateY(0.3rem);}100% {transform: translateY(0rem) rotateZ(45deg);}}
+				@-o-keyframes times {0% {transform: translateY(0rem);}40% {transform: translateY(0.3rem);}100% {transform: translateY(0rem) rotateZ(45deg);}}
+				@keyframes times {0% {transform: translateY(0rem);}40% {transform: translateY(0.3rem);}100% {transform: translateY(0rem) rotateZ(45deg);}}
 
 					#hamburger-menu-container > div.times::after {
 						content: "";
@@ -434,14 +454,20 @@
 						height: .17rem;
 						width: 1.3rem;
 						background-color: white;
-						transform: rotateZ(90deg);
+						/*transform: translate rotateZ(90deg);
 
 						-webkit-transition: all .4s ease;
 						-moz-transition: all .4s ease;
 						-ms-transition: all .4s ease;
 						-o-transition: all .4s ease;
-						transition: all .4s ease;
-					}
+						transition: all .4s ease;*/
+						animation: times2 .3s ease-in forwards;
+				}
+
+				@-webkit-keyframes times2 {0% {transform: translateY(.6rem);}40% {transform: translateY(0rem);}100% {transform: translateY(0rem) rotateZ(-90deg);}}
+				@-moz-keyframes times2 {0% {transform: translateY(.6rem);}40% {transform: translateY(0rem);}100% {transform: translateY(0rem) rotateZ(-90deg);}}
+				@-o-keyframes times2 {0% {transform: translateY(.6rem);}40% {transform: translateY(0rem);}100% {transform: translateY(0rem) rotateZ(-90deg);}}
+				@keyframes times2 {0% {transform: translateY(.6rem);}40% {transform: translateY(0rem);}100% {transform: translateY(0rem) rotateZ(-90deg);}}
 				
 			/* dropdown menu */
 			#nav-item-4 {
