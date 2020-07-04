@@ -63,7 +63,7 @@ hamburgerContainer.onclick = function() {
     }
 };
 
-/*SECTION 1: HOME / LANDING PAGE */
+/*SECTION 1: HOME / LANDING PAGE 
 function skyCity() {
     for( var i=0; i < 400; i++) {
         console.log();
@@ -82,12 +82,11 @@ function skyCity() {
         cityLight.style.animationDuration = 10 + animate + 's';
         //cityLight.style.animationDelay = animate + 's';
 
-
         header.appendChild(cityLight);
 
     }
 }
-skyCity();
+skyCity(); */
 
 /*SECTION 2: ABOUT */
 

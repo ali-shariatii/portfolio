@@ -9,13 +9,16 @@
     border-top: .5 solid #393939;
 }
 
-	#sky-city-2 {
+	.sky-city-2 {
         position: absolute;
 		object-fit: contain;
         width: 100%;;
         height: auto;
         margin-top: -10px;
-	}
+    }
+    
+    #sky-city-2 { display: block;}
+    #sky-city-2-1200px, #sky-city-2-992px, #sky-city-2-768px, #sky-city-2-600px, #sky-city-2-400px {display: none;}
 
     #contact-grid-item-1 {
         z-index: 2;
@@ -125,9 +128,21 @@
                 text-align: center;
             }
 
+                /* resets y axis of sky-city images*/
+                .sky-city-y-reset {
+                    position: absolute;
+                    bottom: 0px;
+                    object-fit: contain;
+                    width: 100%;
+                    height: auto;
+                    z-index: 2;
+                }
+
                 #confirmation-mesg {
+                    position: relative;
                     margin: 0;
                     animation: slideLeft ease 1s;
+                    z-index: 3;
                 }
 
                 @-webkit-keyframes slideLeft {
@@ -151,9 +166,11 @@
                 }
 
                 #redirect-mesg {
+                    position: relative;
                     font-size: .7rem;
                     padding-bottom: .2rem;
                     animation: slideRight ease 1s;
+                    z-index: 3;
                 }
 
                 @-webkit-keyframes slideRight {
@@ -183,11 +200,13 @@
                 #message-grid-item p a:hover, #message-grid-item p a:active { text-decoration: none; color: #1676b6 ;}
 
                 #logo4 {
+                    position: relative;
                         display: inline-block;
                         width: auto;
                         height: 1.792rem;
                         margin-top: 2rem;
-                        
+                        z-index: 3;
+
                         -webkit-animation: spin 2s infinite ease;
                         -moz-animation: spin 2s infinite ease;
                         -o-animation: spin 2s infinite ease;

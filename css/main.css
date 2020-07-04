@@ -130,7 +130,6 @@ h4 {
 	border-right: rgba(97, 96, 96, .6);;
 }
 
-
 	#media-window li {
 		display: block;
 		line-height: 1.2rem;
@@ -208,7 +207,7 @@ header {
 		align-items: center;
 	}
 
-		#sky-city-1 {
+		.sky-city-1 {
 			position: absolute;
 			bottom: -5px;
 			object-fit: contain;
@@ -216,6 +215,9 @@ header {
 			height: auto;
 			z-index: 2;
 		}
+
+		#sky-city-1 { display: block;}
+		#sky-city-1-1200px, #sky-city-1-992px, #sky-city-1-768px, #sky-city-1-600px, #sky-city-1-400px {display: none;}
 
 		#header-grid-item {
 			display: grid;

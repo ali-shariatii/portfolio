@@ -71,11 +71,11 @@ $(window).scroll(function() {
         $("#highlights-grid-item-3").addClass("scale-in");
     };
 
-    if(scroll >= homeStart + homeEnd*.75){
+    if(scroll >= homeStart + homeEnd*.83){
         $("#about-grid-item-3 p").addClass("appear-in");
     };
 
-    if(scroll >= homeStart + homeEnd*.90){
+    if(scroll >= homeStart + homeEnd*.95){
         $("#about-grid-item-4").addClass("appear-in");
     };
     
