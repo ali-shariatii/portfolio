@@ -64,7 +64,30 @@ hamburgerContainer.onclick = function() {
 };
 
 /*SECTION 1: HOME / LANDING PAGE */
+function skyCity() {
+    for( var i=0; i < 400; i++) {
+        console.log();
+        var header = document.getElementById("home-grid"),
+            cityLight = document.createElement("i"),
+            x = Math.floor(Math.random() * window.innerWidth * .98),
+            y = Math.floor(Math.random() * window.innerHeight),
+            size = Math.random() * 1.5;
+            animate = Math.random() * 50;
 
+        cityLight.style.left = x + 'px';
+        cityLight.style.top = y + 'px';
+        cityLight.style.width = size + 1.5 + 'px';
+        cityLight.style.height = size + 1.5 + 'px';
+        cityLight.style.opacity = Math.random();
+        cityLight.style.animationDuration = 10 + animate + 's';
+        //cityLight.style.animationDelay = animate + 's';
+
+
+        header.appendChild(cityLight);
+
+    }
+}
+skyCity();
 
 /*SECTION 2: ABOUT */
 

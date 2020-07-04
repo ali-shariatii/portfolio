@@ -41,7 +41,9 @@ html {
 	display: grid;
 	grid-template-columns: auto;
 	grid-template-rows: auto;
-	border: .5px #2e2e2e solid;
+	border-top: .5px #393939 solid;
+	border-bottom: .5px #393939 solid;
+	background-color: #393939;
 }
 
 input::-webkit-outer-spin-button,
@@ -74,7 +76,8 @@ h4 {
 	grid-template-columns: 80% 20%;
 	align-items: center;
 	width: 3rem;
-	z-index: 1;
+	z-index: 3;
+	gap: 0;
 
 	animation: slideOut 2.4s ease;
 
@@ -116,15 +119,15 @@ h4 {
 #media-window {
 	padding: .4rem;
 
-	background-color: rgba(97, 96, 96, 0.6);
-	-webkit-backdrop-filter: blur(.36rem);
-	backdrop-filter: blur(.36rem);
-
+	background-color: rgba(97, 96, 96, .6);
+	-webkit-backdrop-filter: blur(6px);
+	backdrop-filter: blur(6px);
 	-webkit-transition: all .35s ease;
 	-moz-transition: all .35s ease;
 	-ms-transition: all .35s ease;
 	-o-transition: all .35s ease;
 	transition: all .35s ease;
+	border-right: rgba(97, 96, 96, .6);;
 }
 
 
@@ -144,7 +147,7 @@ h4 {
 		#media-window a:active { text-decoration: none; color: white ;}
 
 #media-container-arrow {
-	border-left: .4rem solid rgba(97, 96, 96, 0.6);
+	border-left: .4rem solid rgba(97, 96, 96, .6);
 	border-top: .4rem solid transparent;
 	border-bottom: .4rem solid transparent;
 	background-color: transparent;
@@ -173,8 +176,27 @@ header {
 	background-size: cover;
 	height: 100vh;
 	align-items: center;
-	border: 0.5px #2e2e2e solid;
+	overflow: hidden;
 }
+
+	#home-grid i {
+		position: absolute;
+		border-radius: 100%;
+		background: grey;
+		transition: all ease;
+		animation: lighting-dance linear infinite;
+	}
+
+	@keyframes lighting-dance {
+		0% {
+			transform: translateY(0);
+		}
+
+		100% {
+			opacity: 0;
+			transform: translateY(-300px);
+		}
+	}
 
 	#header-grid-shade {
 		display: grid;
@@ -185,6 +207,15 @@ header {
 		justify-content: stretch;
 		align-items: center;
 	}
+
+		#sky-city-1 {
+			position: absolute;
+			bottom: -5px;
+			object-fit: contain;
+			width: 100%;
+			height: auto;
+			z-index: 2;
+		}
 
 		#header-grid-item {
 			display: grid;
@@ -205,6 +236,7 @@ header {
 				padding-left: 2.048rem;
 				padding-right: 0;
 				padding-top: 0;
+				z-index: 3;
 			}
 
 				#header-grid-item h1 a {
@@ -248,30 +280,36 @@ header {
 				.name-letters {
 					display: inline-block;
 					animation: appearSlideLeft ease 2s;
+					background: linear-gradient(white , #393939);
+					-webkit-background-clip: text;
+					-moz-background-clip: text;
+					background-clip: text;
+					-webkit-text-fill-color: transparent;
+					-moz-text-fill-color: transparent;
 				}
 
 					@-webkit-keyframes appearSlideLeft {
-						0% {transform: translateX(-7px); color: transparent;}
-						55% {transform: translateX(-7px); color: transparent;}
-						100% {transform: translateX(0); color: white;} 
+						0% {transform: translateX(-.28rem); opacity: 0;}
+						55% {transform: translateX(-.28rem); opacity: 0;}
+						100% {transform: translateX(0); opacity: 1;} 
 					}
 				
 					@-moz-keyframes appearSlideLeft {
-						0% {transform: translateX(-.28rem); color: transparent;}
-						55% {transform: translateX(-.28rem); color: transparent;}
-						100% {transform: translateX(0); color: white;}
+						0% {transform: translateX(-.28rem); opacity: 0;}
+						55% {transform: translateX(-.28rem); opacity: 0;}
+						100% {transform: translateX(0); opacity: 1;} 
 					}
 				
 					@-o-keyframes appearSlideLeft {
-						0% {transform: translateX(-.28rem); color: transparent;}
-						55% {transform: translateX(-.28rem); color: transparent;}
-						100% {transform: translateX(0); color: white;}
+						0% {transform: translateX(-.28rem); opacity: 0;}
+						55% {transform: translateX(-.28rem); opacity: 0;}
+						100% {transform: translateX(0); opacity: 1;} 
 					}
 				
 					@keyframes appearSlideLeft {
-						0% {transform: translateX(-.28rem); color: transparent;}
-						55% {transform: translateX(-.28rem); color: transparent;}
-						100% {transform: translateX(0); color: white;}
+						0% {transform: translateX(-.28rem); opacity: 0;}
+						55% {transform: translateX(-.28rem); opacity: 0;}
+						100% {transform: translateX(0); opacity: 1;} 
 					}
 
 				#logo1, #logo2 {
@@ -324,6 +362,12 @@ header {
 				margin-left: .44rem;
 				font-weight: 500;
 				margin-top: -3rem;
+				background: linear-gradient(grey 40%, #2e2e2e);
+				-webkit-background-clip: text;
+				-moz-background-clip: text;
+				background-clip: text;
+				-webkit-text-fill-color: transparent;
+				z-index: 3;
 
 				-webkit-transition: all .5s ease;
 				-moz-transition: all .5s ease;
@@ -335,27 +379,27 @@ header {
 			}
 
 				@-webkit-keyframes appearSlideRight {
-					0% {transform: translateX(.28rem); color: transparent;}
-					55% {transform: translateX(.28rem); color: transparent;}
-					100% {transform: translateX(0); color: white;} 
+					0% {transform: translateX(.28rem); opacity: 0;}
+					55% {transform: translateX(.28rem); opacity: 0;}
+					100% {transform: translateX(0); opacity: 1;} 
 				}
 			
 				@-moz-keyframes appearSlideRight {
-					0% {transform: translateX(.28rem); color: transparent;}
-					55% {transform: translateX(.28rem); color: transparent;}
-					100% {transform: translateX(0); color: white;}
+					0% {transform: translateX(.28rem); opacity: 0;}
+					55% {transform: translateX(.28rem); opacity: 0;}
+					100% {transform: translateX(0); opacity: 1;} 
 				}
 			
 				@-o-keyframes appearSlideRight {
-					0% {transform: translateX(.28rem); color: transparent;}
-					55% {transform: translateX(.28rem); color: transparent;}
-					100% {transform: translateX(0); color: white;}
+					0% {transform: translateX(.28rem); opacity: 0;}
+					55% {transform: translateX(.28rem); opacity: 0;}
+					100% {transform: translateX(0); opacity: 1;} 
 				}
 			
 				@keyframes appearSlideRight {
-					0% {transform: translateX(.28rem); color: transparent;}
-					55% {transform: translateX(.28rem); color: transparent;}
-					100% {transform: translateX(0); color: white;}
+					0% {transform: translateX(.28rem); opacity: 0;}
+					55% {transform: translateX(.28rem); opacity: 0;}
+					100% {transform: translateX(0); opacity: 1;} 
 			}
 
 

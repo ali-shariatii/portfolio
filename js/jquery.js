@@ -117,7 +117,7 @@ $(window).scroll(function() {
         $("#nav-item-2 ul a, #nav-item-4 ul a").click(function(){
             $("html, body").animate({
                 scrollTop: $($.attr(this, 'href')).offset().top
-            }, 550);
+            }, 650);
         });
     });
 
@@ -125,7 +125,7 @@ $(window).scroll(function() {
         $(".logoPointer").click(function(){
             $("html, body").animate({
                 scrollTop: $($.attr(this, 'href')).offset().top
-            }, 550);
+            }, 650);
     });
 });
 

@@ -9,7 +9,8 @@
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-    padding-bottom: 4.8rem;
+	padding-bottom: 4.8rem;
+	border-bottom: .5 solid #393939;
 }
 
 /*	#testimonials-grid-shade {
@@ -70,11 +71,11 @@
 			width: 100%;
 			text-align: center;
 			
-			-webkit-transition: all .3s ease;
-			-moz-transition: all .3s ease;
-			-ms-transition: all .3s ease;
-			-o-transition: all .3s ease;
-			transition: all .3s ease;
+			-webkit-transition: all .4s ease;
+			-moz-transition: all .4s ease;
+			-ms-transition: all .4s ease;
+			-o-transition: all .4s ease;
+			transition: all .4s ease;
 		}
 
 		#recom-item-4:hover {

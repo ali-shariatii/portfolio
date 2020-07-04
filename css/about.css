@@ -5,6 +5,7 @@
     grid-template-rows: repeat(4, auto);
     background-color: #393939;
     padding-bottom: 4.8rem;
+    z-index: 2;
 }
 
     #about-grid-item-1 {

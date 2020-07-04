@@ -35,7 +35,7 @@
     -moz-transition: all ease .6s;
     -o-transition: all ease .6s;
     transition: all ease .6s;
-    /*transform: scale(.85);*/
+    transform: scale(.85);
 }
 
 .scale-in {
@@ -44,7 +44,7 @@
     -moz-transition: all ease .6s;
     -o-transition: all ease .6s;
     transition: all ease .6s;
-    /*transform: scale(1);*/
+    transform: scale(1);
 }
 
 

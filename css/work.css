@@ -138,8 +138,6 @@
                     font-size: .8rem;
                 }
 
-
-
                 /*This is the full blackout background.*/
                 .modal-full-window {
                     display: grid;
@@ -148,7 +146,7 @@
                     justify-content: stretch;
                     align-items: center;
                     position: fixed;
-                    z-index: 1;
+                    z-index: 4;
                     left: -100%;
                     top: 0;
                     width: 100%;
