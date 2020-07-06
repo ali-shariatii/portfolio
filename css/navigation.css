@@ -481,15 +481,15 @@
 				align-items: stretch;
 				-webkit-backdrop-filter: blur(.6rem);
 				backdrop-filter: blur(.6rem);
-				-webkit-transition: all .6s ease;
-				-moz-transition: all .6s ease;
-				-ms-transition: all .6s ease;
-				-o-transition: all .6s ease;
-				transition: all .6s ease;
+				-webkit-transition: all .7s ease;
+				-moz-transition: all .7s ease;
+				-ms-transition: all .7s ease;
+				-o-transition: all .7s ease;
+				transition: all .7s ease;
 			}
 
 				.hidden-dropdown {
-					top: -150vh;
+					top: -100vh;
 				}
 
 				.unhidden-dropdown {

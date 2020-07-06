@@ -32,8 +32,7 @@
     <link rel="shortcut icon" type="image/png" href="img/favicon/favicon-256×256.ico">
 </head>
 
-<body id="body">
-
+<body class="noscroll-x">
 <!-- ¯\_(ツ)_/¯  -->
 
 <div id="content-wrapper">

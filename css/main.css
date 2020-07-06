@@ -5,6 +5,7 @@
 html, body {
 	margin: 0;
 	background-color: #2e2e2e;
+	max-width: 100%;
 }
 
 html { 
@@ -22,6 +23,10 @@ html {
 	.container-grid, #home-grid, footer {
 		grid-column: 1 / 13;
 	}
+
+.noscroll-x {
+	overflow-x: hidden;
+}
 
 .noscroll {
 	overflow: hidden;
@@ -76,7 +81,7 @@ h4 {
 	grid-template-columns: 80% 20%;
 	align-items: center;
 	width: 3rem;
-	z-index: 3;
+	z-index: 4;
 	gap: 0;
 
 	animation: slideOut 2.4s ease;

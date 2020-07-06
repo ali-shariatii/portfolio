@@ -63,15 +63,23 @@ hamburgerContainer.onclick = function() {
     }
 };
 
-/*SECTION 1: HOME / LANDING PAGE 
+/*SECTION 1: HOME / LANDING PAGE */
+window.onresize = function() {
+    skyCity();
+};
+
+var header = document.getElementById("home-grid");
+var cityLights = []
+for( var i=0; i < 400; i++) {
+    cityLights.push(document.createElement("i"));
+}
+
 function skyCity() {
     for( var i=0; i < 400; i++) {
-        console.log();
-        var header = document.getElementById("home-grid"),
-            cityLight = document.createElement("i"),
+        var cityLight = cityLights[i],
             x = Math.floor(Math.random() * window.innerWidth * .98),
             y = Math.floor(Math.random() * window.innerHeight),
-            size = Math.random() * 1.5;
+            size = Math.random() * 1.5,
             animate = Math.random() * 50;
 
         cityLight.style.left = x + 'px';
@@ -80,13 +88,12 @@ function skyCity() {
         cityLight.style.height = size + 1.5 + 'px';
         cityLight.style.opacity = Math.random();
         cityLight.style.animationDuration = 10 + animate + 's';
-        //cityLight.style.animationDelay = animate + 's';
 
         header.appendChild(cityLight);
-
     }
-}
-skyCity(); */
+};
+skyCity();
+
 
 /*SECTION 2: ABOUT */
 
@@ -105,15 +112,14 @@ var modalOpener2 = document.getElementById("modalOpener2"),
     modalContentWindow2 = document.getElementById("modalContentWindow2"),
     modalFullWindow2 = document.getElementById("modalFullWindow2");
 
-var body = document.getElementById("body");
-
 //modal1 func
 modalOpener1.onclick = function() {
     modalFullWindow1.classList.remove("full-window-disappear");
     modalContentWindow1.classList.remove("content-window-disappear");
     modalFullWindow1.classList.add("full-window-appear");
     modalContentWindow1.classList.add("content-window-appear");
-    body.classList.add("noscroll");
+    document.body.classList.add("noscroll");
+    document.body.classList.remove("noscroll-x");
 }
 
 modalCloser1.onclick = function() {
@@ -121,7 +127,8 @@ modalCloser1.onclick = function() {
     modalContentWindow1.classList.remove("content-window-appear");
     modalContentWindow1.classList.add("content-window-disappear");
     modalFullWindow1.classList.add("full-window-disappear");
-    body.classList.remove("noscroll");
+    document.body.classList.remove("noscroll");
+    document.body.classList.add("noscroll-x");
 }
 
 //modal2 func
@@ -130,7 +137,8 @@ modalOpener2.onclick = function() {
     modalContentWindow2.classList.remove("content-window-disappear");
     modalFullWindow2.classList.add("full-window-appear");
     modalContentWindow2.classList.add("content-window-appear");
-    body.classList.add("noscroll");
+    document.body.classList.add("noscroll");
+    document.body.classList.remove("noscroll-x");
 }
 
 modalCloser2.onclick = function() {
@@ -138,7 +146,8 @@ modalCloser2.onclick = function() {
     modalContentWindow2.classList.remove("content-window-appear");
     modalContentWindow2.classList.add("content-window-disappear");
     modalFullWindow2.classList.add("full-window-disappear");
-    body.classList.remove("noscroll");
+    document.body.classList.remove("noscroll");
+    document.body.classList.add("noscroll-x");
 }
 
 //close all modals on window click
@@ -148,13 +157,15 @@ window.onclick = function(event) {
         modalContentWindow1.classList.remove("content-window-appear");
         modalContentWindow1.classList.add("content-window-disappear");
         modalFullWindow1.classList.add("full-window-disappear");
-        body.classList.remove("noscroll");
+        document.body.classList.remove("noscroll");
+        document.body.classList.add("noscroll-x");
     } else if(event.target == modalFullWindow2) {
         modalFullWindow2.classList.remove("full-window-appear");
         modalContentWindow2.classList.remove("content-window-appear");
         modalContentWindow2.classList.add("content-window-disappear");
         modalFullWindow2.classList.add("full-window-disappear");
-        body.classList.remove("noscroll");
+        document.body.classList.remove("noscroll");
+        document.body.classList.add("noscroll-x");
     }
 
 }
