@@ -236,13 +236,15 @@
 
 <!--SECTION 6: FOOTER-->
 <footer>
-    <div id="footer-grid-item-1" target="_blank"><p>
-        <a href="mailto:info@alishariatii.com">EMAIL</a><span> |</span>
-        <a href="https://github.com/ali-shariatii/" target="_blank"> GITHUB</a><span> |</span>
-        <a href="https://www.linkedin.com/in/ali-shariatii/" target="_blank"> LINKEDIN</a><span> |</span>
-        <a href="https://stackoverflow.com/users/13517523/ali-shariati" target="_blank"> STACK</a>
-    </p></div>
-    <div id="footer-grid-item-2">© 2020 ALI SHARIATI. MADE IN CANADA</div>
+    <div id="footer-wrapper">
+        <div id="footer-grid-item-1" target="_blank"><p>
+            <a href="mailto:info@alishariatii.com">EMAIL</a><span> |</span>
+            <a href="https://github.com/ali-shariatii/" target="_blank"> GITHUB</a><span> |</span>
+            <a href="https://www.linkedin.com/in/ali-shariatii/" target="_blank"> LINKEDIN</a><span> |</span>
+            <a href="https://stackoverflow.com/users/13517523/ali-shariati" target="_blank"> STACK</a>
+        </p></div>
+        <div id="footer-grid-item-2">© 2020 ALI SHARIATI. MADE IN CANADA</div>
+    </div>
 </footer>
 </div>
 
