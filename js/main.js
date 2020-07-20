@@ -1,10 +1,7 @@
-// (`_`) _/ 
-
-
 /* NAVIGATION */
 //background music
-const AudioContext = window.AudioContext || window.webkitAudioContext;
-const audioCtx = new AudioContext();
+//const AudioContext = window.AudioContext || window.webkitAudioContext;
+//const audioCtx = new AudioContext();
 
 var bgMusic = document.getElementById("bgMusic"),
     musicBtn = document.getElementById("musicBtn"),
@@ -31,7 +28,7 @@ bgMusic.onpause = function() {
 };
 
 //click  sound effects
-var clickSnd = document.getElementById("clickSnd"),
+/*var clickSnd = document.getElementById("clickSnd"),
     clickSnd2 = document.getElementById("clickSnd2");
 
 function clickEffect() {
@@ -40,42 +37,57 @@ function clickEffect() {
 
 function clickEffect2() {
     clickSnd2.play();
-}
+}*/
 
 //hamburger/dropdown menu
-var hamburgerIcon = document.getElementById("hamburgerIcon"),
+var hamburgerLine1 = document.getElementById("hamburgerLine1"),
+    hamburgerLine2 = document.getElementById("hamburgerLine2"),
     hamburgerContainer = document.getElementById("hamburger-menu-container"),
-    hamMenuCont = document.getElementById("hamburger-menu-container"),
     dropDownMenu = document.getElementById("nav-item-4"),
     navGrid = document.getElementById("nav-grid");
 
 hamburgerContainer.onclick = function() {
-    if(hamburgerIcon.classList.contains("hamburger")) {
-        hamburgerIcon.classList.replace("hamburger", "times");
-        hamMenuCont.classList.replace("align-container-1", "align-container-2");
-        dropDownMenu.classList.replace("hidden-dropdown","unhidden-dropdown");
-        navGrid.classList.remove("shadow-filter-effect");
-    }else {
-        hamburgerIcon.classList.replace("times","hamburger");
-        hamMenuCont.classList.replace("align-container-2", "align-container-1");
-        dropDownMenu.classList.replace("unhidden-dropdown","hidden-dropdown");
+
+    if (hamburgerLine1.classList.contains("animateHamburgerLine1") && hamburgerLine2.classList.contains("animateHamburgerLine2")) {
+        hamburgerLine1.classList.replace("animateHamburgerLine1", "animateTimesLine1");
+        hamburgerLine2.classList.replace("animateHamburgerLine2", "animateTimesLine2");
+        dropDownMenu.classList.replace("unhidden-dropdown", "hidden-dropdown");
         navGrid.classList.add("shadow-filter-effect");
+    } else if (hamburgerLine1.classList.contains("animateTimesLine1") && hamburgerLine2.classList.contains("animateTimesLine2")) {
+        hamburgerLine1.classList.replace("animateTimesLine1", "animateHamburgerLine1");
+        hamburgerLine2.classList.replace("animateTimesLine2", "animateHamburgerLine2");
+        dropDownMenu.classList.replace("hidden-dropdown", "unhidden-dropdown");
+        navGrid.classList.remove("shadow-filter-effect");
+    } else {
+        hamburgerLine1.classList.add("animateHamburgerLine1");
+        hamburgerLine2.classList.add("animateHamburgerLine2");
+        dropDownMenu.classList.replace("hidden-dropdown", "unhidden-dropdown");
+        navGrid.classList.remove("shadow-filter-effect");
     }
 };
 
 /*SECTION 1: HOME / LANDING PAGE */
+var vh = window.innerHeight * 0.01;
+document.documentElement.style.setProperty('--vh', `${vh}px`);
+
+window.addEventListener('resize', () => {
+    var vh = window.innerHeight * 0.01;
+    document.documentElement.style.setProperty('--vh', `${vh}px`);
+});
+
+
 window.onresize = function() {
     skyCity();
 };
 
 var header = document.getElementById("home-grid");
-var cityLights = []
-for( var i=0; i < 400; i++) {
+var cityLights = [];
+for (var i = 0; i < 400; i++) {
     cityLights.push(document.createElement("i"));
-}
+};
 
 function skyCity() {
-    for( var i=0; i < 400; i++) {
+    for (var i = 0; i < 400; i++) {
         var cityLight = cityLights[i],
             x = Math.floor(Math.random() * window.innerWidth * .98),
             y = Math.floor(Math.random() * window.innerHeight),
@@ -120,7 +132,7 @@ modalOpener1.onclick = function() {
     modalContentWindow1.classList.add("content-window-appear");
     document.body.classList.add("noscroll");
     document.body.classList.remove("noscroll-x");
-}
+};
 
 modalCloser1.onclick = function() {
     modalFullWindow1.classList.remove("full-window-appear");
@@ -129,7 +141,7 @@ modalCloser1.onclick = function() {
     modalFullWindow1.classList.add("full-window-disappear");
     document.body.classList.remove("noscroll");
     document.body.classList.add("noscroll-x");
-}
+};
 
 //modal2 func
 modalOpener2.onclick = function() {
@@ -139,7 +151,7 @@ modalOpener2.onclick = function() {
     modalContentWindow2.classList.add("content-window-appear");
     document.body.classList.add("noscroll");
     document.body.classList.remove("noscroll-x");
-}
+};
 
 modalCloser2.onclick = function() {
     modalFullWindow2.classList.remove("full-window-appear");
@@ -148,18 +160,18 @@ modalCloser2.onclick = function() {
     modalFullWindow2.classList.add("full-window-disappear");
     document.body.classList.remove("noscroll");
     document.body.classList.add("noscroll-x");
-}
+};
 
 //close all modals on window click
 window.onclick = function(event) {
-    if(event.target == modalFullWindow1) {
+    if (event.target == modalFullWindow1) {
         modalFullWindow1.classList.remove("full-window-appear");
         modalContentWindow1.classList.remove("content-window-appear");
         modalContentWindow1.classList.add("content-window-disappear");
         modalFullWindow1.classList.add("full-window-disappear");
         document.body.classList.remove("noscroll");
         document.body.classList.add("noscroll-x");
-    } else if(event.target == modalFullWindow2) {
+    } else if (event.target == modalFullWindow2) {
         modalFullWindow2.classList.remove("full-window-appear");
         modalContentWindow2.classList.remove("content-window-appear");
         modalContentWindow2.classList.add("content-window-disappear");
@@ -177,4 +189,3 @@ window.onclick = function(event) {
 
 
 /*SECTION 6: FOOTER */
-
